@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default {
-    title:"Example/Information",
-    component:<div></div>
+    title:"Example/InformationButton",
+    component:<Information></Information>
 }
 
-export const Information = () => <div>Information</div>
+export const Information = () => <Information>Information About App</Information>
