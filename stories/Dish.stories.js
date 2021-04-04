@@ -1,8 +1,9 @@
 import React from 'react';
+import Dish from "../comps/Dish"
 
 export default {
     title:"Example/Dish",
-    component:<div></div>
+    component:<Dish/>
 }
 
-export const Dish = () => <div>Dish</div>
+export const MyDish = () => <div>Dish</div>
