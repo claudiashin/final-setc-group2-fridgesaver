@@ -6,7 +6,7 @@ const InfoContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // max-width: 300px;
+    max-width: 350px;
 `;
 
 const InfoTitle = styled.h3`
@@ -23,11 +23,18 @@ const InfoTitle = styled.h3`
     font-family: 'Athiti', sans-serif;
 `;
 
-const Information = () => {
+const Information = ({
+    titletext="Title",
+    paratext="paragraph",
+}) => {
     
     return <InfoContainer>
-        <InfoTitle>WHAT THIS APP DOES</InfoTitle>
-        <InfoDescription>This mobile app ...</InfoDescription>
+        <InfoTitle>
+            {titletext}
+        </InfoTitle>
+        <InfoDescription>
+            {paratext}
+        </InfoDescription>
     </InfoContainer>
 }
 
