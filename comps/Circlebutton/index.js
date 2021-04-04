@@ -15,9 +15,11 @@ const ButtonInput = styled.button`
     word-wrap: break-word;
 `;
 
-const CircleButton = () => {
+const CircleButton = ({
+    text="Text"
+}) => {
     return <ButtonInput>
-        Cost Saved
+        {text}
     </ButtonInput>
 
 }

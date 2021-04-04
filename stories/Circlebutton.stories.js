@@ -7,3 +7,9 @@ export default {
 }
 
 export const DefaultCircle = () => <CircleButton/>
+
+export const CostCircle = () => <CircleButton text="Costs Saved"/>
+
+export const DonateCircle = () => <CircleButton text="Donate Food"/>
+
+export const TipsCircle = () => <CircleButton text="Tips"/>
