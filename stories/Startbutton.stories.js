@@ -1,8 +1,9 @@
 import React from 'react';
+import StartButton from '../comps/Startbutton';
 
 export default {
     title:"Example/StartButton",
-    component:<div></div>
+    component:<StartButton/>
 }
 
-export const StartButton = () => <div>Start Button</div>
+export const MyButton = () => <StartButton/>
