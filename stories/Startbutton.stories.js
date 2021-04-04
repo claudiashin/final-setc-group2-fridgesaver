@@ -2,7 +2,7 @@ import React from 'react';
 import StartButton from '../comps/Startbutton';
 
 export default {
-    title:"Example/StartButton",
+    title:"Example/Start Button",
     component:<StartButton/>
 }
 

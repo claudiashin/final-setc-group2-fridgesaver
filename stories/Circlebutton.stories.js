@@ -1,8 +1,9 @@
 import React from 'react';
+import CircleButton from '../comps/Circlebutton';
 
 export default {
-    title:"Example/CircleButton",
-    component:<div></div>
+    title:"Example/Circle Button",
+    component:<CircleButton/>
 }
 
-export const CircleButton = () => <div>Circle Button</div>
+export const MyCircle = () => <CircleButton/>

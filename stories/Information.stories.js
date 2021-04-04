@@ -1,8 +1,9 @@
 import React from 'react';
+import Information from '../comps/Information';
 
 export default {
-    title:"Example/InformationButton",
-    component:<Information></Information>
+    title:"Example/Information",
+    component:<Information/>
 }
 
-export const Information = () => <Information>Information About App</Information>
+export const MyInformation = () => <Information/>
