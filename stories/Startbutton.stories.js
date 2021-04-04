@@ -6,4 +6,14 @@ export default {
     component:<StartButton/>
 }
 
-export const MyButton = () => <StartButton/>
+export const DefaultButton = () => <StartButton/>
+
+export const StartButtonWithTextProp = () => <StartButton text="Let's Get Started"/>
+
+export const SkipButtonWithTextAndBorderProp = () => (
+    <StartButton
+    text="Skip"
+    brdrcolor="none"
+    width="120px"
+    />
+);

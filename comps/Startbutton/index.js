@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const ButtonInput = styled.button`
     background-color: #B4E2B9;
     color: #000000;
-    border:2px solid #F7FFC5;
+    border:${props=>props.bordercolor};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 200px;
+    width: ${props=>props.width};
     height: 40px;
     font-family: 'Athiti', sans-serif;
     font-weight: 700;
@@ -16,22 +16,14 @@ const ButtonInput = styled.button`
 
 //props
 const StartButton = ({
-    text="Let's Get Started"
+    text="Test Button",
+    brdrcolor="2px solid #F7FFC5",
+    width="200px"
 }) => {
 
-    return <div>
-        {/* <button style={{
-            backgroundColor:"#B4E2B9",
-            color:"#000000",
-            border:"2px solid #F7FFC5",
-            boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25",
-            width:"200px",
-            height:"40px"
-        }}>Test Button</button> */}
-        <ButtonInput>
-            {text}
-        </ButtonInput>
-    </div>
+    return <ButtonInput bordercolor={brdrcolor} width={width}>
+        {text}
+    </ButtonInput>
 }
 
 export default StartButton;

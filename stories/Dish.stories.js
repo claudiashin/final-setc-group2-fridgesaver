@@ -6,4 +6,4 @@ export default {
     component:<Dish/>
 }
 
-export const MyDish = () => <Dish/>
+export const DefaultDish = () => <Dish/>

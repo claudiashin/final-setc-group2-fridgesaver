@@ -16,11 +16,10 @@ const ButtonInput = styled.button`
 `;
 
 const CircleButton = () => {
-    return <div>
-        <ButtonInput>
-            Costs Saved
-        </ButtonInput>
-    </div>
+    return <ButtonInput>
+        Cost Saved
+    </ButtonInput>
+
 }
 
 export default CircleButton;

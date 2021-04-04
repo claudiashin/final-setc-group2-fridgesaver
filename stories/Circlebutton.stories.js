@@ -6,4 +6,4 @@ export default {
     component:<CircleButton/>
 }
 
-export const MyCircle = () => <CircleButton/>
+export const DefaultCircle = () => <CircleButton/>

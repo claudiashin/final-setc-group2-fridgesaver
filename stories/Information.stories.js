@@ -6,4 +6,4 @@ export default {
     component:<Information/>
 }
 
-export const MyInformation = () => <Information/>
+export const DefaultInformation = () => <Information/>

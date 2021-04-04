@@ -6,11 +6,10 @@ const DishImage = styled.img`
 `;
 
 const Dish = () => {
-    return <div>
-        <DishImage>
-            Onion Noodle
-        </DishImage>
-    </div>
+    return <DishImage>
+        Onion Noodle
+    </DishImage>
+
 }
 
 export default Dish;
