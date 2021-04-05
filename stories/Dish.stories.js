@@ -7,3 +7,14 @@ export default {
 }
 
 export const DefaultDish = () => <Dish/>
+
+export const OnionDish = () => (
+    <Dish
+    dishname="Onion Noodle"
+    />
+);
+
+export const OnionChickenDish = () => (
+    <Dish
+    dishname="Onion Chicken Noodle"/>
+);
