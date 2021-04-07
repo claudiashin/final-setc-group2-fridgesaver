@@ -9,7 +9,7 @@ const ButtonInput = styled.button`
     width: ${props=>props.width};
     height: 40px;
     font-family: 'Athiti', sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 16px;
     text-align: center;
 `;

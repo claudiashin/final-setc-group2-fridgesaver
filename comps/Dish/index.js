@@ -11,7 +11,7 @@ const DishContainer = styled.div`;
 
 const DishName = styled.h3`
     font-family: 'Athiti', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     position: absolute;
     text-align: center;
     color: #000000;
