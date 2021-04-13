@@ -4,4 +4,10 @@
 // import Line from '../comps/Line';
 // import Recipe from '../comps/Recipe';
 
-// maggie - landing page 
+
+export default function Home() {
+  return (
+    
+  )
+}
+
