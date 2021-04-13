@@ -1,3 +1,4 @@
+
 // import Head from 'next/head'
 // import styled from 'styled-components';
 // import Header from '../comps/Header';
@@ -10,4 +11,5 @@ export default function Home() {
     
   )
 }
+
 
