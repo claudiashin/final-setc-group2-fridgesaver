@@ -5,7 +5,7 @@ import Line from '../comps/Line';
 import Recipe from '../comps/Recipe';
 
 //example
-const HomeCont = styled.div`
+const HomeCont = styled.body`
   .header {
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ export default function Home() {
       <Recipe/>
       <Recipe/>
       </div>
-      <div className="right">
+      <div style="display=flex" className="right">
       <Recipe/>
       <Recipe/>
       </div>
