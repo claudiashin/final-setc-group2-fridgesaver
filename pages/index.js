@@ -1,6 +1,15 @@
-import Head from 'next/head'
-import Message from '../comps/Message'
-import Ingredient from '../comps/Ingredient'
-import Direction from '../comps/Directions'
-import styled from 'styled-components'
-import React,{useState} from 'react'
+
+// import Head from 'next/head'
+// import styled from 'styled-components';
+// import Header from '../comps/Header';
+// import Line from '../comps/Line';
+// import Recipe from '../comps/Recipe';
+
+
+export default function Home() {
+  return (
+    
+  )
+}
+
+
