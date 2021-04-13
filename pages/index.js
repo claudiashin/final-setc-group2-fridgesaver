@@ -6,10 +6,10 @@
 // import Recipe from '../comps/Recipe';
 
 
-export default function Home() {
-  return (
+// export default function Home() {
+//   return (
     
-  )
-}
+//   )
+// }
 
 
