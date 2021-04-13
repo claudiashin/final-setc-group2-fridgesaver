@@ -1,6 +1,0 @@
-import Head from 'next/head'
-import Message from '../comps/Message'
-import Ingredient from '../comps/Ingredient'
-import Direction from '../comps/Directions'
-import styled from 'styled-components'
-import React,{useState} from 'react'
