@@ -41,7 +41,6 @@ background-color: #FFF8F8;
     width: 120px;
 }
 
-
 .information {
   margin: 25px;
 }
@@ -61,8 +60,6 @@ background-color: #FFF8F8;
 export default function Home() {
 
   return <HomeCont>
-    <div className="navigationbar"></div>
-
     <div className="logo">
       <img src="logo.png"></img> 
     </div>
