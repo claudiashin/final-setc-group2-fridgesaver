@@ -8,7 +8,7 @@ export default {
 
 export const DefualtDeveloper = () => <Developer />
 export const OurDeveloper = () => (
-    <Developer 
+    <Developer
         name1="Iori Takeshita" 
         name2="Claudia Shin"
         name3="Maggie Su"
