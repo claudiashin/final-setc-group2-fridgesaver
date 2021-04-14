@@ -6,5 +6,5 @@ export default{
     component:<Message />
 }
 
-export const Message1 = () => <Message />
+export const Message1 = () => <Message/>
 export const Message2 = () => <Message border = "solid pink" />

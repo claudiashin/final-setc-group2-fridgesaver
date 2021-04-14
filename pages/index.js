@@ -4,6 +4,7 @@ import Line from '../comps/Line';
 import Startbutton from '../comps/Startbutton';
 import Information from '../comps/Information';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 // import {Router, useRouter} from 'next/router';
 
 
@@ -29,7 +30,7 @@ background-color: #FFF8F8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 40px;
 }
 
 .arrow {
