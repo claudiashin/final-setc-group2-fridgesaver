@@ -4,7 +4,7 @@ import Line from '../comps/Line';
 import Startbutton from '../comps/Startbutton';
 import Information from '../comps/Information';
 import styled from 'styled-components';
-import {Router, useRouter} from 'next/router';
+// import {Router, useRouter} from 'next/router';
 
 
 const HomeCont = styled.div`
@@ -68,7 +68,7 @@ export default function Home() {
 
     <div className="cta-fridge">
       <img className="arrow" src="right-arrow.svg"></img>
-      <img className="fridge" src="fridge.png" onClick={()=>Router.push("/landingpagetwo")}></img>
+      <img className="fridge" src="fridge.png"></img>
     </div>
 
     <div className="information">
