@@ -13,32 +13,31 @@ margin:8px;
 border-radius:100%;
 width:${props=>props.width}px;
 height:${props=>props.height}px;
-opacity:${props=>props.opacity};
 border:${props=>props.border};
+font-size:${props=>props.fontsize}px;
 `;
 
-const BoxText =styled.div`
+const BoxText =styled.p`
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-font-size:14px;
+// font-size:14px;
 font-family: 'Athiti';
 text-align: center;
 margin:5px;
 `;
-
 
 const Message =({text = "7% of greenhouse gases produced globally are due to preventable food waste",
 bgcolor ="#E09E9E",
 backgroundopacity = "rgba(224, 158, 158, 0.4)",
 width = 160,
 height = 160,
-opacity = 0.6,
+fontsize = 14,
 border = "none",
 
 }) => {
     
-    return <MessageCont bg = {bgcolor} bgopacity= {backgroundopacity} width = {width} opacity = {opacity} height = {height} border = {border}>
+    return <MessageCont fontsize = {fontsize} bg = {bgcolor} bgopacity= {backgroundopacity} width = {width} height = {height} border = {border}>
         <BoxText>{text}</BoxText>
     </MessageCont>
 }

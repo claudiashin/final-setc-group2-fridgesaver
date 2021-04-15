@@ -33,7 +33,7 @@ background-color: #FFF8F8;
 
 .message {
     background-color: #FFF3F3;
-    height: 340px;
+    height: 300px;
     border-radius: 20px;
     margin: 30px;
     display:flex;
@@ -69,6 +69,7 @@ background-color: #FFF8F8;
 .footer {
   margin: 10px;
 }
+
 `;
 
 export default function Home() {
@@ -86,12 +87,12 @@ export default function Home() {
 
     <div className="message">
         <div className="top">
-        <Message text="Did you know that..." width="110" height="110" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18"/>
-        <Message text="7% of greenhouse gases produced globally are due to preventable food waste" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)"/>
+        <Message className="text" text="Start saving by..." width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)" fontsize="18"/>
+        <Message text="Finding tips on how to maximize the longevity of vegetables" width="120" height="120" backgroundopacity="rgba(224, 158, 158, 0.4)"/>
         </div>
 
         <div className="bottom">
-        <Message text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)"/>
+        <Message text="Using the foods you already have" width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)"/>
         </div>
     </div>
 
