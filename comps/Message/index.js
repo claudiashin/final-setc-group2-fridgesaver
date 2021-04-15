@@ -34,10 +34,11 @@ width = 160,
 height = 160,
 fontsize = 14,
 border = "none",
+routeTo=""
 
 }) => {
-    
-    return <MessageCont fontsize = {fontsize} bg = {bgcolor} bgopacity= {backgroundopacity} width = {width} height = {height} border = {border}>
+    const router = useRouter();
+    return <MessageCont onClick={()=>router.push(routeTo)} fontsize = {fontsize} bg = {bgcolor} bgopacity= {backgroundopacity} width = {width} height = {height} border = {border}>
         <BoxText>{text}</BoxText>
     </MessageCont>
 }

@@ -7,15 +7,20 @@ import Message from '../comps/Message';
 import Fridge from '../comps/Fridge';
 import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
-import {useRouter} from 'next/router';
-// import {Router, useRouter} from 'next/router';
-
 
 const HomeCont = styled.div`
+width: 450px;
 max-width: 450px;
-height: 1200px;
+height: 812px;
+max-height: 812px;
 background-color: #FFF8F8;
+overflow: scroll;
 
+.navbar {
+  width: 100$;
+  height: 40px;
+  background-color: #9FCDA4;
+}
 
 .logo {
   display: flex;
@@ -63,36 +68,36 @@ background-color: #FFF8F8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 60px;
 }
 
 .footer {
-  margin: 10px;
+  margin: 35px;
 }
 `;
 
 export default function Home() {
 
   return <HomeCont>
-    <div className="navigationbar"></div>
+    <div className="navbar"></div>
 
     <div className="logo">
-      <img src="logo.png"></img> 
+      <img src="logo.png"></img>
     </div>
 
     <div className="cta-fridge">
-      <Fridge image="fridge-open.png"/>
+      <Fridge image="fridge-open.png" />
     </div>
 
     <div className="message">
-        <div className="top">
-        <Message text="Did you know that..." width="110" height="110" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18"/>
-        <Message text="7% of greenhouse gases produced globally are due to preventable food waste" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)"/>
-        </div>
+      <div className="top">
+        <Message routeTo="/landingpage_three" text="Did you know that..." width="110" height="110" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18" />
+        <Message routeTo="/landingpage_three" text="7% of greenhouse gases produced globally are due to preventable food waste" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" />
+      </div>
 
-        <div className="bottom">
-        <Message text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)"/>
-        </div>
+      <div className="bottom">
+        <Message routeTo="/landingpage_three" text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" />
+      </div>
     </div>
 
     {/* <div className="information">
@@ -100,16 +105,15 @@ export default function Home() {
     </div> */}
 
     <div className="start-button">
-      <Startbutton text="Let's Get Started"/>
+      <Startbutton text="Let's Get Started" />
     </div>
 
-    <Line/>
+    <Line />
 
     <div className="footer">
-      <Developer name1="Iori Takeshita" name2="Claudia Shin" name3="Maggie Su" name4="Leighai Nishibata"/>
+      <Developer name1="Iori Takeshita" name2="Claudia Shin" name3="Maggie Su" name4="Leighai Nishibata" />
     </div>
-  
- 
+
   </HomeCont>
 }
 

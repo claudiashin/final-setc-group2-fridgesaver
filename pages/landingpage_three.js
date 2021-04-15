@@ -7,15 +7,20 @@ import Message from '../comps/Message';
 import Fridge from '../comps/Fridge';
 import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
-import {useRouter} from 'next/router';
-// import {Router, useRouter} from 'next/router';
-
 
 const HomeCont = styled.div`
+width: 450px;
 max-width: 450px;
-height: 1200px;
+height: 812px;
+max-height: 812px;
 background-color: #FFF8F8;
+overflow: scroll;
 
+.navbar {
+    width: 100$;
+    height: 40px;
+    background-color: #9FCDA4;
+}
 
 .logo {
   display: flex;
@@ -63,55 +68,56 @@ background-color: #FFF8F8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 60px;
 }
 
 .footer {
-  margin: 10px;
+  margin: 35px;
 }
 
 `;
 
 export default function Home() {
 
-  return <HomeCont>
-    <div className="navigationbar"></div>
+    return <HomeCont>
+        <div className="navbar"></div>
 
-    <div className="logo">
-      <img src="logo.png"></img> 
-    </div>
-
-    <div className="cta-fridge">
-      <Fridge image="fridge-open.png"/>
-    </div>
-
-    <div className="message">
-        <div className="top">
-        <Message className="text" text="Start saving by..." width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)" fontsize="18"/>
-        <Message text="Finding tips on how to maximize the longevity of vegetables" width="120" height="120" backgroundopacity="rgba(224, 158, 158, 0.4)"/>
+        <div className="logo">
+            <img src="logo.png"></img>
         </div>
 
-        <div className="bottom">
-        <Message text="Using the foods you already have" width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)"/>
+        <div className="cta-fridge">
+            <Fridge image="fridge-open.png" />
         </div>
-    </div>
 
-    {/* <div className="information">
-      <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste."/>
+        <div className="message">
+            <div className="top">
+                <Message className="text" text="Start saving by..." width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)" fontsize="18" />
+                <Message text="Finding tips on how to maximize the longevity of vegetables" width="120" height="120" backgroundopacity="rgba(224, 158, 158, 0.4)" />
+            </div>
+
+            <div className="bottom">
+                <Message text="Using the foods you already have" width="100" height="100" backgroundopacity="rgba(224, 158, 158, 0.4)" />
+            </div>
+        </div>
+
+        {/* <div className="information">
+      <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge toƒ save time and costs, all while minimizing food waste."/>
     </div> */}
 
-    <div className="start-button">
-      <Startbutton text="Let's Get Started"/>
-    </div>
+        <div className="start-button">
+            <Startbutton text="Let's Get Started" />
+        </div>
 
-    <Line/>
+        <Line />
 
-    <div className="footer">
-      <Developer name1="Iori Takeshita" name2="Claudia Shin" name3="Maggie Su" name4="Leighai Nishibata"/>
-    </div>
-  
- 
-  </HomeCont>
+        <div className="footer">
+            <Developer name1="Iori Takeshita" name2="Claudia Shin" name3="Maggie Su" name4="Leighai Nishibata" />
+        </div>
+
+
+    </HomeCont>
+
 }
 
 
