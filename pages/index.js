@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';
 import Line from '../comps/Line';
 import Startbutton from '../comps/Startbutton';
@@ -8,10 +9,8 @@ import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-width: 450px;
 max-width: 450px;
 height: 812px;
-max-height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
@@ -19,16 +18,6 @@ overflow: scroll;
   width: 100$;
   height: 40px;
   background-color: #9FCDA4;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  img {
-    width: 240px;
-  }
 }
   
 .cta-fridge {
@@ -53,7 +42,7 @@ export default function Home() {
     <div className="navbar"></div>
 
     <div className="logo">
-      <img src="logo.png"></img>
+      <Logo />
     </div>
 
     <div className="cta-fridge">

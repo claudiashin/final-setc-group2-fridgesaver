@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';
 import Line from '../comps/Line';
 import Startbutton from '../comps/Startbutton';
@@ -9,10 +10,8 @@ import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-width: 450px;
 max-width: 450px;
 height: 812px;
-max-height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
@@ -20,16 +19,6 @@ overflow: scroll;
   width: 100$;
   height: 40px;
   background-color: #9FCDA4;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-    img {
-      width: 240px;
-    }
 }
 
 .cta-fridge {
@@ -60,10 +49,6 @@ overflow: scroll;
     align-items: center;
 }
 
-// .information {
-//   margin: 25px;
-// }
-
 .start-button {
   display: flex;
   justify-content: center;
@@ -82,7 +67,7 @@ export default function Home() {
     <div className="navbar"></div>
 
     <div className="logo">
-      <img src="logo.png"></img>
+      <Logo />
     </div>
 
     <div className="cta-fridge">
@@ -99,10 +84,6 @@ export default function Home() {
         <Message routeTo="/landingpage_three" text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" />
       </div>
     </div>
-
-    {/* <div className="information">
-      <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste."/>
-    </div> */}
 
     <div className="start-button">
       <Startbutton text="Let's Get Started" />
