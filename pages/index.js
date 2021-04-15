@@ -23,20 +23,7 @@ background-color: #FFF8F8;
   }
 }
   
-.cta-fridge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-  
-  .arrow {
-    width: 110px;
-  }
-  
-  .fridge {
-    width: 120px;
-  }
-}
+.cta-fridge {}
   
 .information {
   margin: 25px;
@@ -62,8 +49,6 @@ export default function Home() {
     </div>
 
     <div className="cta-fridge">
-      <img className="arrow" src="rightarrow-01.svg"></img>
-      <img className="fridge" src="fridge.png"></img>
     </div>
 
     <div className="information">

@@ -5,6 +5,7 @@ import Startbutton from '../comps/Startbutton';
 import Information from '../comps/Information';
 import Message from '../comps/Message';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 // import {Router, useRouter} from 'next/router';
 
 
@@ -31,15 +32,16 @@ background-color: #FFF8F8;
   justify-content: center;
   align-items: center;
   margin: 40px;
+
+  .fridge {
+      width: 120px;
+  }
+
+  // .arrow {
+  //   width: 80px;
+  // }
 }
 
-.arrow {
-  width: 80px;
-}
-
-.fridge {
-    width: 120px;
-}
 
 .message {
     background-color: #FFF3F3;
