@@ -8,7 +8,7 @@ const FridgeContainer = styled.div`;
 `;
 
 const FridgeImage = styled.img`
-    width: 120px;
+    width: ${props=>props.width}px;
     height: 120px;
     object-fit: contain;
 `;
@@ -16,10 +16,11 @@ const FridgeImage = styled.img`
 //props
 const Fridge = ({
     image="fridge.png",
+    width="120"
 
 }) => {
     return <FridgeContainer>
-        <FridgeImage src={image}/>
+        <FridgeImage src={image} width={width}/>
     </FridgeContainer>
 }
 
