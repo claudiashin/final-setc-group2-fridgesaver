@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 
 const HomeCont = styled.div`
-max-width: 400px;
+max-width: 450px;
 height: 1150px;
 background-color: #FFF8F8;
 

@@ -9,38 +9,35 @@ import {useRouter} from 'next/router';
 
 
 const HomeCont = styled.div`
-max-width: 400px;
-height: 900px;
+max-width: 450px;
+height: 950px;
 background-color: #FFF8F8;
-
-.navigationbar {}
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo 
+  
   img {
-    width: 200px;
+    width: 240px;
+  }
 }
-
+  
 .cta-fridge {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
-}
-
-.arrow {
-  width: 80px;
-}
-
-.fridge {
+  
+  .arrow {
+    width: 110px;
+  }
+  
+  .fridge {
     width: 120px;
+  }
 }
-
+  
 .information {
   margin: 25px;
 }
@@ -65,7 +62,7 @@ export default function Home() {
     </div>
 
     <div className="cta-fridge">
-      <img className="arrow" src="right-arrow.svg"></img>
+      <img className="arrow" src="rightarrow-01.svg"></img>
       <img className="fridge" src="fridge.png"></img>
     </div>
 
