@@ -8,7 +8,7 @@ const ArrowContainer = styled.div`;
 `;
 
 const ArrowImage = styled.img`
-    width: ${props=>props.bordercolor}px;
+    width: ${props=>props.width}px;
     height: 120px;
     object-fit: contain;
 `;
@@ -16,7 +16,7 @@ const ArrowImage = styled.img`
 //props
 const Arrow = ({
     image="rightarrow-01.svg",
-    width={width}
+    width=120
 
 }) => {
     return <ArrowContainer>

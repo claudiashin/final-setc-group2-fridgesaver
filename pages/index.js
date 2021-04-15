@@ -25,18 +25,16 @@ background-color: #FFF8F8;
   }
 }
   
-.cta-fridge {}
+.cta-fridge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
   
 .information {
   margin: 25px;
 }
-
-// .start-button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 40px;
-// }
 
 .footer {
   margin: 10px;
@@ -52,16 +50,12 @@ export default function Home() {
 
     <div className="cta-fridge">
       <Arrow/>
-      <Fridge/>
+      <Fridge routeTo="/landingpage_two"/>
     </div>
 
     <div className="information">
       <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste."/>
     </div>
-
-    {/* <div className="start-button">
-      <Startbutton text="Let's Get Started"/>
-    </div> */}
 
     <Line/>
 

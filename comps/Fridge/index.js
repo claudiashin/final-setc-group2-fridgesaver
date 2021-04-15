@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const FridgeContainer = styled.div`;
     display: flex;
@@ -16,10 +17,11 @@ const FridgeImage = styled.img`
 //props
 const Fridge = ({
     image="fridge.png",
-    width="120"
-
+    width="120",
+    routeTo=""
 }) => {
-    return <FridgeContainer>
+    const router = useRouter();
+    return <FridgeContainer onClick={()=>router.push(routeTo)}>
         <FridgeImage src={image} width={width}/>
     </FridgeContainer>
 }
