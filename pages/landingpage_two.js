@@ -4,6 +4,8 @@ import Line from '../comps/Line';
 import Startbutton from '../comps/Startbutton';
 import Information from '../comps/Information';
 import Message from '../comps/Message';
+import Fridge from '../comps/Fridge';
+import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 // import {Router, useRouter} from 'next/router';
@@ -93,8 +95,6 @@ export default function Home() {
     </div>
 
     <div className="cta-fridge">
-      {/* <img className="arrow" src="right-arrow.svg"></img> */}
-      <img className="fridge" src="fridge-open.png"></img>
     </div>
 
     <div className="message">
