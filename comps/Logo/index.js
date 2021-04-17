@@ -16,7 +16,7 @@ const LogoImage = styled.img`
 //props
 const Logo = ({
     image="logo.png",
-    width="240",
+    width="200",
     routeTo=""
 }) => {
     const router = useRouter();

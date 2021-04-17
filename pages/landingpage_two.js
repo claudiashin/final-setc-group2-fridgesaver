@@ -10,8 +10,8 @@ import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-max-width: 450px;
-height: 812px;
+// max-width: 450px;
+// height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
@@ -21,12 +21,16 @@ overflow: scroll;
   background-color: #9FCDA4;
 }
 
+.logo {
+  margin-top: 30px;
+}
+
 .cta-fridge {
-  margin: 50px;
+  margin: 30px;
 }
 
 .message {
-    background-color: #FFF3F3;
+    // background-color: #FFF3F3;
     height: 340px;
     border-radius: 20px;
     margin: 30px;
@@ -76,12 +80,13 @@ export default function Home() {
 
     <div className="message">
       <div className="top">
-        <Message routeTo="/landingpage_three" text="Did you know that..." width="110" height="110" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18" />
-        <Message routeTo="/landingpage_three" text="7% of greenhouse gases produced globally are due to preventable food waste" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" />
+        <Message routeTo="/landingpage_three" text="Did you know that..." width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18" />
+        <Message routeTo="/landingpage_three" text="Start saving by..." width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" fontsize="18" />
       </div>
 
       <div className="bottom">
-        <Message routeTo="/landingpage_three" text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="130" height="130" backgroundopacity="rgba(224, 158, 158, 0.2)" />
+        <Message /*routeTo="/landingpage_three"*/ text="7% of greenhouse gases produced globally are due to preventable food waste" width="135" height="135" backgroundopacity="rgba(224, 158, 158, 0.2)" />
+        <Message /*routeTo="/landingpage_three"*/ text="About 63% of the food that is thrown away could be eaten or used in some sort of way" width="135" height="135" backgroundopacity="rgba(224, 158, 158, 0.2)" />
       </div>
     </div>
 

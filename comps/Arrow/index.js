@@ -16,7 +16,7 @@ const ArrowImage = styled.img`
 //props
 const Arrow = ({
     image="rightarrow-01.svg",
-    width=120
+    width=100
 
 }) => {
     return <ArrowContainer>

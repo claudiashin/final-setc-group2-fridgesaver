@@ -10,8 +10,8 @@ import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-max-width: 450px;
-height: 812px;
+// max-width: 450px;
+// height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
@@ -21,12 +21,16 @@ overflow: scroll;
     background-color: #9FCDA4;
 }
 
+.logo {
+    margin-top: 30px;
+}
+
 .cta-fridge {
-  margin: 50px;
+  margin: 30px;
 }
 
 .message {
-    background-color: #FFF3F3;
+    // background-color: #FFF3F3;
     height: 300px;
     border-radius: 20px;
     margin: 30px;

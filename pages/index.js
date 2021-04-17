@@ -9,8 +9,8 @@ import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-max-width: 450px;
-height: 812px;
+// max-width: 450px;
+// height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
@@ -19,16 +19,23 @@ overflow: scroll;
   height: 40px;
   background-color: #9FCDA4;
 }
+
+.logo {
+  margin-top: 30px;
+}
   
 .cta-fridge {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 30px;
 }
   
 .information {
-  margin: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
 .footer {

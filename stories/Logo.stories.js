@@ -9,6 +9,6 @@ export default {
 export const MainLogo = () => (
     <Logo
         image="logo.png"
-        width="240"
+        width="200"
     />
 );

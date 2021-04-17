@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
-const FridgeContainer = styled.div`;
+const FridgeContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ const FridgeImage = styled.img`
 //props
 const Fridge = ({
     image="fridge.png",
-    width="120",
+    width="100",
     routeTo=""
 }) => {
     const router = useRouter();

@@ -11,6 +11,6 @@ export const ArrowDefault = () => <Arrow/>
 export const RightArrow = () => (
     <Arrow
         image="rightarrow-01.svg"
-        widhth="120"
+        widhth="100"
     />
 );

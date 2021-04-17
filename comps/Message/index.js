@@ -34,7 +34,7 @@ width = 160,
 height = 160,
 fontsize = 14,
 border = "none",
-routeTo=""
+routeTo="",
 
 }) => {
     const router = useRouter();
