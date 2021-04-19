@@ -4,7 +4,7 @@ import Recipe from '../comps/Recipe';
 import Heart from '../comps/Heart';
 import Direction from '../comps/Directions';
 import CircleButton from '../comps/Circlebutton';
-import {FiHeart} from 'react-icons/fi';
+// import {FiHeart} from 'react-icons/fi';
 
 const HomeCont = styled.div`
 
@@ -18,6 +18,7 @@ const HomeCont = styled.div`
   position: relative;
 
     .navbar {
+      display: flex;
       width: 100%;
       height: 40px;
       background-color: #9FCDA4;
@@ -30,6 +31,7 @@ const HomeCont = styled.div`
     }
 
     .directions {
+      display: flex;
       overflow: scroll;
       width: 430px;
       height: 350px; 

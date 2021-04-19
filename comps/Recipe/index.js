@@ -22,6 +22,7 @@ const RecipeImage = styled.img`
 `;
 
 const IngredientsCont = styled.div`
+    display: flex;
     flex-direction: column;
     align-items: left;
     width: 220px;
@@ -32,7 +33,6 @@ const IngredientsCont = styled.div`
 
 const RecipeTitle = styled.h2`
     font-family: 'Permanent Marker', cursive;
-
     margin-top: 0px;
     margin-bottom: 0px;
 `;

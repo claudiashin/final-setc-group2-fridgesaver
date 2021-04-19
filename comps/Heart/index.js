@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import styled from 'styled-components';
-import {FiHeart} from 'react-icons/fi';
+// import {FiHeart} from 'react-icons/fi';
 import React, {useState} from 'react';
 
 const HeartCont = styled.div`
@@ -41,11 +41,11 @@ const Heart = ({
 
     return <HeartCont>
         <HeartIcon onClick={()=>setOpen(!open)}>
-            <FiHeart 
-                text={<div><GiShinyApple />Apple</div>} 
+            {/* <FiHeart 
+                // text={<div><FiHeart />Apple</div>} 
                 bgcolor="red"
                 onClick={onHeartClick}
-            />
+            /> */}
         </HeartIcon>
     </HeartCont>
 }
