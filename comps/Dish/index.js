@@ -46,17 +46,19 @@ const Dish = ({
     dishname1="Dish Name",
     dishname2="Dish Name",
     dishurl1 = "/onionnoodle.jpeg",
-    dishurl2 = "/"  
-    
+    dishurl2 = "/",
+    onClick1=()=>{},
+    onClick2=()=>{},
+
 }) => {
     return <DishContainer>
         <div className = "boxCon">
         <DishName>{dishname1}</DishName>
-        <DishImage src={dishurl1} />
+        <DishImage src={dishurl1} onClick = {onClick1}/>
         </div>
         <div className = "boxCon">
         <DishName>{dishname2}</DishName>
-        <DishImage src={dishurl2} />
+        <DishImage src={dishurl2} onClick = {onClick2}/>
         </div>
     </DishContainer>
 }
