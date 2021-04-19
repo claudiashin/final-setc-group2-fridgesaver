@@ -9,30 +9,28 @@ const RecipeCont = styled.div`
     height: 250px;
     justify-content: center;
     align-items: flex-end;
-
 `;
 
 const RecipeImage = styled.img`
+    display: flex;
     width: 180px;
     height: 180px; 
     object-fit: contain;
     margin-right: 10px;
     margin-bottom: 10px;
-
 `;
 
 const IngredientsCont = styled.div`
+    display: flex;
     flex-direction: column;
     align-items: left;
     width: 220px;
     height: 180px; 
     margin-bottom: 10px;
-
 `;
 
 const RecipeTitle = styled.h2`
     font-family: 'Permanent Marker', cursive;
-
     margin-top: 0px;
     margin-bottom: 0px;
 `;
