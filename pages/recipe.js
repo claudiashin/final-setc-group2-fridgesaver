@@ -6,6 +6,11 @@ import Recipe from '../comps/Recipe';
 
 //example
 const HomeCont = styled.div`
+  max-width: 450px;
+  height: 812px;
+  background-color: #FFF8F8;
+
+
   .header {
     display: flex;
     justify-content: center;
@@ -36,11 +41,11 @@ export default function Home() {
     <div className="bottom">
       <div className="left">
       <Recipe/>
-      <Recipe/>
+
       </div>
       <div className="right">
       <Recipe/>
-      <Recipe/>
+
       </div>
     </div>
   </HomeCont>
