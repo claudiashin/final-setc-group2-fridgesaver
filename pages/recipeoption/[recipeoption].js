@@ -50,27 +50,35 @@ import {useRouter} from 'next/router';
 const recipes = {
     Peppers:{
         dishname1:"Pepper Chinese Noodle",
-        dishname2:"Pepper Vegan Noodle",
-        dishurl1:"/PepperPasta.jpeg",
-        dishurl2:"/PepperVegan.jpg" 
+        dishname2:"Pepper Meat Noodle",
+        dishurl1:"/DN-Pepper.jpg",
+        dishurl2:"/PepperPasta.jpeg ", 
+        dishlink1:"/recipe",
+        dishlink2:"/recipe"
     },
     Onions:{
-        dishname1:"Onion Japanese Noodle",
+        dishname1:"Onion Cream Pasta",
         dishname2:"Onion Chicken Noodle",
-        dishurl1:"/onionnoodle.jpeg",
-        dishurl2:"/ChickenNoodle.jpeg" 
+        dishurl1:"/DN-Onion.jpg",
+        dishurl2:"/ChickenNoodle.jpeg",
+        dishlink1:"/recipe",
+        dishlink2:"/recipe" 
      },
     Eggplants:{
-        dishname1:"Onion Noodle",
-        dishname2:"Onion Chicken Noodle",
-        dishurl1:"/onionnoodle.jpeg",
-        dishurl2:"/ChickenNoodle.jpeg" 
+        dishname1:"Eggplants Noodle",
+        dishname2:"Eggplants Meat Noodle",
+        dishurl1:"/DN-Eggplant.jpg",
+        dishurl2:"/DR-Eggplant.jpg" ,
+        dishlink1:"/recipe",
+        dishlink2:"/recipe",
     },
     Mushrooms:{
         dishname1:"Mushroom Noodle",
         dishname2:"Mushroom Cream Pasta",
-        dishurl1:"/MushroomPasta.jpg",
-        dishurl2:"/MushroomCreamPasta.jpg" 
+        dishurl1:"/DN-Mushroom.jpg",
+        dishurl2:"/MushroomCreamPasta.jpg" ,
+        dishlink1:"/recipe",
+        dishlink2:"/recipe"
     }  
 }
 
@@ -84,6 +92,8 @@ export default function Home() {
   var name2 = "name";
   var url1 = "/";
   var url2 = "/";
+  var click1 = "/recipe";
+  var click2 = "/recipe";
 
   
   if(recipeoption === 'Peppers'){
@@ -91,6 +101,10 @@ export default function Home() {
     name2 = recipes.Peppers.dishname2; 
     url1 = recipes.Peppers.dishurl1;
     url2 = recipes.Peppers.dishurl2;
+    click1 = recipes.Peppers.dishlink1;
+    click2 = recipes.Peppers.dishlink2;
+    
+
     }
 
    if(recipeoption === 'Onions'){
@@ -98,6 +112,8 @@ export default function Home() {
         name2 = recipes.Onions.dishname2; 
         url1 = recipes.Onions.dishurl1;
         url2 = recipes.Onions.dishurl2;
+        click1 = recipes.Onions.dishlink1;
+        click2 = recipes.Onions.dishlink2;
         }
 
      if(recipeoption === 'Eggplants'){
@@ -105,6 +121,8 @@ export default function Home() {
         name2 = recipes.Eggplants.dishname2; 
         url1 = recipes.Eggplants.dishurl1;
         url2 = recipes.Eggplants.dishurl2;
+        click1 = recipes.Eggplants.dishlink1;
+        click2 = recipes.Eggplants.dishlink2;
         } 
         
       if(recipeoption === 'Mushrooms'){
@@ -112,6 +130,8 @@ export default function Home() {
             name2 = recipes.Mushrooms.dishname2; 
             url1 = recipes.Mushrooms.dishurl1;
             url2 = recipes.Mushrooms.dishurl2;
+            click1 = recipes.Mushrooms.dishlink1;
+            click2 = recipes.Mushrooms.dishlink2;
             }   
 
 
@@ -127,6 +147,8 @@ export default function Home() {
                 dishname2= {name2}
                 dishurl1 = {url1}
                 dishurl2 = {url2}
+                onClick1={()=>router.push(click1)}
+                onClick2={()=>router.push(click2)}
           />
          </DishCont>   
           {/* <div className = "line"></div> */}
