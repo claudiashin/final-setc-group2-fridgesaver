@@ -117,7 +117,7 @@ export default function Home() {
     </div>
 
     <div className="start-button">
-      <Startbutton text="Let's Get Started" />
+      <Startbutton text="Let's Get Started" routeTo="tutorial"/>
     </div>
 
     <Line />
