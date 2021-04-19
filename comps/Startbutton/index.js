@@ -20,10 +20,14 @@ const StartButton = ({
     text="Test Button",
     brdrcolor="2px solid #F7FFC5",
     width="200px",
-    routeTo=""
-}) => {
+
+    routeTo="/",
+    onClick=()=>{
+    }}) => {
+    
     const router = useRouter();
-    return <ButtonInput onClick={()=>router.push(routeTo)} bordercolor={brdrcolor} width={width}>
+    return <ButtonInput bordercolor={brdrcolor} width={width} onClick={()=>router.push(routeTo)}>
+
         {text}
     </ButtonInput>
 }

@@ -49,10 +49,9 @@ const HomeCont = styled.div`
       justify-content: center;
       align-items: center;
     }
-
 `;
 
-//example
+
 export default function Home() {
   return <HomeCont>
     <div className="navbar"></div>
@@ -64,7 +63,7 @@ export default function Home() {
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
-    <StartButton text="Skip" brdrcolor="none" width="100px"/>
+    <StartButton text="Skip" brdrcolor="none" width="100px" routeTo="options/option1"/>
     </div>
   </HomeCont>
 }
