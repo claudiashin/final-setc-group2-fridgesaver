@@ -1,5 +1,3 @@
-
-
 import Head from 'next/head';
 import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';

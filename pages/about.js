@@ -5,7 +5,6 @@ import Info from '../comps/Information'
 import React, {component, useState} from 'react';
 
 const HomeCont = styled.div`
-    // max-width: 450px;
     height: 812px;
     background-color: #FFF8F8;
 
