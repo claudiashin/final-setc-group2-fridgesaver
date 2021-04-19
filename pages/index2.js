@@ -8,7 +8,7 @@ import Fridge from '../comps/Fridge';
 import Factsbutton from '../comps/Factsbutton';
 import styled from 'styled-components';
 import React, {useState} from 'react';
-import {factstexts} from '../data/texts';
+import {factstexts} from '../data/indextexts';
 
 const HomeCont = styled.div`
 height: 812px;
