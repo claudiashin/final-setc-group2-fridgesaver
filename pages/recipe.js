@@ -4,7 +4,7 @@ import Recipe from '../comps/Recipe';
 import Heart from '../comps/Heart';
 import Direction from '../comps/Directions';
 import CircleButton from '../comps/Circlebutton';
-import {FiHeart} from 'react-icons/fi';
+// import {FiHeart} from 'react-icons/fi';
 
 const HomeCont = styled.div`
 
