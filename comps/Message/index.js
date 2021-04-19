@@ -1,38 +1,53 @@
-import React from 'react';
 import styled from 'styled-components';
+import React, { useState } from 'react'
+// import { useRouter } from 'next/router';
+
+const MsgButtCont = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+const FactsCont = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF3F3;
+    width: 500px;
+    height: 220px;
+    border-radius: 0px 0px 30px 30px
+`;
+
+const FactsText = styled.div`
+    width: 135px;
+    height: 135px;
+    background-color: rgba(224, 158, 158, 0.4);
+    border-radius: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Athiti';
+    font-size: 16px;
+    padding: 20px;
+`;
 
 
-const MessageCont =styled. div`
-display:flex;
-background-color:${props=>props.bg};
-align-items: center;
-padding:5px;
-border-radius:80px;
-width:${props=>props.width}px;
-height:${props=>props.height}px;
-opacity:${props=>props.opacity};
-border:${props=>props.border}
-`
-;
+const Message = ({
+    firstfact="First Message",
+    secondfact="Second Message"
+}) => {
 
-const BoxText =styled.div`
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-font-size:10px;
-font-family: 'Athiti';
-margin:5px;`
-
-
-const Message =({text = "7% of greenhouse gases produced globally are due to preventable food waste",
-bgcolor ="#E09E9E",
-width = 160,
-height = 160,
-opacity = 0.6,
-border = "none"}) =>{
-    return <MessageCont bg = {bgcolor} width = {width} opacity = {opacity} height = {height} border = {border}>
-        <BoxText>{text}</BoxText>
-    </MessageCont>
+    // const [open, setOpen] = useState(false);
+    return <MsgButtCont>
+        <FactsCont>
+            <FactsText>{firstfact}</FactsText>
+            <FactsText>{secondfact}</FactsText>
+        </FactsCont>
+    </MsgButtCont>
 }
 
 export default Message;

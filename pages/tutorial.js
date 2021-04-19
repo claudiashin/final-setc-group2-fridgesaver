@@ -1,47 +1,70 @@
 import Head from 'next/head'
 import styled from 'styled-components';
 import Header from '../comps/Header';
-import Line from '../comps/Line';
-import Recipe from '../comps/Recipe';
+import StartButton from '../comps/Startbutton';
 
-//example
+
 const HomeCont = styled.div`
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // max-width: 450px;
+  height: 812px;
+  align-items: center;
+  background-color: #FFF8F8;
 
-  .bottom {
-    display:flex;
+    .navbar {
+      width: 100%;
+      height: 40px;
+      background-color: #9FCDA4;
+    }
 
-    .left {
+    p {
+      font-family: 'Athiti', sans-serif;
+    }
+
+    .top {
       display:flex;
       flex-direction: column;
-      padding: 10px;
+
+      .step {
+        line-height: 30px;
+        margin: 5px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
     }
 
-    .right {
-      padding: 10px;
+    p.bottom {
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 30px;
     }
-  } 
+
+    .startbutton {
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+
 `;
 
 //example
 export default function Home() {
   return <HomeCont>
-    <Header>Home Page</Header>
-    <Line/>
-    <div className="bottom">
-      <div className="left">
-      <Recipe/>
-      <Recipe/>
-      </div>
-      <div className="right">
-      <Recipe/>
-      <Recipe/>
-      </div>
+    <div className="navbar"></div>
+    <Header icon="/video-tutorial.png" text="Tutorial" text2="(Based on single servings)"/>
+    <div className="top">
+      <p className="step"><span class="bold">Step 1</span> - Select your main</p>
+      <p className="step"><span class="bold">Step 2</span> - Select your style</p>
+      <p className="step"><span class="bold">Step 3</span> - Select your veggies</p>
+    </div>
+    <p className="bottom">Voila! You have your recipe!!</p>
+    <div className="startbutton">
+    <StartButton text="Skip" brdrcolor="none" width="100px"/>
     </div>
   </HomeCont>
 }

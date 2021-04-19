@@ -20,7 +20,7 @@ const HeaderText = styled.h2`
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     width: 300px;
-    height: 80px; 
+    height: 60px; 
 `;
 
 const HeaderSubText = styled.p`
@@ -33,7 +33,7 @@ const Header = ({
     icon="/plate.png",
     text="Choose What Type of Food You Want",
     text2="",
-    bgcolor= "#FFF8F8"
+    bgcolor= ""
 }) => {
 
     return <HeaderCont backgroundTexture={bgcolor}>

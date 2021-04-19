@@ -1,47 +1,63 @@
 import Head from 'next/head'
 import styled from 'styled-components';
-import Header from '../comps/Header';
-import Line from '../comps/Line';
 import Recipe from '../comps/Recipe';
+import Heart from '../comps/Heart';
+import Direction from '../comps/Directions';
+import CircleButton from '../comps/Circlebutton';
 
 
 const HomeCont = styled.div`
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
 
-  .bottom {
-    display:flex;
+  display: flex;
+  flex-direction: column;
+  // width: 450px;
+  height: 812px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8F8;
+  position: relative;
 
-    .left {
-      display:flex;
-      flex-direction: column;
-      padding: 10px;
+    .navbar {
+      width: 100%;
+      height: 40px;
+      background-color: #9FCDA4;
     }
 
-    .right {
-      padding: 10px;
+    .heart {
+      display: flex;
+      justify-content: flex-end;
     }
-  } 
+
+    .directions {
+      overflow: scroll;
+      width: 430px;
+      height: 350px; 
+      margin-top: 20px;
+    }
+
+    .bottom {
+      display: flex;
+      width: 100%;
+      max-width: 380px;
+      height: 190px;
+      justify-content: space-between;
+      align-items: center;
+    }
 `;
 
-//example
+
 export default function Home() {
   return <HomeCont>
-    <Header>Home Page</Header>
-    <Line/>
+    <div className="navbar"></div>
+    <Recipe/>
+    <div className="heart"><Heart/></div>
+    <div className="directions"><Direction/></div>
     <div className="bottom">
-      <div className="left">
-      <Recipe/>
-      <Recipe/>
-      </div>
-      <div className="right">
-      <Recipe/>
-      <Recipe/>
-      </div>
+
+      <CircleButton text="Costs Saved"/>
+      <CircleButton text="Food for Thought"/>
+      <CircleButton text="Tips on Saving"/>
+
     </div>
   </HomeCont>
 }
