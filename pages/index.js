@@ -2,20 +2,18 @@ import Head from 'next/head';
 import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';
 import Line from '../comps/Line';
-import Startbutton from '../comps/Startbutton';
 import Information from '../comps/Information';
 import Fridge from '../comps/Fridge';
 import Arrow from '../comps/Arrow';
 import styled from 'styled-components';
 
 const HomeCont = styled.div`
-// max-width: 450px;
-// height: 812px;
+height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
 .navbar {
-  width: 100$;
+  width: 100%;
   height: 40px;
   background-color: #9FCDA4;
 }
@@ -23,7 +21,7 @@ overflow: scroll;
 .logo {
   margin-top: 30px;
 }
-  
+
 .cta-fridge {
   display: flex;
   justify-content: center;
@@ -54,7 +52,7 @@ export default function Home() {
 
     <div className="cta-fridge">
       <Arrow />
-      <Fridge routeTo="/landingpage_two" />
+      <Fridge routeTo="/index2" />
     </div>
 
     <div className="information">

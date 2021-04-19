@@ -11,6 +11,16 @@ const ArrowImage = styled.img`
     width: ${props=>props.width}px;
     height: 120px;
     object-fit: contain;
+    animation-name: example;
+    animation-duration: 3s;
+    
+    @keyframes example {
+        from {top: 0px;}
+        tp {top: 200px;}
+    }
+
+    
+
 `;
 
 //props

@@ -17,7 +17,7 @@ const FridgeImage = styled.img`
 //props
 const Fridge = ({
     image="fridge.png",
-    width="100",
+    width="90",
     routeTo=""
 }) => {
     const router = useRouter();
