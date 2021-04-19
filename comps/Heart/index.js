@@ -26,8 +26,10 @@ const HeartIcon = styled.div`
 // `;
 
 const Heart = ({
+
     //   icon="/heart empty.svg"
     onHeartClick=()=>{},
+
 }) => {
     const [open, setOpen] = useState(false);
     

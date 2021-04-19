@@ -14,7 +14,7 @@ export const optiontexts = {
         img1: "/noodles_soup.png",
         txt2: "Dry Base",
         img2: "/rice_dry.png",
-        click: "/recipe"
+        click: "/foodoption"
        
     }
 }

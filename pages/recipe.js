@@ -24,6 +24,7 @@ const HomeCont = styled.div`
     }
 
     .heart {
+      width: 50%;
       display: flex;
       justify-content: flex-end;
     }
@@ -49,7 +50,7 @@ export default function Home() {
   return <HomeCont>
     <div className="navbar"></div>
     <Recipe/>
-    <div className="heart"><Heart/></div>
+    <div className="heart"><Heart icon="/heart_filled.svg"/></div>
     <div className="directions"><Direction/></div>
     <div className="bottom">
 
