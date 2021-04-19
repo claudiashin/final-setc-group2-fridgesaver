@@ -4,7 +4,6 @@ import Recipe from '../comps/Recipe';
 import Heart from '../comps/Heart';
 import Direction from '../comps/Directions';
 import CircleButton from '../comps/Circlebutton';
-// import {FiHeart} from 'react-icons/fi';
 
 const HomeCont = styled.div`
 
@@ -42,7 +41,7 @@ const HomeCont = styled.div`
       display: flex;
       width: 100%;
       max-width: 380px;
-      height: 190px;
+      height: 180px;
       justify-content: space-between;
       align-items: center;
     }
@@ -52,7 +51,7 @@ export default function Home() {
   return <HomeCont>
     <div className="navbar"></div>
     <Recipe/>
-    <div className="heart"><Heart icon="/heart_filled.svg"/></div>
+    <div className="heart"><Heart /></div>
     <div className="directions"><Direction/></div>
     <div className="bottom">
 
