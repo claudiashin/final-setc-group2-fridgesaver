@@ -55,7 +55,7 @@ export default function Home() {
   return <HomeCont>
     <div className="navbar"></div>
     <Header icon="/plate.png" text="Saved Recipes"/>
-    <Line LineBgColor="#000" LineWidth="35%" LineHeight="5px"/>
+    <Line LineBgColor="#000" LineWidth="50%" LineHeight="5px"/>
     <div className="saved_col">
       <div className="saved_row">
           <img className="item" src="/DN-Onion.jpg" />
