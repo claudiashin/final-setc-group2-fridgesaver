@@ -6,9 +6,8 @@ const DirectionCont =styled.div`
 display:flex;
 flex-direction:column;
 align-items: center;
-width:500px;
-height:500px;
-margin:10px;
+max-width: 400px;
+max-height: 500px;
 position:relative;
 background-color:${props=>props.bg};
 width:${props=>props.width}px;
@@ -19,17 +18,15 @@ const BoxTitle =styled.h3`
 display:flex;
 justify-content:center;
 align-self:flex-start;
-margin:20px;
-font-size:15px;
+margin: 25px 0px 0px 10px;
 font-family: 'Permanent Marker';
 `
-
 
 const BoxSubText =styled.h2`
 display:flex;
 justify-content:center;
 align-self:center;
-margin:20px;
+margin:15px;
 font-size:15px;
 font-family: 'Athiti';
 `
@@ -42,12 +39,12 @@ font-family: 'Athiti';
 
 
 const Direction =({
-bgcolor = "#E09E9E",
+bgcolor = "",
 width = 500,
 height = 500,
 subtext = "1. Heat the olive oil in a large pot over medium-high heat. Add the onion and cook until translucent, about 4 minutes. Add the garlic and cook 30 seconds. Add the celery and carrot and cook until they begin to soften, about 5 minutes. Stir in the green beans, dried oregano and basil, 3/4 teaspoon salt, and pepper to taste; cook 3 more minutes."})=>{
     return <DirectionCont bg = {bgcolor} width = {width} height = {height}>
-     <BoxTitle>Direction</BoxTitle>
+     <BoxTitle>Directions</BoxTitle>
      <BoxSubText>{subtext}</BoxSubText>
      <BoxSubText>{subtext}</BoxSubText>
     </DirectionCont>
