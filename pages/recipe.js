@@ -4,7 +4,7 @@ import Header from '../comps/Header';
 import Line from '../comps/Line';
 import Recipe from '../comps/Recipe';
 
-//example
+
 const HomeCont = styled.div`
   .header {
     display: flex;
