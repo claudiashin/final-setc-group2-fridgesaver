@@ -22,7 +22,7 @@ const FactsCont = styled.div`
 const FactsText = styled.div`
     width: 135px;
     height: 135px;
-    background-color: rgba(224, 158, 158, 0.4);
+    background-color: rgba(224, 158, 158, 0.3);
     border-radius: 100%;
     margin: 10px;
     display: flex;
