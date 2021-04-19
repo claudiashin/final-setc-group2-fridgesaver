@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
+// import React, {useState} from 'react';
 
 const ButtonCont = styled.span`
     margin: 5px;
@@ -7,8 +9,8 @@ const ButtonCont = styled.span`
 
 const ButtonInput = styled.button`
 background-color: ${props=>props.background};
-width: 180px;
-padding: 20px;
+width: 240px;
+padding: 25px;
 border-radius: 5px;
 border: none;
 display: flex;
@@ -30,10 +32,14 @@ const ButtonImg = styled.img`
 const OptionButton = ({
     text="Rice",
     bgcolor="#FEF2CA",
-    img='/rice.svg'
+    img='/rice.svg',
+    routeTo="/",
+    onClick=()=>{}
 
 }) => {
-    return <ButtonCont>
+    const router = useRouter();
+
+    return <ButtonCont onClick={onClick}>
         <ButtonInput background={bgcolor}>
         <ButtonImg src={img}/>
             {text}
