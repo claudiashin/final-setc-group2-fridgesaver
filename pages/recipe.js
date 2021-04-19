@@ -7,6 +7,7 @@ import CircleButton from '../comps/Circlebutton';
 
 
 const HomeCont = styled.div`
+
   display: flex;
   flex-direction: column;
   // width: 450px;
@@ -52,9 +53,11 @@ export default function Home() {
     <div className="heart"><Heart/></div>
     <div className="directions"><Direction/></div>
     <div className="bottom">
+
       <CircleButton text="Costs Saved"/>
       <CircleButton text="Food for Thought"/>
       <CircleButton text="Tips on Saving"/>
+
     </div>
   </HomeCont>
 }

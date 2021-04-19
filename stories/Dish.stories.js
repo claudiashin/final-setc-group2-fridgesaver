@@ -16,5 +16,6 @@ export const OnionDish = () => (
 
 export const OnionChickenDish = () => (
     <Dish
-    dishname="Onion Chicken Noodle"/>
+    dishname="Onion Chicken Noodle"
+    />
 );
