@@ -40,7 +40,8 @@ const HomeCont = styled.div`
       }
 
       img {
-        width: 100px;
+        min-width: 50px;
+        max-width: 100px;
         height: 100px;
         object-fit: contain;
       }

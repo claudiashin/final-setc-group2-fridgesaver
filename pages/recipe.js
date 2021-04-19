@@ -4,7 +4,7 @@ import Recipe from '../comps/Recipe';
 import Heart from '../comps/Heart';
 import Direction from '../comps/Directions';
 import CircleButton from '../comps/Circlebutton';
-
+import {FiHeart} from 'react-icons/fi';
 
 const HomeCont = styled.div`
 
@@ -44,7 +44,6 @@ const HomeCont = styled.div`
       align-items: center;
     }
 `;
-
 
 export default function Home() {
   return <HomeCont>

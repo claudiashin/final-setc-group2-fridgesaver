@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const ButtonInput = styled.button`
     background-color: #B4E2B9;
@@ -18,10 +19,13 @@ const ButtonInput = styled.button`
 const StartButton = ({
     text="Test Button",
     brdrcolor="2px solid #F7FFC5",
-    width="200px"
-}) => {
-
-    return <ButtonInput bordercolor={brdrcolor} width={width}>
+    width="200px",
+    routeTo="/",
+    onClick=()=>{
+    }}) => {
+    
+    const router = useRouter();
+    return <ButtonInput bordercolor={brdrcolor} width={width} onClick={()=>router.push(routeTo)}>
         {text}
     </ButtonInput>
 }
