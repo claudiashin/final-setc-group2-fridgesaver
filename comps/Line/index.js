@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const LineBorder = styled.div`
     display: flex;
     background-color: ${props=>props.background};
-    width: 100%;
+    width: ${props=>props.width};
     height: ${props=>props.height};
 `;
 // pass LineBgColor to container ${props=>props.background}
@@ -16,10 +16,12 @@ const LineBorder = styled.div`
 //LineBgColor is value
 const Line = ({
     LineBgColor="#E1E1E1",
+    LineWidth="100%",
     LineHeight="15px",
 }) => {
     return <LineBorder 
         background={LineBgColor}
+        width={LineWidth}
         height={LineHeight}>
     </LineBorder>
 }

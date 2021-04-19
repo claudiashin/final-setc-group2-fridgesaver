@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HeartCont = styled.div`
     width: 30px;
-    hieght: 30px;
+    height: 30px;
 `;
 
 const HeartIcon = styled.img`
