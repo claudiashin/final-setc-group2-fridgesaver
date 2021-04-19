@@ -15,7 +15,7 @@ const HeartIcon = styled.img`
 
 //props
 const Heart = ({
-  icon="/heart empty.svg"
+  icon="/heart_empty.svg"
 }) => {
    
     return <HeartCont>
