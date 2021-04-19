@@ -63,7 +63,7 @@ export default function Home() {
     <Line />
 
     <div className="footer">
-      <Developer name1="Iori Takeshita" name2="Claudia Shin" name3="Maggie Su" name4="Leighai Nishibata" />
+      <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4=""/>
     </div>
 
 
