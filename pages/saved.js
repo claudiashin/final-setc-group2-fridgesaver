@@ -21,7 +21,7 @@ const HomeCont = styled.div`
     .saved_col {
       display:flex;
       width: 100%;
-      height:70%;
+      height:65%;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -36,12 +36,11 @@ const HomeCont = styled.div`
       .item {
         display:flex;
         flex-wrap: wrap;
-        margin: 12px;
+        margin: 10px;
       }
 
       img {
-        min-width: 50px;
-        max-width: 100px;
+        width: 100px;
         height: 100px;
         object-fit: contain;
       }
