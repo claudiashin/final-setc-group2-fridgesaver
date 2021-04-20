@@ -6,15 +6,14 @@ import Direction from '../comps/Directions';
 import CircleButton from '../comps/Circlebutton';
 
 const HomeCont = styled.div`
-
   display: flex;
   flex-direction: column;
   // width: 450px;
-  height: 812px;
+  // height: 812px;
   justify-content: center;
   align-items: center;
   background-color: #FFF8F8;
-  position: relative;
+  overflow: scroll;
 
     .navbar {
       width: 100%;
@@ -26,37 +25,22 @@ const HomeCont = styled.div`
       width: 50%;
       display: flex;
       justify-content: flex-end;
+      max-width: 450px;
+      min-width: 450px;
     }
 
     .directions {
-      overflow: scroll;
-      width: 430px;
-      height: 350px; 
-      margin-top: 20px;
-    }
-
-    .bottom {
-      display: flex;
-      width: 100%;
-      max-width: 380px;
-      height: 180px;
-      justify-content: space-between;
-      align-items: center;
+      max-width: 450px;
     }
 `;
 
 export default function Home() {
   return <HomeCont>
     <div className="navbar"></div>
-    <Recipe/>
+    <Recipe />
     <div className="heart"><Heart /></div>
-    <div className="directions"><Direction/></div>
-    <div className="bottom">
+    <div className="directions"><Direction /></div>
 
-      <CircleButton text="Costs Saved"/>
-      <CircleButton text="Food for Thought"/>
-      <CircleButton text="Tips on Saving"/>
-
-    </div>
+    <CircleButton/>
   </HomeCont>
 }

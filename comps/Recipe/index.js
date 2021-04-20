@@ -5,10 +5,16 @@ import styled from 'styled-components';
 
 const RecipeCont = styled.div`
     display: flex;
-    width: 450px;
-    height: 250px;
+    // width: 450px;
+    // height: 250px;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 50px;
+
+    @media only screen and (max-width: 400px){
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const RecipeImage = styled.img`
@@ -23,9 +29,11 @@ const RecipeImage = styled.img`
 const IngredientsCont = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: left;
-    width: 220px;
-    height: 180px; 
+    justify-content: center;
+    align-items: center;
+    // align-items: left;
+    // width: 220px;
+    // height: 180px; 
     margin-bottom: 10px;
 `;
 
