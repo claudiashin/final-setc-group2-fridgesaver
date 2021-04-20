@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const RecipeCont = styled.div`
     display: flex;
     // width: 450px;
-    // height: 250px;
+    // height: 30%;
     justify-content: center;
     align-items: flex-end;
     margin-top: 50px;
@@ -23,7 +23,6 @@ const RecipeImage = styled.img`
     height: 180px; 
     object-fit: contain;
     margin-right: 10px;
-    margin-bottom: 10px;
 `;
 
 const IngredientsCont = styled.div`
@@ -31,10 +30,9 @@ const IngredientsCont = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // align-items: left;
-    // width: 220px;
-    // height: 180px; 
-    margin-bottom: 10px;
+    align-items: left;
+    width: 220px;
+    height: 180px; 
 `;
 
 const RecipeTitle = styled.h2`
@@ -46,8 +44,8 @@ const RecipeTitle = styled.h2`
 const IngredientsList = styled.ul`
     font-family: 'Athiti', sans-serif;
     list-style-type: none;
-    line-height: 20px;
-    padding: 5px;
+    line-height: 1.3em;
+    padding: 2px;
     margin-top: 0px;
 `;
 

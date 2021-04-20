@@ -7,10 +7,9 @@ import StartButton from '../comps/Startbutton';
 const HomeCont = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  // max-width: 450px;
+  // align-items: center;
+  // height: 100vh;
   height: 812px;
-  align-items: center;
   background-color: #FFF8F8;
 
     .navbar {
@@ -20,6 +19,9 @@ const HomeCont = styled.div`
     }
 
     p {
+      display:flex;
+      justify-content: center;
+      align-items: center;
       font-family: 'Athiti', sans-serif;
     }
 
@@ -38,16 +40,16 @@ const HomeCont = styled.div`
     }
 
     p.bottom {
+      display:flex;
       font-weight: bold;
-      padding: 5px;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .startbutton {
       display: flex;
-      height: 100px;
+      height: 15%;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
     }
 `;
 

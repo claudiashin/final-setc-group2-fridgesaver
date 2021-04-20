@@ -11,22 +11,24 @@ const HeaderCont = styled.div`
 `;
 
 const RecipeIcon = styled.img`
-    width: 50px;
+    // width: 50px;
     height: 50px; 
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 `;
 
 const HeaderText = styled.h2`
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    width: 300px;
+    // width: 300px;
     height: 60px; 
 `;
 
 const HeaderSubText = styled.p`
+    display: flex;
     font-family: 'Athiti';
-    text-align: center;
-    margin: 0px;
+    justify-content: center;
+    // margin: 10px;
 `;
 
 const Header = ({
