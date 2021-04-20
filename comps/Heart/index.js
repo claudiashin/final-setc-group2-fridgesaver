@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 
 const HeartCont = styled.div`
@@ -14,11 +15,14 @@ const HeartIcon = styled.img`
 `;
 
 const Heart = ({
-    icon="/heart_outline.svg"
-
-}) => {
+    icon="/heart_outline.svg",
+    routeTo="/",
+    onClick=()=>{
+    }}) => {
+    
+    const router = useRouter();
     return <HeartCont>
-        <HeartIcon src={icon}/>
+        <HeartIcon src={icon} onClick={()=>router.push(routeTo)} />
     </HeartCont>
 }
 

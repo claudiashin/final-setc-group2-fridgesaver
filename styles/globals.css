@@ -11,6 +11,7 @@ html, body {
   margin: 0;
   font-family: 'Athiti', sans-serif;
   font-family: 'Permanent Marker', cursive;
-
+  box-sizing: border-box;
 }
+
 
