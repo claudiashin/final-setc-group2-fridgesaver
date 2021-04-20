@@ -29,14 +29,10 @@ const ButtonInput = styled.button`
 `;
 
 const CircleButton = ({
-    text1="Costs Saved",
-    text2="Food of Thought",
-    text3="Tips on Saving",
+    text="Costs Saved",
 }) => {
     return <ButtonContainer>
-        <ButtonInput>{text1}</ButtonInput>
-        <ButtonInput>{text2}</ButtonInput>
-        <ButtonInput>{text3}</ButtonInput>
+        <ButtonInput>{text}</ButtonInput>
     </ButtonContainer>
         
 
