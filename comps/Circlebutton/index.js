@@ -6,12 +6,6 @@ const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
-    @media only screen and (max-width: 400px)
-    {
-        display:flex;
-        flex-direction: column;
-    }
 `;
 
 const ButtonInput = styled.button`
