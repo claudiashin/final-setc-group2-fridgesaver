@@ -2,7 +2,6 @@
   "name": "final-setc-group2-fridgesaver",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +17,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
-
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",

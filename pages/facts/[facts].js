@@ -39,7 +39,21 @@ const HomeCont = styled.div`
     }
 `;
 
+const  issue = {
+    text: {
+        topic:"Average Canadian wastes 140kg of food in a year ",
+    }
+}
+
 export default function Home() {
+    const router = useRouter();
+    const {facts} = router.query; 
+
+
+
+   if(facts === 'topic1')
+
+
     return <HomeCont>
         <div className="logo">
             <img src="/Logo.png" />

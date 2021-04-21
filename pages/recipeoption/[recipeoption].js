@@ -3,41 +3,20 @@ import styled from 'styled-components';
 import Header from '../../comps/Header';
 import Ingredient from '../../comps/Dish';
 import Dish from '../../comps/Dish';
-import Line from '../../comps/Line';
+import Footer from '../../comps/Footer';
 import {useRouter} from 'next/router';
 
 
 
-//   const HomeBody = styled.body`
-//   max-width:475px;
-//   max-height:812px;
-//   margin:0px;
-//   overflow:scroll
-// `;
-
   const HomeCont = styled.div`
-  margin:0px;
   display:flex;
-  height:812px;
+  height:100%;
   flex-direction:column;
   justify-contents:center;
   align-item:center;
   background-color :#FFF8F8;
   overflow:scroll;
-  
-  .navbar{
-    width:100%;
-    height:40px;
-    background-color:#9FCDA4;
-}
-.line{
-    dispay:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    height:1px;
-    background-color:gray;
-}
+
 
   `
  const DishCont  = styled.div`
@@ -81,8 +60,6 @@ const recipes = {
         dishlink2:"/recipe"
     }  
 }
-
-
 
 
 export default function Home() {
@@ -137,7 +114,6 @@ export default function Home() {
 
 
   return <HomeCont>
-        <div className = "navbar"></div> 
         <Header 
         icon="/recipe-book.png"
         text="Choose the recipe you want to try"
@@ -150,9 +126,11 @@ export default function Home() {
                 onClick1={()=>router.push(click1)}
                 onClick2={()=>router.push(click2)}
           />
+          
          </DishCont>   
-          {/* <div className = "line"></div> */}
-         
+      
+         <Footer/>
   </HomeCont>
+  
 }
 

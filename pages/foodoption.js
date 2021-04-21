@@ -4,6 +4,7 @@ import Header from '../comps/Header';
 import Line from '../comps/Line';
 import Ingredient from '../comps/Ingredient'
 import {useRouter} from "next/router"
+import Footer from '../comps/Footer';
 
   const HomeCont = styled.div`
   display:flex;
@@ -20,13 +21,6 @@ import {useRouter} from "next/router"
       background-color:#9FCDA4;
   }
   `
- const Row  = styled.div`
- display:flex;
- flex-direction:row;
- justify-content:center;
- align-items:center;
- margin:25px 50px 25px;
-`;
 
 
 export default function Home() {
@@ -37,13 +31,13 @@ export default function Home() {
         icon="/salad.png"
         text="Choose one of the vegetables below that is about to expire"
         />
-      <Row>
+
       <Ingredient veg = "Peppers" onClick={() => router.push('./recipeoption/Peppers')}/>
-      <Ingredient veg = "Onions" subtext ="Put it on mesh bag and hang on the wall could save more than a month " url = "/Onions.jpeg" onClick={() => router.push('./recipeoption/Onions')}/>
-      </Row>
-      <Row>
-      <Ingredient veg = "Eggplants" url = "/eggplants.jpeg" preserve = "Lasts five days" subtext = "Place uncut and unwashed eggplant in plastic bag and store in the refrigerator" onClick={() => router.push('./recipeoption/Eggplants')}/> 
-      <Ingredient veg = "Mushrooms" url = "/mushrooms.jpg"subtext = "Place mushrooms in a paper bag and put it in freezer for up to 10 days" onClick={() => router.push('./recipeoption/Mushrooms')}/>
-      </Row>
+      <Ingredient veg = "Onions"  subtext ="Excellent sources of vitamins A and C, potassium, folic acid, and fiber" src = "/onion.png" onClick={() => router.push('./recipeoption/Onions')}/>
+      <Ingredient veg = "Eggplants" src = "/eggplant.png" preserve = "Lasts five days" subtext = "Rich in the B vitamins: riboflavin, niacin, and pantothenic acid." onClick={() => router.push('./recipeoption/Eggplants')}/> 
+      <Ingredient veg = "Mushrooms" src = "/mushroom.png"subtext = "Contains low in calories and sodium, and is a great source of dietary fiber." onClick={() => router.push('./recipeoption/Mushrooms')}/>
+    
+
+      <Footer/>
   </HomeCont>
 }
