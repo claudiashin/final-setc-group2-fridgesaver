@@ -7,7 +7,6 @@ import React, {component, useState} from 'react';
 import {useRouter} from 'next/router';
 import {optiontexts} from '../../data/options';
 
-
 const HomeCont = styled.div`
     // max-width: 450px;
     height: 812px;
@@ -15,8 +14,6 @@ const HomeCont = styled.div`
 
     .navbar {
       width: 100%;
-      height: 40px;
-      background-color: #9FCDA4;
     }
     .buttons {
       display: flex;
@@ -41,6 +38,9 @@ export default function Home() {
     var txt2 = "rice";
     var img2 = "/rice.svg";
     var click = "/about"
+    var click1 = "/";
+    var click2 = "/";
+    var display = "visible";
 
     if(options === "option1"){
         head = optiontexts.option1.head;
@@ -48,7 +48,9 @@ export default function Home() {
         img1 = optiontexts.option1.img1;
         txt2 = optiontexts.option1.txt2;
         img2 = optiontexts.option1.img2;
-        click = optiontexts.option1.click
+        click = optiontexts.option1.click;
+        click1 = optiontexts.option1.click1;
+        display = optiontexts.option1.display;
     }
     if(options === "option2"){
         head = optiontexts.option2.head;
@@ -56,11 +58,18 @@ export default function Home() {
         img1 = optiontexts.option2.img1;
         txt2 = optiontexts.option2.txt2;
         img2 = optiontexts.option2.img2;
-        click = optiontexts.option2.click
+        click = optiontexts.option2.click;
+        click1 = optiontexts.option2.click1;
+        display = optiontexts.option2.display;
     }
 
     return <HomeCont>
-      <div className="navbar"></div>
+      <div className="navbar">
+          <Navbar 
+            onClick={()=>router.push(click1)}
+            visibility={display}
+          />
+        </div>
       <Header text={head}/>
       <div className="buttons">
         <div>
