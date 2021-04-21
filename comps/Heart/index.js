@@ -1,6 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+
+
 
 const HeartCont = styled.div`
     width: 30px;
@@ -25,4 +27,4 @@ const Heart = ({
     </HeartCont>
 }
 
-export default Heart;
+export default Heart; 

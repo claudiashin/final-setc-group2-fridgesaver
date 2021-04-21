@@ -15,6 +15,7 @@ const HomeCont = styled.div`
   overflow: scroll;
 
     .navbar {
+      display: flex;
       width: 100%;
       height: 40px;
       background-color: #9FCDA4;
@@ -22,6 +23,7 @@ const HomeCont = styled.div`
 
     .directions {
       display: flex;
+
       // width: 50%;
       // height: 350px; 
       margin-bottom: 20px;
