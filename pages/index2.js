@@ -15,29 +15,23 @@ height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
 
-.navbar {
-  width: 100$;
-  height: 40px;
-  background-color: #9FCDA4;
-}
-
 .logo {
   margin-top: 30px;
 }
 
 .cta-fridge {
-  margin: 30px;
+  margin: 90px;
 }
 
 .message {
     // background-color: #FFF3F3;
     // height: 420px;
     border-radius: 20px;
-    margin: 60px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 26px;
 }
 
 .top {
@@ -95,21 +89,21 @@ export default function Home() {
   }
 
   return <HomeCont>
-    <div className="navbar"></div>
+    {/* <div className="navbar"></div> */}
 
     <div className="logo">
       <Logo routeTo="/"/>
     </div>
 
     <div className="cta-fridge">
-      <Fridge image="fridge-open.png" />
+      <Fridge image="fridge.png" />
     </div>
 
-    <div className="message">
-      <Factsbutton
+    <div className="message">Did you know ...
+      {/* <Factsbutton
         onDidYouClick={HandleDidYou}
         onStartByClick={HandleStartBy}
-      />
+      /> */}
       <Message
         firstfact={first}
         secondfact={second}
