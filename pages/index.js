@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Logo from '../comps/Logo';
+import Navbar from '../comps/Navigation';
 import Developer from '../comps/Developer';
 import Line from '../comps/Line';
 import Information from '../comps/Information';
-import Fridge from '../comps/Fridge';
-import Arrow from '../comps/Arrow';
+import Footer from '../comps/Footer';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const HomeCont = styled.div`
 height: 812px;
@@ -15,13 +16,6 @@ overflow: scroll;
 .logo {
   margin-top: 30px;
 }
-
-// .cta-fridge {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 30px;
-// }
   
 .information {
   display: flex;
@@ -30,34 +24,33 @@ overflow: scroll;
   margin-bottom: 50px;
 }
 
-.footer {
+.developer {
   margin: 20px;
 }
 `;
 
 export default function Home() {
+  const router = useRouter();
+
 
   return <HomeCont>
-    {/* <div className="navbar"></div> */}
+    <Navbar visibility="" src=""/>
 
     <div className="logo">
-      <Logo routeTo="/index2"/>
+      <Logo routeTo="/index2" />
     </div>
-
-    {/* <div className="cta-fridge">
-      <Arrow />
-      <Fridge routeTo="/index2" />
-    </div> */}
 
     <div className="information">
       <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste." />
     </div>
 
-    {/* <Line /> */}
+    <Line />
 
-    <div className="footer">
-      <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4=""/>
+    <div className="developer">
+      <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4="" />
     </div>
+
+    <Footer />
 
 
   </HomeCont>

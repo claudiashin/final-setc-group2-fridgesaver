@@ -7,7 +7,7 @@ const FooterCont  = styled.div`
 display:flex;
 flex-direction:row;
 width:100%;
-height:20%;
+// height:20%;
 margin:0px;
  
 .IconCont{
@@ -17,8 +17,7 @@ margin:0px;
        width:80px;
        height:80%;  
        margin:10px;
-}   
-
+}  
 
 `
 
