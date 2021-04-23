@@ -244,7 +244,6 @@ export default function Home() {
     listText6 = recipeCategories.OnionChickenCasserole.listText6;
   }
 
-
   if(recipe === "EggplantChilliNoodles"){
     subtext1 = recipeCategories.EggplantChilliNoodles.subtext1;
     subtext2 = recipeCategories.EggplantChilliNoodles.subtext2;
