@@ -19,7 +19,10 @@ const ButtonInput = styled.button`
     font-weight: bold;
     font-size: 16px;
     text-align: center;
-    margin: 40px;
+
+    word-wrap: break-word;
+    margin:10px;
+
 `;
 
 const CircleButton = ({
@@ -27,12 +30,12 @@ const CircleButton = ({
     width= "80",
     height= "80",
     bkgdColor="#FFEBEB",
+
     onCircleClick=()=>{}
 }) => {
     return <ButtonInput width={width} height={height} bgColor={bkgdColor} onClick={onCircleClick} >
         {text}
     </ButtonInput>
-
 }
 
 export default CircleButton;
