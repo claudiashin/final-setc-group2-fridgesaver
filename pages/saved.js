@@ -2,7 +2,9 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Header from '../comps/Header';
 import Line from '../comps/Line';
-
+import {useRouter} from 'next/router';
+import Footer from '../comps/Footer';
+import Navbar from '../comps/Navigation';
 
 const HomeCont = styled.div`
   display: flex;
@@ -14,8 +16,6 @@ const HomeCont = styled.div`
 
     .navbar {
       width: 100%;
-      height: 40px;
-      background-color: #9FCDA4;
     }
 
     .saved_col {
@@ -45,15 +45,22 @@ const HomeCont = styled.div`
         object-fit: contain;
       }
     }
-
-    
 `;
 
 
 export default function Home() {
+  const router = useRouter();
+  
   return <HomeCont>
-    <div className="navbar"></div>
-    <Header icon="/plate.png" text="Saved Recipes"/>
+    <Head>
+      <title>Saved Recipes</title>
+    </Head>
+    <div className="navbar">
+      <Navbar 
+        onClick={()=>router.push("/")}
+      />
+    </div>
+    <Header icon="/bookmarks_filled.png" text="Saved Recipes"/>
     <Line LineBgColor="#000" LineWidth="50%" LineHeight="5px"/>
     <div className="saved_col">
       <div className="saved_row">
@@ -72,5 +79,6 @@ export default function Home() {
           <img className="item" src="/SR-Mushroom.jpg" />
       </div>
     </div>
+    <Footer/>
   </HomeCont>
 }

@@ -13,15 +13,15 @@ const FactsCont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF3F3;
-    width: 500px;
-    height: 220px;
-    border-radius: 0px 0px 30px 30px
+    // background-color: #FFF3F3;
+    // width: 500px;
+    // height: 220px;
+    // border-radius: 0px 0px 30px 30px
 `;
 
 const FactsText = styled.div`
-    width: 135px;
-    height: 135px;
+    width: 150px;
+    height: 150px;
     background-color: rgba(224, 158, 158, 0.3);
     border-radius: 100%;
     margin: 10px;
