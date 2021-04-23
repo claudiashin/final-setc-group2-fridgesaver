@@ -60,7 +60,7 @@
         dishurl2 = "/",
         onClick1=()=>{},
         onClick2=()=>{},
-        subtext1 = "A humble dish from Shanghai, onion oil noodles is simple but delectable. It can be served as breakfast, lunch, dinner, or even as a side dish for parties.",
+        subtext1 = "Prep Time 10 minutesCook Time 15 minutesTotal Time 25 minutesCalories: 345 kcalsm ",
         subtext2 = "A humble dish from Shanghai, onion oil noodles is simple but delectable. It can be served as breakfast, lunch, dinner, or even as a side dish for parties."
 
     }) => {
