@@ -53,6 +53,7 @@ font-family: 'Athiti';
 `
 
 const Direction =({
+
     width = "",
     height = "",
     subtext1 = "1. Heat the olive oil in a large pot over medium-high heat. Add the onion and cook until translucent, about 4 minutes. Add the garlic and cook 30 seconds. Add the celery and carrot and cook until they begin to soften, about 5 minutes. Stir in the green beans, dried oregano and basil, 3/4 teaspoon salt, and pepper to taste; cook 3 more minutes.",
@@ -64,11 +65,13 @@ const Direction =({
 
     return <DirectionCont width = {width} height = {height}>
      <BookmarkDiv><Bookmark routeTo="/saved"/></BookmarkDiv>
+
      <BoxTitle>Directions</BoxTitle>
      <BoxSubText>{subtext1}</BoxSubText>
      <BoxSubText>{subtext2}</BoxSubText>
      <BoxSubText>{subtext3}</BoxSubText>
      <BoxSubText>{subtext4}</BoxSubText>
+
     </DirectionCont>
 }
 

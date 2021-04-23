@@ -1,13 +1,15 @@
 import Head from 'next/head';
-import Developer from '../comps/Developer';
-import Line from '../comps/Line';
-import Startbutton from '../comps/Startbutton';
-import Fridge from '../comps/Fridge';
+import Developer from '../../comps/Developer';
+import Line from '../../comps/Line';
+import Startbutton from '../../comps/Startbutton';
+import Fridge from '../../comps/Fridge';
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { factstexts } from '../data/indextexts';
+import { factstexts } from '../../data/indexfacts';
 import Facts from '../../comps/Facts';
+import Navbar from '../../comps/Navigation'
+import Footer from '../../comps/Footer'
 
 const HomeCont = styled.div`
 // max-width: 450px;
