@@ -13,7 +13,7 @@ const HeaderCont = styled.div`
 const RecipeIcon = styled.img`
     // width: 50px;
     height: 50px; 
-    margin-top: 50px;
+    // margin-top: 50px;
     margin-bottom: 50px;
 `;
 

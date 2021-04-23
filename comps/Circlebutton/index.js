@@ -21,10 +21,10 @@ const CircleButton = ({
     width= "80",
     height= "80",
     bkgdColor="#FFEBEB",
-    opacity = "1",
+
     onCircleClick=()=>{}
 }) => {
-    return <ButtonInput width={width} height={height} bgColor={bkgdColor} onClick={onCircleClick} opacity = {opacity}>
+    return <ButtonInput width={width} height={height} bgColor={bkgdColor} onClick={onCircleClick} >
         {text}
     </ButtonInput>
 }

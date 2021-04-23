@@ -10,8 +10,7 @@ const InfoCont = styled.div`
     width:${props=>props.width}px;
     height: ${props=>props.height}px;
     background-color: ${props=>props.bgcolor};
-    font-family: 'Athiti', sans-serif;
-    margin-right:2px;
+    font-family: 'Athiti', sans-serif;  
     transition: 0.5s;
 `;
 
@@ -29,17 +28,18 @@ const CrossImg = styled.img`
     object-fit: contain;
 `;
 
-const InfoHeader = styled.div`
+const InfoHeader = styled.h4`
     // display: flex;
     // justify-content: center;
 `;
 
-const Infotext = styled.div`
+const Infotext = styled.p`
+    display: flex; 
     text-align: center;
     line-height: 1.5em;
-    font-size:10px;
-    // width: 200px;
-    // height: 150px;
+    width: 200px;
+    height: 150px;
+    margin-top: 0px;
 
 `;
 
@@ -54,9 +54,23 @@ const InfoBox = ({
     routeTo="/",
 }) => {
 
+    // const [infoBoxState, setInfoBoxState] = useState(false);
+
+    // var opacity = 0;
+    // if(infoBoxState === true)
+    // {
+    //   opacity = 1;
+    // }
+  
+    // const HandleClick = () =>{
+    //   setInfoBoxState(!infoBoxState);
+    // }
+    // opacity={opacity} onClick={HandleClick}
+    
     return <InfoCont bgcolor={bkgrdColor} width={width} height={height} >
         <CrossDiv>
-            <CrossImg src={img} />
+            {/* <CrossImg src={img} /> */}
+            <CrossImg />
         </CrossDiv>
         <InfoHeader>{header}</InfoHeader>
         <Infotext>{text}</Infotext>

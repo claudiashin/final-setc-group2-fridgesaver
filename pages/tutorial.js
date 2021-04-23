@@ -2,7 +2,9 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Header from '../comps/Header';
 import StartButton from '../comps/Startbutton';
-
+import Footer from '../comps/Footer';
+import Navbar from '../comps/Navigation';
+import {useRouter} from 'next/router';
 
 const HomeCont = styled.div`
   display: flex;
@@ -11,11 +13,9 @@ const HomeCont = styled.div`
   // height: 100vh;
   height: 812px;
   background-color: #FFF8F8;
-
+  
     .navbar {
       width: 100%;
-      height: 40px;
-      background-color: #9FCDA4;
     }
 
     p {
@@ -55,8 +55,16 @@ const HomeCont = styled.div`
 
 
 export default function Home() {
+  const router = useRouter();
   return <HomeCont>
-    <div className="navbar"></div>
+    <Head>
+      <title>Tutorial</title>
+    </Head>
+    <div className="navbar">
+      <Navbar 
+        onClick={()=>router.push("/index2")}
+      />
+    </div>
     <Header icon="/video-tutorial.png" text="Tutorial" text2="(Based on single servings)"/>
     <div className="top">
       <p className="step"><span class="bold">Step 1</span> - Select your main</p>
@@ -65,7 +73,8 @@ export default function Home() {
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
-    <StartButton text="Skip" brdrcolor="none" width="100px" routeTo="options/option1"/>
+    <StartButton text="Let’s Get Started" brdrcolor="none" width="200px" routeTo="options/option1"/>
     </div>
+    <Footer/>
   </HomeCont>
 }

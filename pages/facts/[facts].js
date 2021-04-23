@@ -4,6 +4,7 @@ import React, {component, useState} from 'react';
 import Button from '../../comps/Buttons';
 import {useRouter} from 'next/router';
 
+
 const HomeCont = styled.div`
     background-color: #FFF8F8;
     display: flex;

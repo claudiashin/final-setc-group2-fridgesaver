@@ -7,7 +7,6 @@ import Footer from '../../comps/Footer';
 import {useRouter} from 'next/router';
 
 
-
   const HomeCont = styled.div`
   display:flex;
   height:100%;
@@ -16,8 +15,6 @@ import {useRouter} from 'next/router';
   align-item:center;
   background-color :#FFF8F8;
   overflow:scroll;
-
-
   `
  const DishCont  = styled.div`
  display:flex;
@@ -28,7 +25,7 @@ import {useRouter} from 'next/router';
 
 const recipes = {
     Peppers:{
-        dishname1:"Pepper Chinese Noodle",
+        dishname1:"Pepper Stir Fry Noodles",
         dishname2:"Pepper Meat Noodle",
         dishurl1:"/DN-Pepper.jpg",
         dishurl2:"/PepperPasta.jpeg ", 
@@ -36,7 +33,7 @@ const recipes = {
         dishlink2:"/recipe"
     },
     Onions:{
-        dishname1:"Onion Cream Pasta",
+        dishname1:"Onion Parmesan Pasta",
         dishname2:"Onion Chicken Noodle",
         dishurl1:"/DN-Onion.jpg",
         dishurl2:"/ChickenNoodle.jpeg",
@@ -44,7 +41,7 @@ const recipes = {
         dishlink2:"/recipe" 
      },
     Eggplants:{
-        dishname1:"Eggplants Noodle",
+        dishname1:"Eggplant Chilli Noodles",
         dishname2:"Eggplants Meat Noodle",
         dishurl1:"/DN-Eggplant.jpg",
         dishurl2:"/DR-Eggplant.jpg" ,
@@ -52,15 +49,14 @@ const recipes = {
         dishlink2:"/recipe",
     },
     Mushrooms:{
-        dishname1:"Mushroom Noodle",
+        dishname1:"Mushroom Stir Fry Noodles",
         dishname2:"Mushroom Cream Pasta",
         dishurl1:"/DN-Mushroom.jpg",
-        dishurl2:"/MushroomCreamPasta.jpg" ,
+        dishurl2:"/MushroomCreamPasta.jpg",
         dishlink1:"/recipe",
         dishlink2:"/recipe"
     }  
 }
-
 
 export default function Home() {
   const router = useRouter();
@@ -80,8 +76,6 @@ export default function Home() {
     url2 = recipes.Peppers.dishurl2;
     click1 = recipes.Peppers.dishlink1;
     click2 = recipes.Peppers.dishlink2;
-    
-
     }
 
    if(recipeoption === 'Onions'){
