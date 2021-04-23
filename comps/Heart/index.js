@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 
-
 const HeartCont = styled.div`
     width: 30px;
     height: 30px;
