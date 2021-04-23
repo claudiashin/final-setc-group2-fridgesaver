@@ -9,7 +9,7 @@ import Footer from '../comps/Footer';
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { factstexts } from '../data/indexfacts';
-import { Router } from 'next/router';
+import { useRouter } from 'next/router';
 
 const HomeCont = styled.div`
 height: 812px;
@@ -72,8 +72,10 @@ export default function Home() {
     setSecond(factstexts.startby.second);
   }
 
+  const router = useRouter();
   return <HomeCont>
-    <Navbar routeTo="/"/>
+    <Navbar onClick={()=>router.push("/")}
+    />
 
     <div className="cta-fridge">
       <Fridge image={fridge} />

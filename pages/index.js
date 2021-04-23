@@ -34,7 +34,7 @@ export default function Home() {
 
 
   return <HomeCont>
-    <Navbar visibility="" src=""/>
+    <Navbar visibility="hidden"/>
 
     <div className="logo">
       <Logo routeTo="/index2" />
