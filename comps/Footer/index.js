@@ -64,7 +64,7 @@ const  Footer = ({
               </div>
 
           <div className = "IconCont">
-            <Link href = "/about">  
+            <Link href = "/facts/topic1">  
               <IconImage src ="/planet.png"/>
             </Link>  
           </div>

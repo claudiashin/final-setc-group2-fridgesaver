@@ -25,18 +25,17 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 const Button = ({text = "Topic1",
 bgcolor = '#FEF2CA',
 routeTo = "/",
+width = "250",
 onClick=()=>{}}) => {
 
 const rounter  = useRouter()
 // ()=> rounter.push(routeTo)
-    return (<ButtonCont onClick = {onClick}>
-
-            <ButtonInput bgcolor ={bgcolor}>
+    return (
+        <ButtonCont onClick = {onClick}>
+            <ButtonInput bgcolor ={bgcolor} width = {width}>
              {text}
             </ButtonInput>
-
          </ButtonCont>
-
      )
 }
 
