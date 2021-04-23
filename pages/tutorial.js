@@ -11,7 +11,7 @@ const HomeCont = styled.div`
   flex-direction: column;
   // align-items: center;
   // height: 100vh;
-  height: 812px;
+  // height: 812px;
   background-color: #FFF8F8;
   
     .navbar {
@@ -50,6 +50,7 @@ const HomeCont = styled.div`
       height: 15%;
       justify-content: center;
       align-items: flex-end;
+      margin-top: 45px;
     }
 `;
 
