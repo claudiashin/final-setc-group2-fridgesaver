@@ -3,13 +3,14 @@ import Footer from '../../comps/Footer';
 import React, {component, useState} from 'react';
 import Button from '../../comps/Buttons';
 import {useRouter} from 'next/router';
+import Navbar from "../../comps/Navigation"
 
 
 const HomeCont = styled.div`
     background-color: #FFF8F8;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 
     .logo {
         width: 250px;
@@ -35,6 +36,11 @@ const HomeCont = styled.div`
 
     .title{
         font-family:"Permanent Marker"
+    }
+    .column{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
     }
     .row{
       display:flex;
@@ -86,22 +92,23 @@ export default function Home() {
 
 
     return <HomeCont>
-        <div className="logo">
-            <img src="/Logo.png" />
-        </div>
-        <div className = "title">
-            Facts - eco probs
-        </div>
-        <div className = "row">
-            {text}
-        </div>
-      
-
-        <Button onClick = {()=>router.push("/facts/topic1")}/>
-        <Button text = {"Topic2"}onClick =  {()=>router.push("/facts/topic2")}/>
-        <Button text = {"Topic3"}onClick = {()=>router.push("/facts/topic3")}/>
-        <Button text = {"Topic4"}onClick  = {()=>router.push("/facts/topic4")}/>
-
+       
+        <Navbar onClick={()=>router.push("/options/option1")} />
+            <div className = "column">
+                <div className="logo">
+                    <img src="/Logo.png" />
+                </div>
+                <div className = "title">
+                    Facts - eco probs
+                </div>
+                <div className = "row">
+                    {text}
+                </div>
+                <Button onClick = {()=>router.push("/facts/topic1")}/>
+                <Button text = {"Topic2"}onClick =  {()=>router.push("/facts/topic2")}/>
+                <Button text = {"Topic3"}onClick = {()=>router.push("/facts/topic3")}/>
+                <Button text = {"Topic4"}onClick  = {()=>router.push("/facts/topic4")}/>
+            </div> 
         <Footer />
     </HomeCont>
 }

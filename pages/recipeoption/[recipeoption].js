@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import styled from 'styled-components';
 import Header from '../../comps/Header';
-import Ingredient from '../../comps/Dish';
+// import Ingredient from '../../comps/Dish';
 import Dish from '../../comps/Dish';
 import Footer from '../../comps/Footer';
 import {useRouter} from 'next/router';
+import Navbar from  "../../comps/Navigation"
 
 
   const HomeCont = styled.div`
@@ -29,32 +30,32 @@ const recipes = {
         dishname2:"Pepper Meat Noodle",
         dishurl1:"/DN-Pepper.jpg",
         dishurl2:"/PepperPasta.jpeg ", 
-        dishlink1:"/recipe",
-        dishlink2:"/recipe"
+        dishlink1:"/recipes/PepperStirFryNoodles",
+        dishlink2:"/recipes/PepperPasta"
     },
     Onions:{
         dishname1:"Onion Parmesan Pasta",
         dishname2:"Onion Chicken Noodle",
         dishurl1:"/DN-Onion.jpg",
         dishurl2:"/ChickenNoodle.jpeg",
-        dishlink1:"/recipe",
-        dishlink2:"/recipe" 
+        dishlink1:"/recipes/OnionParmesanPasta",
+        dishlink2:"/recipes/OnionChickenCasserole" 
      },
     Eggplants:{
         dishname1:"Eggplant Chilli Noodles",
         dishname2:"Eggplants Meat Noodle",
         dishurl1:"/DN-Eggplant.jpg",
         dishurl2:"/DR-Eggplant.jpg" ,
-        dishlink1:"/recipe",
-        dishlink2:"/recipe",
+        dishlink1:"/recipes/EggplantChilliNoodles",
+        dishlink2:"/recipes/EggplantBeefPasta",
     },
     Mushrooms:{
         dishname1:"Mushroom Stir Fry Noodles",
         dishname2:"Mushroom Cream Pasta",
         dishurl1:"/DN-Mushroom.jpg",
         dishurl2:"/MushroomCreamPasta.jpg",
-        dishlink1:"/recipe",
-        dishlink2:"/recipe"
+        dishlink1:"/recipes/MushroomStirFryNoodles",
+        dishlink2:"/recipes/MushroomCreamPasta"
     }  
 }
 
@@ -108,6 +109,8 @@ export default function Home() {
 
 
   return <HomeCont>
+        
+        <Navbar  onClick={()=>router.push("/foodoption")}/>
         <Header 
         icon="/recipe-book.png"
         text="Choose the recipe you want to try"
