@@ -6,6 +6,7 @@ const LogoContainer = styled.div`;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px;
 `;
 
 const LogoImage = styled.img`
@@ -16,7 +17,7 @@ const LogoImage = styled.img`
 //props
 const Logo = ({
     image="logo.png",
-    width="200",
+    width="250",
     routeTo=""
 }) => {
     const router = useRouter();

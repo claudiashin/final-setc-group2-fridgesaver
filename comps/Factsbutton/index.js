@@ -12,10 +12,10 @@ const HeadingCont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF3F3;
-    width: 500px;
-    height: 220px;
-    border-radius: 30px 30px 0px 0px
+    // background-color: #FFF3F3;
+    // width: 500px;
+    // height: 220px;
+    // border-radius: 30px 30px 0px 0px
 `;
 
 const HeadingText = styled.div`

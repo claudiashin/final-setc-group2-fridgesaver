@@ -19,8 +19,7 @@ bottom: 0;
        width:80px;
        height:80%;  
        margin:10px;
-}   
-
+}  
 
 `
 
