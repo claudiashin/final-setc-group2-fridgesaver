@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Navbar from '../comps/Navigation'
-import Developer from '../comps/Developer'
-import Info from '../comps/Information'
-import Footer from '../comps/Footer'
+import Navbar from '../../comps/Navigation'
+import Developer from '../../comps/Developer'
+import Info from '../../comps/Information'
+import Footer from '../../comps/Footer'
 import React, {component, useState} from 'react';
-import Button from '../comps/Buttons';
+import Button from '../../comps/Buttons';
 
 const HomeCont = styled.div`
     background-color: #FFF8F8;

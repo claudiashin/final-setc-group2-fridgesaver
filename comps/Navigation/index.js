@@ -42,7 +42,7 @@ const Navbar =({
     return <NavCont>
         <NavBack src="/back-button.svg" onClick={onClick} visibility={visibility} />
         <NavText onClick={()=>router.push("/")}>FridgeSaver</NavText>
-        <NavQ src="/info.png" onClick={()=>router.push("/about")} />
+        <NavQ src="/info.png" onClick={()=>router.push("/tutorial")} />
     </NavCont>
 }
 
