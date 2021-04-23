@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import Navbar from '../../comps/Navigation'
 import Header from '../../comps/Header';
 import OptionButton from '../../comps/Optionbutton';
+import Footer from '../../comps/Footer'
 import React, {component, useState} from 'react';
 import {useRouter} from 'next/router';
 import {optiontexts} from '../../data/options';
 
 const HomeCont = styled.div`
-    // max-width: 450px;
+
     height: 812px;
     background-color: #FFF8F8;
 
@@ -39,7 +40,6 @@ export default function Home() {
     var img2 = "/rice.svg";
     var click = "/about"
     var click1 = "/";
-    var click2 = "/";
     var display = "visible";
 
     if(options === "option1"){
@@ -89,5 +89,6 @@ export default function Home() {
             />
         </div>
       </div>
+      <Footer />
     </HomeCont>
 }

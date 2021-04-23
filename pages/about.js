@@ -4,6 +4,7 @@ import Developer from '../comps/Developer'
 import Info from '../comps/Information'
 import Footer from '../comps/Footer'
 import React, {component, useState} from 'react';
+import {useRouter} from 'next/router';
 import Button from '../comps/Buttons';
 
 const HomeCont = styled.div`
@@ -12,6 +13,9 @@ const HomeCont = styled.div`
     flex-direction: column;
     align-items: center;
 
+    .navbar {
+        width: 100%;
+    }
     .logo {
         width: 250px;
         height: 250px;
@@ -36,11 +40,17 @@ const HomeCont = styled.div`
 
     .title{
         font-family:"Permanent Marker"
+        font-size: 24pt;
     }
 `;
 
 export default function Home() {
     return <HomeCont>
+        <div className="navbar">
+          <Navbar 
+            onClick={()=>router.push("/")}
+          />
+        </div>
         <div className="logo">
             <img src="/Logo.png" />
         </div>
