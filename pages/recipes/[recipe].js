@@ -216,7 +216,7 @@ export default function Home() {
     </Head>
     <div className="navbar">
       <Navbar 
-        onClick={()=>router.push("/recipeoption/recipeoption")}
+        onClick={()=>router.push("/foodoption")}
       />
     </div>
     <Recipe
