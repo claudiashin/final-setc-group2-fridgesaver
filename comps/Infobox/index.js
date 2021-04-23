@@ -22,11 +22,11 @@ const CrossDiv = styled.div`
     margin-right: 10px;
 `;
 
-const CrossImg = styled.img`
-    width: 10px;
-    height: 10px;
-    object-fit: contain;
-`;
+// const CrossImg = styled.img`
+//     width: 10px;
+//     height: 10px;
+//     object-fit: contain;
+// `;
 
 const InfoHeader = styled.h4`
     // display: flex;
@@ -70,7 +70,7 @@ const InfoBox = ({
     return <InfoCont bgcolor={bkgrdColor} width={width} height={height} >
         <CrossDiv>
             {/* <CrossImg src={img} /> */}
-            <CrossImg />
+            {/* <CrossImg /> */}
         </CrossDiv>
         <InfoHeader>{header}</InfoHeader>
         <Infotext>{text}</Infotext>
