@@ -20,6 +20,5 @@ export const optiontexts = {
         click: "/foodoption",
         click1: "/options/option1",
         display: "visible"
-       
     }
 }
