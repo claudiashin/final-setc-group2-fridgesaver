@@ -8,8 +8,7 @@ display:flex;
 flex-direction:row;
 width:100%;
 margin:0px;
-padding-top: 40px;
-bottom: 0;
+padding-top: 170px;
  
 .IconCont{
        display:flex;
