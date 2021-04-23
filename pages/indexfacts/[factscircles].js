@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Developer from '../comps/Developer';
-import Line from '../comps/Line';
-import Startbutton from '../comps/Startbutton';
-import Fridge from '../comps/Fridge';
+import Developer from '../../comps/Developer';
+import Line from '../../comps/Line';
+import Startbutton from '../../comps/Startbutton';
+import Fridge from '../../comps/Fridge';
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { factstexts } from '../data/indextexts';
+import { factstexts } from '../../data/indexfacts';
 import Facts from '../../comps/Facts';
 
 const HomeCont = styled.div`
@@ -80,7 +80,7 @@ export default function Home() {
   console.log(router.query);
   const { factscircles } = router.query;
 
-  var heading = "default heading text";
+  var headings = "default heading text";
   var firsttext = "default first text";
   var secondtext = "default second text";
 
