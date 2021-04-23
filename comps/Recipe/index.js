@@ -22,7 +22,7 @@ const RecipeImage = styled.img`
     width: 180px;
     height: 180px; 
     object-fit: contain;
-    margin-right: 10px;
+    margin-right: 15px;
 `;
 
 const IngredientsCont = styled.div`
