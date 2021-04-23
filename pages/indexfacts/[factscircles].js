@@ -8,6 +8,8 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { factstexts } from '../../data/indexfacts';
 import Facts from '../../comps/Facts';
+import Navbar from '../../comps/Navigation'
+import Footer from '../../comps/Footer'
 
 const HomeCont = styled.div`
 // max-width: 450px;
