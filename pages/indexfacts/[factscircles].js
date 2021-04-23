@@ -80,7 +80,7 @@ export default function Home() {
   console.log(router.query);
   const { factscircles } = router.query;
 
-  var heading = "default heading text";
+  var headings = "default heading text";
   var firsttext = "default first text";
   var secondtext = "default second text";
 
