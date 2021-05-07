@@ -19,7 +19,6 @@ const ButtonInput = styled.button`
     font-weight: bold;
     font-size: 16px;
     text-align: center;
-
     word-wrap: break-word;
     margin:10px;
 

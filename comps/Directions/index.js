@@ -31,9 +31,8 @@ height:${props=>props.height}px;
 
 const BoxTitle =styled.h3`
 display:flex;
-// justify-content:center;
 align-self:flex-start;
-margin: 0px 0px 0px 10px;
+margin: 15px 0px 0px 10px;
 font-family: 'Permanent Marker';
 `
 const BookmarkDiv = styled.div`
@@ -64,7 +63,7 @@ const Direction =({
 
 
     return <DirectionCont width = {width} height = {height}>
-     <BookmarkDiv><Bookmark routeTo="/saved"/></BookmarkDiv>
+     {/* <BookmarkDiv><Bookmark routeTo="/saved"/></BookmarkDiv> */}
 
      <BoxTitle>Directions</BoxTitle>
      <BoxSubText>{subtext1}</BoxSubText>

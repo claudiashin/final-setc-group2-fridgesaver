@@ -5,48 +5,50 @@ import styled from 'styled-components';
 
 const RecipeCont = styled.div`
     display: flex;
-    // width: 450px;
-    // height: 30%;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 50px;
-
+    align-items: center;
+    margin-top: 30px;
+    
     @media only screen and (max-width: 400px){
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 `;
 
 const RecipeImage = styled.img`
     display: flex;
-    width: 180px;
-    height: 180px; 
+    width: 150px;
+    height: 150px; 
     object-fit: contain;
-    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 `;
 
 const IngredientsCont = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-items: left;
+    align-items: flex-start;
     width: 220px;
-    height: 180px; 
+    height: 200px; 
+    margin: 15px 0px 15px 10px;
 `;
 
 const RecipeTitle = styled.h2`
     font-family: 'Permanent Marker', cursive;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    line-height: 1.2em;
+    margin: 0px;
 `;
 
 const IngredientsList = styled.ul`
     font-family: 'Athiti', sans-serif;
     list-style-type: none;
     line-height: 1.3em;
-    padding: 2px;
-    margin-top: 0px;
+    text-align: left;
+    padding: 0px;
+    margin-top: 10px;
 `;
 
 const Recipe = ({
