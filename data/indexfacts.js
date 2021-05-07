@@ -14,5 +14,10 @@ export const factstexts =  {
   startby:{
     first:"Finding tips on how to maximize the longevity of vegetables",
     second:"Using the foods you already have"
+  },
+  visibility:{
+    first:"hidden",
+    second:"visible"
   }
+
 }

@@ -8,7 +8,8 @@ import {useRouter} from 'next/router';
 import Footer from '../../comps/Footer';
 import React, {useState} from 'react';
 import Navbar from '../../comps/Navigation';
-import {recipeCategories} from '../../data2/recipetexts';
+import {recipeCategories} from '../../data/recipetexts';
+import StartButton from '../../comps/StartButton';
 
 // next.js - make page where you can capture the parameter after the folder name
 
@@ -42,7 +43,7 @@ const HomeCont = styled.div`
       flex-wrap: wrap;
       width: 90%;
       max-width: 370px;
-      height: 150px;
+      height: 160px;
       justify-content: space-between;
       align-items: flex-start;
     }
@@ -240,30 +241,32 @@ export default function Home() {
     <div className = "row">
       <Infobox  width = {sticky1 ? 200 :0}  
                 height = {sticky1 ? 200 :0}
-                text = {sticky1 ? "You just saved average of $15 for this meal, alternative save about $100 per weeks.":"" }
+                text = {sticky1 ? "Replace proteins with other proteins like tofu, fish, turkey, or replace dairy with soy.":"" }
                 header = {sticky1 ? "Food Substitutes":"" }
                 bkgrdColor = {"#FBD0A9"}
       /> 
 
       <Infobox  width = {sticky2 ? 200 :0}  
                 height = {sticky2 ? 200 :0}
-                text = {sticky2 ? "About 63% of the food that is thrown away could be eaten or used":"" }
-                header = {sticky2 ? "TCosts Saved":"" }
+                text = {sticky2 ? "You just saved average of $15, alternatively you can save $100/per week.":"" }
+                header = {sticky2 ? "Costs Saved":"" }
                 bkgrdColor = {"#FEF2CA"}
       />   
 
       <Infobox  width = {sticky3 ? 200:0}  
                 height = {sticky3 ? 200:0}
-                text = {sticky3 ? "Before going grocery, just make a list :) ":"" }
+                text = {sticky3 ? "Before going grocery shopping, don't go with an empty stomach and make a list. ":"" }
                 header = {sticky3 ? "Tips on Saving":"" }
                 bkgrdColor = {"#FBD0A9"}
       />  
     </div>
+    <div></div>
     <div className="bottom">
       <CircleButton text="Food Substitutes" width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick1} />
       <CircleButton text="Costs Saved"  width="87" height="85" bkgdColor="#FEF2CA" onCircleClick = {Handleclick2} />
       <CircleButton text="Tips on Saving"  width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick3} />
     </div>
+    <StartButton text= "Pick Another Veggie" brdrcolor= "none"/>
     <Footer/>
   </HomeCont>
 }

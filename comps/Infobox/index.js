@@ -14,13 +14,14 @@ const InfoCont = styled.div`
     transition: 0.5s;
 `;
 
-const CrossDiv = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin-top: 5px;
-    margin-right: 10px;
-`;
+// const CrossDiv = styled.div`
+//     display: flex;
+//     width: 100%;
+//     border: solid
+//     justify-content: flex-end;
+//     margin-top: 5px;
+//     margin-right: 10px;
+// `;
 
 // const CrossImg = styled.img`
 //     width: 10px;
@@ -37,7 +38,7 @@ const Infotext = styled.p`
     display: flex; 
     text-align: center;
     line-height: 1.5em;
-    width: 200px;
+    width: 160px;
     height: 150px;
     margin-top: 0px;
 
@@ -68,10 +69,10 @@ const InfoBox = ({
     // opacity={opacity} onClick={HandleClick}
     
     return <InfoCont bgcolor={bkgrdColor} width={width} height={height} >
-        <CrossDiv>
-            {/* <CrossImg src={img} /> */}
-            {/* <CrossImg /> */}
-        </CrossDiv>
+        {/* <CrossDiv>
+            <CrossImg src={img} />
+            <CrossImg />
+        </CrossDiv> */}
         <InfoHeader>{header}</InfoHeader>
         <Infotext>{text}</Infotext>
     </InfoCont>

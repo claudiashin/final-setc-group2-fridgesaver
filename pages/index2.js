@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../comps/Navigation';
-import Developer from '../comps/Developer';
-import Line from '../comps/Line';
-import Startbutton from '../comps/Startbutton';
 import Fridge from '../comps/Fridge';
 import Facts from '../comps/Facts';
+import Startbutton from '../comps/Startbutton';
 import Footer from '../comps/Footer';
 import styled from 'styled-components';
 import React, { useState } from 'react';
@@ -53,16 +51,18 @@ overflow: scroll;
 `;
 
 export default function Home() {
-  const [fridge, setFridge] = useState("fridge.png")
+  const [fridge, setFridge] = useState("fridge.png") //default image
   const [heading, setHeading] = useState("Did you know that...") //default text
   const [first, setFirst] = useState("About 63% of the food that is thrown away could be eaten or used in some sort of way") //default text
   const [second, setSecond] = useState("7% of greenhouse gases produced globally are due to preventable food waste") //default text
+  const [visibility, setButton] = useState("visible")
 
   const HandleLeftClick = () => {
     setFridge(factstexts.fridge.fridgeclose)
     setHeading(factstexts.heading.first);
     setFirst(factstexts.didyou.first);
     setSecond(factstexts.didyou.second);
+    setButton(factstexts.visibility.first);
   }
 
   const HandleRightClick = () => {
@@ -70,11 +70,12 @@ export default function Home() {
     setHeading(factstexts.heading.second);
     setFirst(factstexts.startby.first);
     setSecond(factstexts.startby.second);
+    setButton(factstexts.visibility.second);
   }
 
   const router = useRouter();
   return <HomeCont>
-    <Navbar onClick={()=>router.push("/")}
+    <Navbar onClick={() => router.push("/")}
     />
 
     <div className="cta-fridge">
@@ -95,13 +96,8 @@ export default function Home() {
 
 
     <div className="start-button">
-      <Startbutton text="Let's Get Started" routeTo="tutorial" />
-    </div>
-
-    <Line />
-
-    <div className="developer">
-      <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4="" />
+      <Startbutton text="More Facts" visibility={visibility} routeTo="/facts/topic1"
+      />
     </div>
 
     <Footer />
