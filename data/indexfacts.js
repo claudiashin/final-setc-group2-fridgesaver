@@ -19,4 +19,5 @@ export const factstexts =  {
     first:"hidden",
     second:"visible"
   }
+
 }
