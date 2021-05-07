@@ -25,6 +25,7 @@ const NavText = styled.div `
     font-family: 'Athiti', sans-serif;
     color: #575757;
     font-size: 16px;
+    visibility: ${props=>props.visibility};
 `;
 const NavQ = styled.img`
     width: 25px;
@@ -42,7 +43,7 @@ const Navbar =({
 
     return <NavCont>
         <NavBack src="/back-button.svg" onClick={onClick} visibility={visibility} />
-        <NavText onClick={()=>router.push("/")}>FridgeSaver</NavText>
+        <NavText visibility={visibility} onClick={()=>router.push("/")}>FridgeSaver</NavText>
         <NavQ src="/info.png" onClick={()=>router.push("/tutorial")} />
     </NavCont>
 }

@@ -24,6 +24,7 @@ const ButtonInput = styled.button`
     text-align: center;
     visibility: ${props=>props.visibility};
     animation: ${AnimateStartButton} 1.1s ease infinite;
+
 `;
 
 //props
@@ -32,6 +33,7 @@ const StartButton = ({
     width="220px",
     visibility="visible",
     routeTo="/",
+
     onClick=()=>{},
 
 }) => {
