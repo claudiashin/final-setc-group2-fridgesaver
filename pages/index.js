@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Logo from '../comps/Logo';
-import Navbar from '../comps/Navigation';
 import Developer from '../comps/Developer';
-import Line from '../comps/Line';
 import Information from '../comps/Information';
 import Footer from '../comps/Footer';
 import styled from 'styled-components';
@@ -27,6 +25,7 @@ overflow: scroll;
 .developer {
   margin: 20px;
 }
+
 `;
 
 export default function Home() {
@@ -34,7 +33,6 @@ export default function Home() {
 
 
   return <HomeCont>
-    <Navbar visibility="hidden"/>
 
     <div className="logo">
       <Logo routeTo="/index2" />
@@ -43,8 +41,6 @@ export default function Home() {
     <div className="information">
       <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste." />
     </div>
-
-    <Line />
 
     <div className="developer">
       <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4="" />

@@ -1,6 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {useRouter} from 'next/router';
+
+const AnimateLogo = keyframes`
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+`;
 
 const LogoContainer = styled.div`;
     display: flex;
@@ -12,6 +21,7 @@ const LogoContainer = styled.div`;
 const LogoImage = styled.img`
     width: ${props=>props.width}px;
     object-fit: contain;
+    animation: ${AnimateLogo} 1.5s ease infinite;
 `;
 
 //props

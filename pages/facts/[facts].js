@@ -4,6 +4,7 @@ import React, {component, useState} from 'react';
 import Button from '../../comps/Buttons';
 import {useRouter} from 'next/router';
 import Navbar from "../../comps/Navigation"
+import StartButton from '../../comps/Startbutton';
 
 
 const HomeCont = styled.div`
@@ -51,6 +52,10 @@ const HomeCont = styled.div`
       color: #DB5959;
       margin-top: 15px;
       margin-bottom: 20px;
+    }
+
+    .tutorialbutton {
+        margin-top: 60px;
     }
 `;
 
@@ -108,6 +113,10 @@ export default function Home() {
                 <Button text = {"Topic2"}onClick =  {()=>router.push("/facts/topic2")}/>
                 <Button text = {"Topic3"}onClick = {()=>router.push("/facts/topic3")}/>
                 <Button text = {"Topic4"}onClick  = {()=>router.push("/facts/topic4")}/>
+
+                <div class="tutorialbutton">
+                <StartButton text="Go to Tutorial" width="260px" routeTo="/tutorial"/>
+                </div>
             </div> 
         <Footer />
     </HomeCont>

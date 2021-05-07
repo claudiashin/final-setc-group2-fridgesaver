@@ -13,7 +13,6 @@ export const StartButtonWithTextProp = () => <StartButton text="Let's Get Starte
 export const SkipButtonWithTextAndBorderProp = () => (
     <StartButton
     text="Skip"
-    brdrcolor="none"
     width="120px"
     />
 );
