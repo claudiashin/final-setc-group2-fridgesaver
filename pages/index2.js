@@ -57,12 +57,14 @@ export default function Home() {
   const [heading, setHeading] = useState("Did you know that...") //default text
   const [first, setFirst] = useState("About 63% of the food that is thrown away could be eaten or used in some sort of way") //default text
   const [second, setSecond] = useState("7% of greenhouse gases produced globally are due to preventable food waste") //default text
+  const [visibility, setButton] = useState("visible")
 
   const HandleLeftClick = () => {
     setFridge(factstexts.fridge.fridgeclose)
     setHeading(factstexts.heading.first);
     setFirst(factstexts.didyou.first);
     setSecond(factstexts.didyou.second);
+    setButton(factstexts.visibility.first);
   }
 
   const HandleRightClick = () => {
@@ -70,6 +72,7 @@ export default function Home() {
     setHeading(factstexts.heading.second);
     setFirst(factstexts.startby.first);
     setSecond(factstexts.startby.second);
+    setButton(factstexts.visibility.second);
   }
 
   const router = useRouter();
@@ -95,7 +98,7 @@ export default function Home() {
 
 
     <div className="start-button">
-      <Startbutton text="Let's Get Started" routeTo="tutorial" />
+      <Startbutton text="Let's Get Started" visibility={visibility} routeTo="tutorial" />
     </div>
 
     <Line />

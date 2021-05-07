@@ -9,7 +9,6 @@ import Navbar from '../comps/Navigation';
 const HomeCont = styled.div`
   display: flex;
   flex-direction: column;
-  height: 812px;
   justify-content: center;
   align-items: center;
   background-color: #FFF8F8;

@@ -13,6 +13,7 @@ const ButtonInput = styled.button`
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    visibility: ${props=>props.visibility};
 `;
 
 //props
@@ -21,11 +22,12 @@ const StartButton = ({
     brdrcolor="2px solid #F7FFC5",
     width="200px",
     routeTo="/",
+    visibility="visible",
     onClick=()=>{
     }}) => {
     
     const router = useRouter();
-    return <ButtonInput bordercolor={brdrcolor} width={width} onClick={()=>router.push(routeTo)}>
+    return <ButtonInput bordercolor={brdrcolor} width={width} visibility={visibility} onClick={()=>router.push(routeTo)}>
         {text}
     </ButtonInput>
 }
