@@ -39,7 +39,8 @@ export default function Home() {
       <Ingredient veg = "Onions"  subtext ="Excellent sources of vitamins A and C, potassium, folic acid, and fiber" src = "/onion.png" onClick={() => router.push('./recipeoption/Onions')}/>
       <Ingredient veg = "Eggplants" src = "/eggplant.png" preserve = "Lasts five days" subtext = "Rich in the B vitamins: riboflavin, niacin, and pantothenic acid." onClick={() => router.push('./recipeoption/Eggplants')}/> 
       <Ingredient veg = "Mushrooms" src = "/mushroom.png"subtext = "Contains low in calories and sodium, and is a great source of dietary fiber." onClick={() => router.push('./recipeoption/Mushrooms')}/>
-       
+      <Ingredient veg = "Carrots" src = "/carrot.png"subtext = "Contains low in calories and sodium, and is a great source of dietary fiber." onClick={() => router.push('./recipeoption/Mushrooms')}/>
+      <Ingredient veg = "Tomatoes" src = "/tomato.png"subtext = "Contains low in calories and sodium, and is a great source of dietary fiber." onClick={() => router.push('./recipeoption/Mushrooms')}/>
        </div>
 
       <Footer/>
