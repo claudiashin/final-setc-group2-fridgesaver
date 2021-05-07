@@ -10,6 +10,7 @@ const HomeCont = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   background-color: #FFF8F8;
