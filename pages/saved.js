@@ -8,6 +8,7 @@ import Navbar from '../comps/Navigation';
 
 const HomeCont = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,7 @@ const HomeCont = styled.div`
       width: 100%;
     }
 
-    .saved_col {
+    .col {
       display:flex;
       width: 100%;
       height:65%;
@@ -25,16 +26,14 @@ const HomeCont = styled.div`
       justify-content: flex-start;
       align-items: center;
 
-      .saved_row {
+      .row {
         display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 5px;
+        margin-top: 15px;
       }
 
       .item {
         display:flex;
-        flex-wrap: wrap;
+
         margin: 10px;
       }
 
@@ -52,27 +51,27 @@ export default function Home() {
   
   return <HomeCont>
     <Head>
-      <title>Saved Recipes</title>
+      <title>Recipes</title>
     </Head>
     <div className="navbar">
       <Navbar 
         onClick={()=>router.push("/")}
       />
     </div>
-    <Header icon="/bookmarks_filled.png" text="Saved Recipes"/>
+    <Header icon="/recipe-book.png" text="Recipes"/>
     <Line LineBgColor="#000" LineWidth="50%" LineHeight="5px"/>
-    <div className="saved_col">
-      <div className="saved_row">
+    <div className="col">
+      <div className="row">
           <img className="item" src="/DN-Onion.jpg" />
           <img className="item" src="/DR-Mushroom.jpg" />
           <img className="item" src="/SB-Eggplant.jpg" />
       </div>
-      <div className="saved_row">
+      <div className="row">
           <img className="item" src="/SR-Pepper.jpg" />
           <img className="item" src="/DN-Eggplant.jpg"/>
           <img className="item" src="/DR-Pepper.jpg" />
       </div>
-      <div className="saved_row">
+      <div className="row">
           <img className="item" src="/DR-Eggplant.jpg" />
           <img className="item" src="/SB-Onion.jpg" />
           <img className="item" src="/SR-Mushroom.jpg" />

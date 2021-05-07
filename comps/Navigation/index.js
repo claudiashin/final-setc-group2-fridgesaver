@@ -10,6 +10,7 @@ const NavCont = styled.div `
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 50px;
 `;
 
 const NavBack = styled.img `
