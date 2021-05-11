@@ -13,6 +13,7 @@ const HomeCont = styled.div`
 height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
+padding-bottom: 70px;
 
 .cta-fridge {
   margin: 90px;
@@ -100,7 +101,7 @@ export default function Home() {
       />
     </div>
 
-    <Footer />
+    <Footer margintop="300px"/>
 
   </HomeCont>
 }

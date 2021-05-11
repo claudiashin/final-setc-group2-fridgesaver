@@ -7,18 +7,29 @@ const FooterCont  = styled.div`
 display:flex;
 flex-direction:row;
 width:100%;
-margin:0px;
 padding-top: 100px;
+font-size: 14px;
+text-align: center;
+position: fixed;
+bottom: 0;
+
 
  
 .IconCont{
-       display:flex;
-       align-items:center;
-       justify-content:center;
-       width:80px;
-       height:80%;  
-       margin:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:80px;
+  height:80%;  
+  margin:10px;
 }  
+
+
+.IconImg {
+  width: 30px;
+  height: 30px;
+  padding: 0px 10px 0px 10px;
+}
 
 `
 
@@ -32,11 +43,9 @@ const Iconbox = styled.div`
 `
 
 const IconImage = styled.img`
-width: 40%;
+width: 100%;
 height: 100%;
-
-
-
+object-fit: cover;
 `
 const  Footer = ({
     
@@ -46,26 +55,38 @@ const  Footer = ({
     <FooterCont>
         <Iconbox>
               <div className = "IconCont">
-                <Link href = "/">
-                    <IconImage src = "/home.png"/>
+                <Link href = "/saved">
+                  <div className = "Icons">
+                    <div className = "IconImg">
+                      {/* <IconImage src = "/recipe-book-footer.png"/> */}
+                      <IconImage src = "/recipe-book-color.png"/>
+                    </div>
+                    <div>SAVED</div>
+                  </div>
                 </Link>
               </div> 
 
               <div className = "IconCont">
-                <Link href = "/saved">  
-                  <IconImage src ="/share.png" />
-                </Link>    
-              </div>
-
-              <div className = "IconCont">
-                <Link href = "/saved">  
-                    <IconImage src ="/bookmarks.png"/>
+                <Link href = "/">  
+                <div className = "Icons">
+                  <div className = "IconImg">
+                    {/* <IconImage src = "/home.png"/> */}
+                    <IconImage src = "/home-color.png"/>
+                  </div>
+                  <div>HOME</div>
+                </div>
                 </Link>
               </div>
 
           <div className = "IconCont">
             <Link href = "/facts/topic1">  
-              <IconImage src ="/planet.png"/>
+            <div className = "Icons">
+              <div className = "IconImg">
+                {/* <IconImage src ="/leaf.png"/> */}
+                <IconImage src ="/leaf-color.png"/>
+              </div>
+              <div>FACTS</div>
+            </div>
             </Link>  
           </div>
         </Iconbox> 

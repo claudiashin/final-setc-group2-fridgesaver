@@ -10,6 +10,7 @@ const HomeCont = styled.div`
 height: 812px;
 background-color: #FFF8F8;
 overflow: scroll;
+padding-bottom: 80px;
 
 .logo {
   margin-top: 30px;
@@ -46,7 +47,7 @@ export default function Home() {
       <Developer name1="Iori Takeshita" content1="" name2="Claudia Shin" content2="" name3="Maggie Su" content3="" name4="Leighai Nishibata" content4="" />
     </div>
 
-    <Footer />
+    <Footer/>
 
 
   </HomeCont>
