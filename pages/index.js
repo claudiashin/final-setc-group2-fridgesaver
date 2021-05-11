@@ -3,6 +3,7 @@ import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';
 import Information from '../comps/Information';
 import Footer from '../comps/Footer';
+import Prepingred from '../comps/Prepingred';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 
@@ -37,6 +38,8 @@ export default function Home() {
     <div className="logo">
       <Logo routeTo="/index2" />
     </div>
+
+    <Prepingred></Prepingred>
 
     <div className="information">
       <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste." />
