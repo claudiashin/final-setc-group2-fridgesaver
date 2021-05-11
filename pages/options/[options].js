@@ -5,13 +5,14 @@ import Header from '../../comps/Header';
 import OptionButton from '../../comps/Optionbutton';
 import Footer from '../../comps/Footer'
 import React, {component, useState} from 'react';
-import {useRouter} from 'next/router';
+import {Router, useRouter} from 'next/router';
 import {optiontexts} from '../../data/options';
 
 const HomeCont = styled.div`
 
     height: 812px;
     background-color: #FFF8F8;
+    padding-bottom: 100px;
 
     .navbar {
       width: 100%;

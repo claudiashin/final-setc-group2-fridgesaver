@@ -14,6 +14,7 @@ import Navbar from "../comps/Navigation";
   overflow:scroll;
   margin:0px;
   background-color :#FFF8F8; 
+  padding-bottom: 130px;
   
   .column{
     display:flex;
@@ -33,6 +34,7 @@ export default function Home() {
         <Header 
         icon="/salad.png"
         text="Choose one of the vegetables below that is about to expire"
+        fontsize="22px"
         />
 
       <Ingredient veg = "Peppers" onClick={() => router.push('./recipeoption/Peppers')}/>
