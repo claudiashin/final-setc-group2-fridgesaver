@@ -21,6 +21,7 @@ const ButtonInput = styled.button`
     text-align: center;
     word-wrap: break-word;
     margin:10px;
+    transition: 0.4s;
 
 `;
 

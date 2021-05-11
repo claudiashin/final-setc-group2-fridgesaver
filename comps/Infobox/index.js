@@ -11,7 +11,7 @@ const InfoCont = styled.div`
     height: ${props=>props.height}px;
     background-color: ${props=>props.bgcolor};
     font-family: 'Athiti', sans-serif;  
-    transition: 0.5s;
+    transition: 0.4s;
 `;
 
 // const CrossDiv = styled.div`
