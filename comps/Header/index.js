@@ -20,8 +20,9 @@ const RecipeIcon = styled.img`
 const HeaderText = styled.h2`
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    // width: 300px;
+    width: 350px;
     height: 60px; 
+    font-size: ${props=>props.fontsize};
 `;
 
 const HeaderSubText = styled.p`
@@ -35,12 +36,13 @@ const Header = ({
     icon="/plate.png",
     text="Choose What Type of Food You Want",
     text2="",
-    bgcolor= ""
+    bgcolor= "",
+    fontsize="24px"
 }) => {
 
     return <HeaderCont backgroundTexture={bgcolor}>
         <RecipeIcon src={icon}/>
-        <HeaderText>
+        <HeaderText fontsize={fontsize}>
             {text} 
         </HeaderText>
         <HeaderSubText>

@@ -16,14 +16,18 @@ const RecipeCont = styled.div`
         flex-wrap: wrap;
     }
 `;
+const ImageDiv = styled.div`
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+`;
+
 
 const RecipeImage = styled.img`
-    display: flex;
-    width: 150px;
-    height: 150px; 
-    object-fit: contain;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+
 `;
 
 const IngredientsCont = styled.div`
@@ -63,7 +67,9 @@ const Recipe = ({
 
 }) => {
     return <RecipeCont>
+        <ImageDiv>
         <RecipeImage src={image}/>
+        </ImageDiv>
         <IngredientsCont>
             <RecipeTitle>{text}</RecipeTitle>
             <IngredientsList>

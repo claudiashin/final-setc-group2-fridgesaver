@@ -9,8 +9,8 @@ const ButtonCont = styled.span`
 
 const ButtonInput = styled.button`
 background-color: ${props=>props.background};
-width: 240px;
-padding: 25px;
+width: 250px;
+padding: 23px;
 border-radius: 5px;
 border: none;
 display: flex;
@@ -23,10 +23,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const ButtonImg = styled.img`
-    width: 30px;
-    hieght: 30px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
-    margin-right: 20px;
+    margin-right: 25px;
 `;
 //props
 const OptionButton = ({

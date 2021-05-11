@@ -10,6 +10,7 @@ const HomeCont = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding-bottom: 150px;
 
   justify-content: center;
   align-items: center;
