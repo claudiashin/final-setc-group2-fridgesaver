@@ -61,7 +61,7 @@ export default function Home() {
     </Head>
     <div className="navbar">
       <Navbar 
-        onClick={()=>router.push("/index2")}
+        onClick={()=>router.push("/facts/topic1")}
       />
     </div>
     <Header icon="/video-tutorial.png" text="Tutorial" text2="(Based on single servings)"/>

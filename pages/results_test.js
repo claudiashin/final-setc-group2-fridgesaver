@@ -12,106 +12,153 @@ const results = {
     RiceSoupPeppers: {
         title: "Pepper Rice Risotto Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceSoupOnions: {
         title: "Onion & Rice Saffron Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceSoupEggplants: {
         title: "Eggplant & Rice Gumbo Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceSoupMushrooms: {
         title: "Mushroom  & Rice Cream Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceSoupCarrots: {
         title: "Wild Rice & Carrot Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceSoupTomatoes: {
         title: "Tomato & Rice Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
 
     // rice - dry based options
     RiceDryPeppers: {
         title: "Stuffed Pepper With Rice",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceDryOnions: {
         title: "Onion Fried Rice",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceDryEggplants: {
         title: "Eggplant Risotto",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceDryMushrooms: {
         title: "Mushroom Pilaf",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceDryCarrots: {
         title: "Spicy Carrot Fried Rice",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     RiceDryTomatoes: {
         title: "Tomato Fried Rice",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
 
     // noodle - soup based options
     NoodleSoupPeppers: {
         title: "Pepper Steak Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",},  
     NoodleSoupOnions: {
         title: "Short-Rib Onion Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleSoupEggplants: {
         title: "Eggplant & Tofu Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleSoupMushrooms: {
         title: "Mushroom Vegan Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleSoupCarrots: {
         title: "Thai Ginger Carrot Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleSoupTomatoes: {
         title: "Tomato Egg Drop Noodle Soup",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
 
     // noodle - dry based options
     NoodleDryPeppers: {
         title: "Pepper Stir Fry Noodles",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleDryOnions: {
         title: "Onion Parmesan Pasta",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleDryEggplants: {
         title: "Eggplant Chilli Noodles",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleDryMushrooms: {
         title: "Mushroom Cream Pasta",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleDryCarrots: {
         title: "Carrot & Garlic Pasta",
         image: "public/",
-        directions: ""}, 
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
     NoodleDryTomatoes: {
         title: "Classic Tomato Spaghetti",
         image: "public/",
-        directions: ""}, 
-
+        preptime: "", 
+        ingredients: "",
+        directions: "",}, 
 
     // create recipe compo and we props here
     // BananaLoonieBlue: <Card bgcolor="" />

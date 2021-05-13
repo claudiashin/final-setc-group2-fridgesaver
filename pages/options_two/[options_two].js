@@ -43,7 +43,15 @@ const HomeCont = styled.div `
     .content {
         margin: 30px 0 30px 0;
     }
+    
 `;
+
+
+var data = {
+    select1:null,
+    select2:null,
+    select3:null,
+  }
 
 
 export default function Home() {
@@ -163,6 +171,42 @@ export default function Home() {
     }
 
 
+        const HandleEndPepper = () =>{
+        data.select3 = "pepper" 
+        sessionStorage.setItem("options",JSON.stringify(data));
+        router.push("/options_two/pepper")
+        }
+
+        const HandleEndOnion = () =>{
+            data.select3 = "onion" 
+            sessionStorage.setItem("options",JSON.stringify(data));
+            router.push("/options_two/onion")
+            }
+            
+        const HandleEndEggPlant = () =>{
+                data.select3 = "eggplant" 
+                sessionStorage.setItem("options",JSON.stringify(data));
+                router.push("/options_two/eggplant")
+                } 
+        
+        const HandleEndCarrot = () =>{
+                data.select3 = "carrot" 
+                sessionStorage.setItem("options",JSON.stringify(data));
+                router.push("/options_two/carrot")
+                }
+                
+        const HandleEndMushroom = () =>{
+                data.select3 = "mushroom" 
+                sessionStorage.setItem("options",JSON.stringify(data));
+                router.push("/options_two/mushroom")
+                }     
+
+        const HandleEndTomato = () =>{
+                data.select3 = "tomato" 
+                sessionStorage.setItem("options",JSON.stringify(data));
+                router.push("/options_two/tomato")
+                    }
+
     return <HomeCont>
         <div className="nav">
             <Navbar onClick={() => router.push("/tutorial")} />
@@ -170,14 +214,14 @@ export default function Home() {
         <Header text="What do you have in your fridge? Choose one vegetable" />
         <div className="icons">
             <div className="row">
-                <Vegicon src="/bell-pepper.svg" bgcolor={bg1} onClick={()=> router.push("/options_two/pepper")}/>
-                <Vegicon src="/onion.png" bgcolor={bg2} onClick={()=> router.push("/options_two/onion")}/>
-                <Vegicon src="/eggplant.png" bgcolor={bg3} onClick={()=> router.push("/options_two/eggplant")}/>
+                <Vegicon src="/bell-pepper.svg" bgcolor={bg1} onClick={HandleEndPepper}/>
+                <Vegicon src="/onion.png" bgcolor={bg2} onClick={HandleEndOnion}/>
+                <Vegicon src="/eggplant.png" bgcolor={bg3} onClick={HandleEndEggPlant}/>
             </div>
             <div className="row">
-                <Vegicon src="/carrot.png"  bgcolor={bg4} onClick={()=> router.push("/options_two/carrot")}/>
-                <Vegicon src="/mushroom.png" bgcolor={bg5} onClick={()=> router.push("/options_two/mushroom")}/>
-                <Vegicon src="/tomato.png" bgcolor={bg6} onClick={()=> router.push("/options_two/tomato")}/>
+                <Vegicon src="/carrot.png"  bgcolor={bg4} onClick={HandleEndCarrot}/>
+                <Vegicon src="/mushroom.png" bgcolor={bg5} onClick={HandleEndMushroom}/>
+                <Vegicon src="/tomato.png" bgcolor={bg6} onClick={HandleEndTomato}/>
             </div>
         </div>
         <div className="content">
@@ -185,7 +229,6 @@ export default function Home() {
                 src={image}
                 name={title}
                 text={info}
-
                 onLeftArrowClick={()=> router.push(left)}
                 onRightArrowClick={()=> router.push(right)}
             >
