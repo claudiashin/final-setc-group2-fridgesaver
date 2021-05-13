@@ -10,7 +10,7 @@ const HomeCont = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #FFF8F8;
-  padding-bottom: 130px;
+  padding-bottom: 200px;
   
     .navbar {
       width: 100%;
