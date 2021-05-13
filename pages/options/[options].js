@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import Navbar from '../../comps/Navigation'
 import Header from '../../comps/Header';
-import Button from '../../comps/Buttons';
 import OptionButton from '../../comps/Optionbutton';
 import Footer from '../../comps/Footer'
 import React, {component, useState,useEffect} from 'react';
@@ -38,14 +37,13 @@ var data = {
   select1:null,
   select2:null,
   select3:null,
-  select4:null
 }
 
 export default function Home() {
     const router = useRouter();
     const {options} = router.query;
     const [chosen,setChosen] = useState(0);
-    const[end,setEnd] = useState(false);
+    // const[end,setEnd] = useState(false);
 
     var head = "Head text goes here"
     var txt1 = "rice";
@@ -107,6 +105,22 @@ export default function Home() {
     },[router.query]);
 
 
+    useEffect(()=> {
+     
+      if(process.browser){
+          var o =sessionStorage.getItem("options");
+          var obj =JSON.parse(o);
+          // var key = obj.fruits+ obj.coins +obj.colors;
+          // if(results[key]){
+          //     setText(results[key]) 
+          // }else {
+          //     setText(results.wrong)
+          // }
+          // setoptions(JSON.parse(o))
+      }
+  },[]);
+
+
 
   const HandleEndRice = () =>{
     // alert(fruits);
@@ -114,7 +128,6 @@ export default function Home() {
       data.select1 = "rice" 
       console.log(data)
     }
-    setEnd(true);
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/options/option2")
     }
@@ -122,7 +135,7 @@ export default function Home() {
    const HandleEndNoodle = () =>{
     // alert(fruits);
     if (options === "option1"){
-      data.select2 = "noodle";
+      data.select1 = "noodle";
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/options/option2")
@@ -131,7 +144,7 @@ export default function Home() {
 
    const HandleEndSoup = () =>{
     if (options === "option2"){
-       data.select3 = "soup";
+       data.select2 = "soup";
        console.log(data)
        
     }
@@ -141,7 +154,7 @@ export default function Home() {
 
    const HandleEndDried = () =>{
     if (options === "option2"){
-      data.select4 = "dried";
+      data.select2 = "dried";
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/recipes/home")
