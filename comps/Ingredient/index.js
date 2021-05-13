@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 
 const IngredientCont =styled.div`
@@ -67,12 +68,14 @@ object-fit: fit;
 `;
 
 
+
+
+
 const Ingredient =({
 veg = "pepper", 
 src = "/bell-pepper.svg",
 bgcolor = "Blue",
 subtext = "Wrap the peppers with a papertowel can help last longer ",
-// preserve = "Lasts two weeks",
 onClick=()=>{}}) =>{
     return (
     <IngredientCont>
