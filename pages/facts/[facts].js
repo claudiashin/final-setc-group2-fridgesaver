@@ -11,6 +11,7 @@ const HomeCont = styled.div`
     background-color: #FFF8F8;
     display: flex;
     flex-direction: column;
+    padding-bottom:200px;
 
 
     .logo {
