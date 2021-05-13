@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 // if(process.browser){ 
 //     recipes = sessionStorage.getItem("recipeoption");
 // }
+var style = null;
 
 const results = {
     // store sessionStorage key - type (value = rice/noodle) - style (value = soup/dry) - vegetable (value = peppers/onions, etc.) 
@@ -135,8 +136,8 @@ export default function Results(){
         if(process.browser){ 
 
             var o = sessionStorage.getItem("recipeoption");
-            // setOptions(JSON.parse(o));
-            //JSON.parse takes the json string (if it is one) + reapplies all JS functionalities
+            setOptions(JSON.parse(o));
+            JSON.parse //takes the json string (if it is one) + reapplies all JS functionalities
             var obj = JSON.parse(o);
 
             var key = obj.type+obj.style+obj.vegetable; 
@@ -163,5 +164,7 @@ export default function Results(){
         <div>
             {/* <Card subtext="Results" bigtext={text} /> */}
         </div>
+        Results - 
+        {style}
     </div>
 }
