@@ -10,8 +10,8 @@ const PrepIngredCont = styled.div`
 `;
 
 const PrepTime = styled.div`
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -20,8 +20,8 @@ const PrepTime = styled.div`
 `;
 
 const Ingredients = styled.div`
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -30,21 +30,21 @@ const Ingredients = styled.div`
 `;
 
 const Heading = styled.h3`
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Athiti";
     font-size: bold;
 `;
 
 const PrepIngredText = styled.p`
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Athiti";
 `;
 
 const PrepIngred = ({
-    prep1="Prep Time 10 minutes",
-    prep2="Cook time 15 minutes",
-    prep3="Total time 25 minutes",
-    prep4="Calories: 345 kcals",
+    prep1="Prep Time _ minutes",
+    prep2="Cook time _ minutes",
+    prep3="Total time _ minutes",
+    prep4="Calories: _ kcals",
 
     ingred1="1 [8 ounce] package egg noodles",
     ingred2="3 tablespoons butter",
