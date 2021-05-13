@@ -34,7 +34,12 @@ const HomeCont = styled.div`
 `;
 
 
-
+var data = {
+  select1:null,
+  select2:null,
+  select3:null,
+  select4:null
+}
 
 export default function Home() {
     const router = useRouter();
@@ -51,12 +56,7 @@ export default function Home() {
     var click1 = "/";
     var display = "visible";
     
-    var data = {
-      select1:null,
-      select2:null,
-      select3:null,
-      select4:null
-    }
+    
 
 //  var buttontext = {
 //      option1:"",
@@ -151,8 +151,6 @@ export default function Home() {
   //    sessionStorage.setItem("options",JSON.stringify(data));
   //    router.push("/options/option2")
   //  }
-
-
 
 
     return <HomeCont>
