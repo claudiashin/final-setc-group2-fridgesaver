@@ -72,7 +72,7 @@ export default function Home() {
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
-    <StartButton text="Let’s Get Started"  width="200px" routeTo="options/option1"/>
+    <StartButton text="Let’s Get Started"  width="200px" routeTo="options_two/pepper"/>
     </div>
     <Footer/>
   </HomeCont>

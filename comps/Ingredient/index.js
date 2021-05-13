@@ -6,93 +6,89 @@ import {useRouter} from 'next/router';
 const IngredientCont =styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
+// justify-content:center;
 align-items: center;
-width:100%;
+width:280px;
+height: 320px;
 margin-bottom:40px;
 border-radius:15px;
 max-width:500px;
-
-.column{
-  display:flex;
-  flex-direction:column;
-}
-
-.circle{
-display:flex;
-justify-content:center;
-align-items: center;
-margin:15px;
-background-color:#FEF2CA;
-width: 100px;
-height: 70px;
-border-radius: 50%;
-}
+border: 1px solid black;
+font-family: Athiti;
+text-align: center;
 
 
-.Ingredient{
-  display:flex;
-  font-family:Athiti;
-  font-weight:bold;
-  font-size: 20px;
-  margin:2px;
-}
-.description{
-  display:flex;
+.Header {
+  width:200px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
   justify-content:center;
-  align-items: center; 
-  font-family:Athiti;
-  margin:3px;
-  flex-wrap:wrap;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+
 }
+.arrow {
+  margin-top: 10px;
+}
+
 `;
 
-const Box = styled.div`
-display:flex;
-flex-direction:row;
-justify-content:center;
-align-items:center;
-width:80%;
-// object-fit:contain;
-border-radius:20px;
-// box-shadow: 5px 5px 8px rgba(219, 211, 185, 0.5);
-// background-color: rgba(255, 223, 118, 0.55);
-// border: 1px solid black;
+const IngName = styled.span`
+margin-left: 10px;
+  
 `;
 
 const IconImage = styled.img`
-// display:flex; 
-width: 40px;
-height: 40px;
+
+width: 35px;
+height: 35px;
 object-fit: fit;
 `;
 
+const IngInfo = styled.p`
+  text-align: center;
+  width: 250px;
+  font-size: 14px;
+  margin-top: 0;
+`;
+
+const Arrow = styled.img`
+    width: 20px;
+    height:20px;
+    object-fit: contain;
+    padding: 5px;
+`;
 
 
+const Ingredient = ({
+  src="carrot.png",
+  name="Carrot",
+  text="You just saved average of $15 for this meal, alternative save about $100 per weeks. Keep going and be proud of being part of saving environment!",
+
+  onLeftArrowClick=()=>{},
+  onRightArrowClick=()=>{}
+
+}) => {
+  const router = useRouter();
+
+  return <IngredientCont>
+    <div className="Header">
+      <IconImage src={src} />
+      <IngName>{name}</IngName>
+    </div>
+    <div className="info">
+      <IngInfo>{text}</IngInfo>
+    </div>
+    <div className="arrow">
+      <Arrow src='/arrow-left.png' onClick={onLeftArrowClick}/>
+      <Arrow src='/arrow-right.png' onClick={onRightArrowClick}/>
+    </div>
 
 
-const Ingredient =({
-veg = "pepper", 
-src = "/bell-pepper.svg",
-bgcolor = "Blue",
-subtext = "Wrap the peppers with a papertowel can help last longer ",
-onClick=()=>{}}) =>{
-    return (
-    <IngredientCont>
-      <Box onClick = {onClick}>
-          <div className = "circle">
-            <IconImage src ={src} />
-          </div>
-          <div className = "column">
-            <div className = "Ingredient">{veg}</div>
-            <div className = "description">{subtext}</div>
-          </div>
-      </Box> 
-
-
-
-    </IngredientCont>
-    )
+  </IngredientCont>
+ 
 }
 
 export default Ingredient;
