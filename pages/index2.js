@@ -101,7 +101,7 @@ export default function Home() {
       />
     </div>
 
-    <Footer margintop="300px"/>
+    <Footer />
 
   </HomeCont>
 }

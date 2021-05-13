@@ -136,7 +136,7 @@ export default function Home() {
        
     }
     sessionStorage.setItem("options",JSON.stringify(data));
-    router.push("/foodoption")
+    router.push("/recipes/home")
    }
 
    const HandleEndDried = () =>{
@@ -144,7 +144,7 @@ export default function Home() {
       data.select4 = "dried";
     }
     sessionStorage.setItem("options",JSON.stringify(data));
-    router.push("/foodoption")
+    router.push("/recipes/home")
    }
 
   //    const HandleEnd = () =>{

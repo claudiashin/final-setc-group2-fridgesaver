@@ -17,7 +17,8 @@ const InfoTitle = styled.h3`
 `;
     
     const InfoDescription = styled.p`
-    color: #DB5959;
+    // color: #DB5959;
+    color: black;
     font-size: 18px;
     text-align: center;
     font-family: 'Athiti', sans-serif;
