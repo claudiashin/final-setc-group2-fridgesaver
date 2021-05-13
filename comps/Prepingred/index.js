@@ -41,10 +41,10 @@ const PrepIngredText = styled.p`
 `;
 
 const PrepIngred = ({
-    prep1="Prep Time 10 minutes",
-    prep2="Cook time 15 minutes",
-    prep3="Total time 25 minutes",
-    prep4="Calories: 345 kcals",
+    prep1="Prep Time _ minutes",
+    prep2="Cook time _ minutes",
+    prep3="Total time _ minutes",
+    prep4="Calories: _ kcals",
 
     ingred1="1 [8 ounce] package egg noodles",
     ingred2="3 tablespoons butter",
