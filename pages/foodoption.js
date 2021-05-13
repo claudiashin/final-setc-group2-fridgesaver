@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import  React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import Header from '../comps/Header';
 import Line from '../comps/Line';
@@ -24,9 +25,44 @@ import Navbar from "../comps/Navigation";
   }
   `
 
+  const results = {
+    ricesouppepper: "You have the wrong choice",
+    ricedriedpepper:"You have the right choice",
+    pastasouppepper: "For every Nickel you get a green apple",
+    pastadriedpepper:"link here"
+  }
+
 
 export default function Home() {
   const router = useRouter();
+  const [options,setoptions] = useState({
+    fruits:null,
+    coins:null,
+    colors:null
+});
+
+
+  const[text,setText] =useState(null);
+
+
+
+  useEffect(()=> {
+    if(process.browser){
+        var o =sessionStorage.getItem("options");
+
+        var obj =JSON.parse(o);
+        var key = results.ricesouppepper
+        if(results[key]){
+            setText(results[key]) 
+        }else {
+            setText(results.ricesouppepper)
+        }
+        setoptions(JSON.parse(o))
+    }
+},[]);
+
+
+
   return <HomeCont>
         <Navbar  onClick={()=>router.push("/options/option2")}/>
 
