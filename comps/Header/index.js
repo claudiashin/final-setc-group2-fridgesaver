@@ -37,7 +37,7 @@ const Header = ({
     text="Choose What Type of Food You Want",
     text2="",
     bgcolor= "",
-    fontsize="24px"
+    fontsize="21px"
 }) => {
 
     return <HeaderCont backgroundTexture={bgcolor}>
