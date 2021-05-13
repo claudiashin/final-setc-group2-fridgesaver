@@ -10,8 +10,8 @@ const PrepIngredCont = styled.div`
 `;
 
 const PrepTime = styled.div`
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -20,8 +20,8 @@ const PrepTime = styled.div`
 `;
 
 const Ingredients = styled.div`
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -30,13 +30,13 @@ const Ingredients = styled.div`
 `;
 
 const Heading = styled.h3`
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Athiti";
     font-size: bold;
 `;
 
 const PrepIngredText = styled.p`
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Athiti";
 `;
 

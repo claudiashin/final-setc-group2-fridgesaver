@@ -10,6 +10,7 @@ import React, {useState} from 'react';
 import Navbar from '../../comps/Navigation';
 import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/StartButton';
+import PrepIngred from '../../comps/PrepIngred';
 
 // next.js - make page where you can capture the parameter after the folder name
 
@@ -220,6 +221,7 @@ export default function Home() {
         onClick={()=>router.push("/foodoption")}
       />
     </div>
+    
     <Recipe
       image={image}
       text={text}
@@ -230,6 +232,9 @@ export default function Home() {
       listText5={listText5}
       listText6={listText6}
     />
+
+    <PrepIngred/>
+
     <div className="directions">
       <Direction
         subtext1={subtext1}
@@ -238,6 +243,8 @@ export default function Home() {
         subtext4={subtext4}
       />
     </div>
+
+
     <div className = "row">
       <Infobox  width = {sticky1 ? 200 :0}  
                 height = {sticky1 ? 200 :0}

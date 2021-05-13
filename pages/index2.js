@@ -56,7 +56,7 @@ export default function Home() {
   const [heading, setHeading] = useState("Did you know that...") //default text
   const [first, setFirst] = useState("About 63% of the food that is thrown away could be eaten or used in some sort of way") //default text
   const [second, setSecond] = useState("7% of greenhouse gases produced globally are due to preventable food waste") //default text
-  const [visibility, setButton] = useState("visible")
+  const [visibility, setButton] = useState("hidden")
 
   const HandleLeftClick = () => {
     setFridge(factstexts.fridge.fridgeclose)
