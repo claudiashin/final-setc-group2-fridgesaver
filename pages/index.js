@@ -40,7 +40,7 @@ export default function Home() {
       <Logo routeTo="/index2" />
     </div>
 
-    <Prepingred></Prepingred>
+    {/* <Prepingred></Prepingred> */}
 
     <div className="information">
       <Information titletext="WHAT THIS APP DOES" paratext="This mobile application provides recipes focused on using the foods in your fridge to save time and costs, all while minimizing food waste." />
