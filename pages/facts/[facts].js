@@ -13,7 +13,6 @@ const HomeCont = styled.div`
     flex-direction: column;
     padding-bottom: 200px;
 
-
     .logo {
         width: 200px;
         height: 200px;
@@ -41,11 +40,13 @@ const HomeCont = styled.div`
         font-family:"Permanent Marker";
         font-size: 24px;
     }
+
     .column{
         display:flex;
         flex-direction:column;
         align-items: center;
     }
+
     .row{
       display:flex;
       max-width: 310px;
@@ -63,43 +64,54 @@ const HomeCont = styled.div`
     }
 `;
 
-
-const  issue = {
+const issue = {
     topic1: {
-        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of the food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. "
+        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of the food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. ",
+        bg1: "#FBD0A9",
     },
     topic2: {
-        topic:"When food is processed and manufactured, about 4.82 million tonnes of food is lost which is equivalent to $21 billion. Most foods are thrown out in the initial phases because they do not meet production standards before they hit the shelves or discarded because they are not stored carefully and have reached the expiration date."
+        topic:"When food is processed and manufactured, about 4.82 million tonnes of food is lost which is equivalent to $21 billion. Most foods are thrown out in the initial phases because they do not meet production standards before they hit the shelves or discarded because they are not stored carefully and have reached the expiration date.",
+        bg2: "#FBD0A9",
     },
     topic3: {
-        topic:"One of the leading contributors to gas emissions would be from our food system. When fossil fuels are burned, they create greenhouse gas emissions such as methane, and these gases are produced during the harvesting, processing, distributing, and decomposition. It is estimated that 7% of greenhouse gases produced globally are due to preventable food waste." 
+        topic:"One of the leading contributors to gas emissions would be from our food system. When fossil fuels are burned, they create greenhouse gas emissions such as methane, and these gases are produced during the harvesting, processing, distributing, and decomposition. It is estimated that 7% of greenhouse gases produced globally are due to preventable food waste.",
+        bg3: "#FBD0A9",
     },
     topic4: {
-        topic:"Wasted food that ends up in the landfill produces methane gases which is 21x more potent than carbon dioxide. Foods that end up in landfills and not through proper food compost take longer to decompose due to the lack of aerobic processes and therefore produce methane gases when broken down."
+        topic:"Wasted food that ends up in the landfill produces methane gases which is 21x more potent than carbon dioxide. Foods that end up in landfills and not through proper food compost take longer to decompose due to the lack of aerobic processes and therefore produce methane gases when broken down.",
+        bg4: "#FBD0A9",
     }
 }
 
 export default function Home() {
     const router = useRouter();
     const {facts} = router.query; 
-    var text = "text"
 
+    var text = "text";
+    var bgcolor1 = "#FEF2CA";
+    var bgcolor2 = "#FEF2CA";
+    var bgcolor3 = "#FEF2CA";
+    var bgcolor4 = "#FEF2CA";
+    
     if(facts === 'topic1'){
         text = issue.topic1.topic
+        bgcolor1 = issue.topic1.bg1
    }
 
     if(facts === 'topic2'){
         text = issue.topic2.topic
+        bgcolor2 = issue.topic2.bg2
     }
 
     if(facts === 'topic3'){
         text = issue.topic3.topic
+        bgcolor3 = issue.topic3.bg3
     }
 
     if(facts === 'topic4'){
         text = issue.topic4.topic
+        bgcolor4 = issue.topic4.bg4
     }
-
 
 
     return <HomeCont>
@@ -115,11 +127,10 @@ export default function Home() {
                 <div className = "row">
                     {text}
                 </div>
-                <Button onClick = {()=>router.push("/facts/topic1")}/>
-                <Button text = {"Discarded Foods"}onClick =  {()=>router.push("/facts/topic2")}/>
-                <Button text = {"Greenhouse Gases"}onClick = {()=>router.push("/facts/topic3")}/>
-                <Button text = {"Food in Landfills"}onClick  = {()=>router.push("/facts/topic4")}/>
-
+                <Button bgcolor={bgcolor1} onClick = {()=>router.push("/facts/topic1")}/>
+                <Button text = {"Discarded Foods"} bgcolor={bgcolor2} onClick =  {()=>router.push("/facts/topic2")}/>
+                <Button text = {"Greenhouse Gases"} bgcolor={bgcolor3} onClick = {()=>router.push("/facts/topic3")}/>
+                <Button text = {"Food in Landfills"} bgcolor={bgcolor4} onClick  = {()=>router.push("/facts/topic4")}/>
                 <div class="tutorialbutton">
                 <StartButton text="Go to Tutorial" width="260px" routeTo="/tutorial"/>
                 </div>

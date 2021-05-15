@@ -10,6 +10,7 @@ import React, {useState} from 'react';
 import Navbar from '../../comps/Navigation';
 import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/StartButton';
+import PrepIngred from '../../comps/PrepIngred';
 
 // next.js - make page where you can capture the parameter after the folder name
 
@@ -28,27 +29,19 @@ const HomeCont = styled.div`
 
     .directions {
       display: flex;
-      // width: 50%;
-      // height: 350px; 
-      margin-bottom: 30px;
-    }
-    
-    .row{
-      display: flex;
-      flex-direction:row;
+      width: 370px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
     }
 
     .bottom {
       display: flex;
-      flex-wrap: wrap;
-      width: 90%;
-      max-width: 370px;
-      height: 160px;
-      justify-content: space-between;
+      height: 180px;
+      justify-content: center;
       align-items: flex-start;
+      margin-top: 50px;
     }
 `;
-
 
 
 export default function Home() {
@@ -60,13 +53,24 @@ export default function Home() {
   var subtext3 = "Step 3: ";
   var subtext4 = "Step 4: ";
   var image = "/DN-Onion.jpg";
-  var text = "Dry Onion Noodle";
+  var title = "Dry Onion Noodle";
   var listText1 = "Ingredient 1" ;
   var listText2 = "Ingredient 2" ;
   var listText3 = "Ingredient 3" ;
   var listText4 = "Ingredient 4" ;
   var listText5 = "Ingredient 5" ;
   var listText6 = "Ingredient 6" ;
+  var prep1="prep1";
+  var prep2="prep2";
+  var prep3="prep3";
+  var prep4="prep4";
+  var ingred1="ingred1";
+  var ingred2="ingred2";
+  var ingred3="ingred3";
+  var ingred4="ingred4";
+  var ingred5="ingred5";
+  var ingred6="ingred6";
+  
 
   if(recipe === "PepperStirFryNoodles"){
     subtext1 = recipeCategories.PepperStirFryNoodles.subtext1;
@@ -220,16 +224,25 @@ export default function Home() {
         onClick={()=>router.push("/options/option2")}
       />
     </div>
+    
     <Recipe
       image={image}
-      text={text}
-      listText1={listText1}
-      listText2={listText2}
-      listText3={listText3}
-      listText4={listText4}
-      listText5={listText5}
-      listText6={listText6}
+      text={title}
     />
+
+    <PrepIngred
+      prep1={prep1}
+      prep2={prep2}
+      prep3={prep3}
+      prep4={prep4}
+      ingred1={ingred1}
+      ingred2={ingred2}
+      ingred3={ingred3}
+      ingred4={ingred4}
+      ingred5={ingred5}
+      ingred6={ingred6}
+    />
+
     <div className="directions">
       <Direction
         subtext1={subtext1}
@@ -238,6 +251,8 @@ export default function Home() {
         subtext4={subtext4}
       />
     </div>
+
+{/* 
     <div className = "row">
       <Infobox  width = {sticky1 ? 200 :0}  
                 height = {sticky1 ? 200 :0}
@@ -259,14 +274,15 @@ export default function Home() {
                 header = {sticky3 ? "Tips on Saving":"" }
                 bkgrdColor = {"#FBD0A9"}
       />  
-    </div>
-    <div></div>
-    <div className="bottom">
+    </div> */}
+    {/* <div className="bottom">
       <CircleButton text="Food Substitutes" width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick1} />
       <CircleButton text="Costs Saved"  width="87" height="85" bkgdColor="#FEF2CA" onCircleClick = {Handleclick2} />
       <CircleButton text="Tips on Saving"  width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick3} />
+    </div> */}
+    <div className="bottom">
+      <StartButton text= "Pick Another Veggie" brdrcolor= "none"/>
     </div>
-    <StartButton text= "Pick Another Veggie" brdrcolor= "none"/>
     <Footer/>
   </HomeCont>
 }
