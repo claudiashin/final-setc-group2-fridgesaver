@@ -12,7 +12,23 @@ import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/StartButton';
 import PrepIngred from '../../comps/PrepIngred';
 
+import {results_pepper} from '../../data/results_pepper';
+import {results_onion} from '../../data/results_onion';
+import {results_eggplant} from '../../data/results_eggplant';
+import {results_carrot} from '../../data/results_carrot';
+import {results_mushroom} from '../../data/results_mushroom';
+import {results_tomato} from '../../data/results_tomato';
+
 // next.js - make page where you can capture the parameter after the folder name
+
+const recipe = {
+  ...results_pepper,
+  ...results_onion,
+  ...results_eggplant,
+  ...results_carrot,
+  ...results_mushroom,
+  ...results_tomato
+}
 
 const HomeCont = styled.div`
   display: flex;
@@ -193,27 +209,27 @@ export default function Home() {
     listText6 = recipeCategories.MushroomCreamPasta.listText6;
   }
    
-  const [sticky1,setSticky1] =  useState(false)
-  const [sticky2,setSticky2] =  useState(false)
-  const [sticky3,setSticky3] =  useState(false)
+  // const [sticky1,setSticky1] =  useState(false)
+  // const [sticky2,setSticky2] =  useState(false)
+  // const [sticky3,setSticky3] =  useState(false)
 
-  const  Handleclick1 = () =>{
-    setSticky1(!sticky1)
-    setSticky2(sticky2)
-    setSticky3(sticky3)
-  }
+  // const  Handleclick1 = () =>{
+  //   setSticky1(!sticky1)
+  //   setSticky2(sticky2)
+  //   setSticky3(sticky3)
+  // }
   
-  const  Handleclick2 = () =>{
-    setSticky2(!sticky2)
-    setSticky1(sticky1)
-    setSticky3(sticky3)
-  }
+  // const  Handleclick2 = () =>{
+  //   setSticky2(!sticky2)
+  //   setSticky1(sticky1)
+  //   setSticky3(sticky3)
+  // }
   
-  const  Handleclick3 = () =>{
-    setSticky3(!sticky3)
-    setSticky1(sticky1)
-    setSticky2(sticky2)
-  }
+  // const  Handleclick3 = () =>{
+  //   setSticky3(!sticky3)
+  //   setSticky1(sticky1)
+  //   setSticky2(sticky2)
+  // }
 
   return <HomeCont>
     <Head>
