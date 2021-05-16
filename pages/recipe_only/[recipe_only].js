@@ -621,9 +621,9 @@ export default function Home() {
       <title>Recipes</title>
     </Head>
     <div className="navbar">
-      {/* <Navbar 
-        onClick={()=>router.push("/options/option2")}
-      /> */}
+      <Navbar 
+        onClick={()=>router.push("/saved")}
+      /> 
     </div>
     
     <Recipe
@@ -653,34 +653,7 @@ export default function Home() {
       />
     </div>
 
-{/* 
-    <div className = "row">
-      <Infobox  width = {sticky1 ? 200 :0}  
-                height = {sticky1 ? 200 :0}
-                text = {sticky1 ? "Replace proteins with other proteins like tofu, fish, turkey, or replace dairy with soy.":"" }
-                header = {sticky1 ? "Food Substitutes":"" }
-                bkgrdColor = {"#FBD0A9"}
-      /> 
 
-      <Infobox  width = {sticky2 ? 200 :0}  
-                height = {sticky2 ? 200 :0}
-                text = {sticky2 ? "You just saved average of $15, alternatively you can save $100/per week.":"" }
-                header = {sticky2 ? "Costs Saved":"" }
-                bkgrdColor = {"#FEF2CA"}
-      />   
-
-      <Infobox  width = {sticky3 ? 200:0}  
-                height = {sticky3 ? 200:0}
-                text = {sticky3 ? "Before going grocery shopping, don't go with an empty stomach and make a list. ":"" }
-                header = {sticky3 ? "Tips on Saving":"" }
-                bkgrdColor = {"#FBD0A9"}
-      />  
-    </div> */}
-    {/* <div className="bottom">
-      <CircleButton text="Food Substitutes" width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick1} />
-      <CircleButton text="Costs Saved"  width="87" height="85" bkgdColor="#FEF2CA" onCircleClick = {Handleclick2} />
-      <CircleButton text="Tips on Saving"  width="87" height="85" bkgdColor="#FBD0A9" onCircleClick = {Handleclick3} />
-    </div> */}
     <div className="bottom">
       <StartButton text="Pick Another Veggie"  width="200px" routeTo="../options_two/pepper"/>
     </div>
