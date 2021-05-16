@@ -48,7 +48,7 @@ export const results_carrot = {
         prep1:"Prep Time: 10 minutes",
         prep2:"Cook Time: 20 minutes",
         prep3:"Total Time: 30 minutes",
-        prep4:"Calories: 93kcal",
+        prep4:"Calories: 267",
         ingred1:"8-10 large carrots",
         ingred2:"1 pkg rice noodles",
         ingred3:"2 tbsp Thai red curry paste",
