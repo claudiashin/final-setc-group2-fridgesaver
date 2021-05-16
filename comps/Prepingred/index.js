@@ -7,11 +7,16 @@ const PrepIngredCont = styled.div`
     align-items: center;
     padding: 10px;
     margin-bottom: 50px;
+
+    @media only screen and (max-width: 400px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 `;
 
 const PrepTime = styled.div`
-    width: 150px;
-    height: 250px;
+    width: 140px;
+    height: 260px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -20,8 +25,8 @@ const PrepTime = styled.div`
 `;
 
 const Ingredients = styled.div`
-    width: 150px;
-    height: 250px;
+    width: 140px;
+    height: 260px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;

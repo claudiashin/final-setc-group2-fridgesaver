@@ -21,7 +21,7 @@ export const results_tomato = {
 
     TomatoRiceDry:{
         title: "Tomato Fried Rice",
-        image: "",
+        image: "/Tomato-Fried-Rice.jpeg",
         subtext1:"Step1: Trim dark green tops from scallions and thinly slice; set aside. Thinly slice white and pale green parts; set aside separately. Quarter any larger tomatoes and halve any small ones. Place about one-quarter of tomatoes in a small bowl; season generously with salt and toss to combine. Set aside.",
         subtext2:"Step2: Heat 1 Tbsp. sesame oil in a large skillet over medium-high. Add reserved white and pale green parts of scallions and remaining three-quarters of tomatoes and cook, stirring occasionally, until softened and any liquid from tomatoes has evaporated, about 4 minutes. Mix in garlic and ginger; cook, stirring constantly, until fragrant, about 30 seconds. Add rice and stir to separate grains. Cook just to heat rice through, about 3 minutes. ",
         subtext3:"Step3: Scoot vegetables and rice to 1 side of skillet, then pour half of remaining sesame oil into pan. Add eggs and cook, stirring often, until just set, about 1 minute. Mix into vegetables and rice, then drizzle in soy sauce and cook, stirring, just until well combined.",
