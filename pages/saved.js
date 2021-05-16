@@ -23,28 +23,24 @@ const HomeCont = styled.div`
 
     .col {
       display:flex;
-      width: 100%;
-      height:65%;
-      flex-direction: column;
-      justify-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
 
       .row {
-        display:flex;
-        margin-top: 15px;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        // margin-top: 15px;
       }
 
-      .item {
-        display:flex;
-
-        margin: 10px;
+      .row img {
+        width: 100%;
+        margin-top: 5px;
+        vertical-align: middle;
       }
 
-      img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-      }
+    
     }
 `;
 
@@ -154,9 +150,10 @@ export default function Home() {
       />
     </div>
     <Header icon="/recipe-book.png" text="Recipes"/>
-    <Line LineBgColor="#000" LineWidth="50%" LineHeight="5px"/>
+    <Line LineBgColor="#000" LineWidth="70%" LineHeight="3px"/>
     <div className="col">
       <div className="row">
+
           <img className="item" src="/DN-Onion.jpg" onClick ={OnionNoodleDry} />
           <img className="item" src="/DR-Mushroom.jpg"onClick ={MushroomRiceDry} />
           <img className="item" src="/SB-Eggplant.jpg"onClick={EggplantNoodleSoup} />
@@ -170,6 +167,7 @@ export default function Home() {
           <img className="item" src="/DR-Eggplant.jpg" onClick ={EggplantRiceDry} />
           <img className="item" src="/SB-Onion.jpg" onClick ={OnionNoodleSoup} />
           <img className="item" src="/SR-Mushroom.jpg" onClick ={MushroomRiceSoup}/>
+
       </div>
     </div>
     <Footer/>

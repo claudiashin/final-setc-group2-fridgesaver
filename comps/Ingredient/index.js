@@ -74,7 +74,7 @@ const Ingredient = ({
   const router = useRouter();
 
   return <IngredientCont>
-  <div>How to Store</div>
+  {/* <div>How to Store</div> */}
     <div className="Header">
       <IconImage src={src} />
       <IngName>{name}</IngName>

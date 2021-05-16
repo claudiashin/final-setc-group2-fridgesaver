@@ -8,6 +8,7 @@ const LineBorder = styled.div`
     background-color: ${props=>props.background};
     width: ${props=>props.width};
     height: ${props=>props.height};
+    margin-bottom: 30px;
 `;
 // pass LineBgColor to container ${props=>props.background}
 //background is name
