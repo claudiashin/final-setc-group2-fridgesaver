@@ -20,11 +20,10 @@ const ButtonInput = styled.button`
     height: 50px;
     font-family: 'Athiti', sans-serif;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: center;
     visibility: ${props=>props.visibility};
     animation: ${AnimateStartButton} 1.1s ease infinite;
-
 `;
 
 //props

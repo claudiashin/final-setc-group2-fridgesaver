@@ -57,14 +57,6 @@ export default function Home() {
     const router = useRouter();
     const {options_two} = router.query;
 
-    // const[]
-
-    // const HandleLeftClick = () => {
-    //     setFisrtInfo(vegitexts.pepper.info);
-    // }
-    // const HandleRightClick = () => {
-    //     setSecondInfo(vegitexts.pepper.info);
-    // }
 
     var image="/carrot.png";
     var title="Carrot";
