@@ -6,7 +6,7 @@ import CircleButton from '../../comps/Circlebutton';
 import Infobox from '../../comps/Infobox';
 import {useRouter} from 'next/router';
 import Footer from '../../comps/Footer';
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Navbar from '../../comps/Navigation';
 import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/StartButton';
@@ -63,6 +63,16 @@ const HomeCont = styled.div`
 export default function Home() {
   const router = useRouter();
   const {recipe} = router.query;  //{recipe} = [recipe].js variable is what you type in the browswer eg. iteems2/big
+  const [data,setData] = useState({
+    select1:"",
+    select2:"",
+    select3:""      
+  })
+
+
+
+
+
 
   var subtext1 = "Step 1: ";
   var subtext2 = "Step 2: ";
@@ -86,7 +96,28 @@ export default function Home() {
   var ingred4="ingred4";
   var ingred5="ingred5";
   var ingred6="ingred6";
+
+
+  useEffect(()=>{
+
+    if(process.browser){
+      var data =sessionStorage.getItem("options");
+      var obj =JSON.parse(data);
+      setData(obj)
+      var decision = obj.select3 + obj.select1 +obj.select2
+      console.log(decision)
+      
+    }
+    // if(!recipes){
+    //   sessionStorage.setItem("options",JSON.stringify(data))
+    // }
+
+    },[router.query]);
   
+
+
+
+
 
   if(recipe === "PepperStirFryNoodles"){
     subtext1 = recipeCategories.PepperStirFryNoodles.subtext1;

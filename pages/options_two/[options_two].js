@@ -46,7 +46,6 @@ const HomeCont = styled.div `
     
 `;
 
-
 var data = {
     select1:null,
     select2:null,
