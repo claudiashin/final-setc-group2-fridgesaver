@@ -16,14 +16,14 @@ export const results_onion = {
         ingred3:"9 ½ cups vegetable broth",
         ingred4:"2 tbsp extra virgin olive oil",
         ingred5:"2 garlic cloves",
-        ingred6:"Pinch dried sage, thyme, and saffron"
+        ingred6:"Pinch dried herbs"
     }, 
 
     OnionRiceDry:{
         title: "Onion Fried Rice",
         image: "/DR-Onion.jpg",
         subtext1:"Step 1: In a medium saucepan, heat olive oil over medium-low heat. Add onion and carrot; cook, stirring frequently, until onion is very tender, for about 15 to 20 minutes.",
-        subtext2:"Step 2: Add garlic cloves and ginger; cook 2 minutes.",
+        subtext2:"Step 2: Add garlic cloves and ginger; cook 2 minutes until they are glazed and golden brown in color.",
         subtext3:"Step 3: Add rice, stirring to coat. Add water and coarse salt; bring to a boil.",
         subtext4:"Step 4: Reduce to a simmer; cover, and cook until rice is tender, 17 to 20 minutes (add a little more water if pan becomes dry).",
         prep1:"Calories: 300",
