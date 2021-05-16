@@ -10,7 +10,7 @@ export const results_carrot = {
         prep1:"Prep Time: 5 minutes",
         prep2:"Cook Time: 35 minutes",
         prep3:"Total Time: 40 minutes",
-        prep4:"Calories: 325kcal",
+        prep4:"Calories: 325",
         ingred1:"2 cups cooked wild rice",
         ingred2:"4 cups chicken broth",
         ingred3:"1 1/2 lb carrots, peeled and sliced",
