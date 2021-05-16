@@ -5,6 +5,7 @@ import Line from '../comps/Line';
 import {useRouter} from 'next/router';
 import Footer from '../comps/Footer';
 import Navbar from '../comps/Navigation';
+import React, {component, useState,useEffect} from 'react';
 
 const HomeCont = styled.div`
   display: flex;
@@ -43,9 +44,101 @@ const HomeCont = styled.div`
     }
 `;
 
+var data = {
+  select1:null,
+  select2:null,
+  select3:null,
+}
+
+
+
+
 
 export default function Home() {
   const router = useRouter();
+
+
+
+  const OnionNoodleDry = () =>{
+    data.select1 = "Noodle";
+    data.select2 = "Dry";
+    data.select3 = "Onion";
+    sessionStorage.setItem("options2",JSON.stringify(data));
+    router.push("/recipe_only/home")
+    }
+
+    const MushroomRiceDry = () =>{
+      data.select1 = "Rice";
+      data.select2 = "Dry";
+      data.select3 = "Mushroom";
+      sessionStorage.setItem("options2",JSON.stringify(data));
+      router.push("/recipe_only/home")
+      }
+
+      const EggplantNoodleSoup = () =>{
+        data.select1 = "Noodle";
+        data.select2 = "Soup";
+        data.select3 = "Eggplant";
+        sessionStorage.setItem("options2",JSON.stringify(data));
+        router.push("/recipe_only/home")
+        }
+
+        const PepperRiceSoup = () =>{
+          data.select1 = "Rice";
+          data.select2 = "Soup";
+          data.select3 = "Pepper";
+          sessionStorage.setItem("options2",JSON.stringify(data));
+          router.push("/recipe_only/home")
+          }
+
+          const EggplantNoodleDry = () =>{
+            data.select1 = "Noodle";
+            data.select2 = "Dry";
+            data.select3 = "Eggplant";
+            sessionStorage.setItem("options2",JSON.stringify(data));
+            router.push("/recipe_only/home")
+            }
+
+            const PepperRiceDry = () =>{
+              data.select1 = "Rice";
+              data.select2 = "Dry";
+              data.select3 = "Pepper";
+              sessionStorage.setItem("options2",JSON.stringify(data));
+              router.push("/recipe_only/home")
+              }
+           
+
+              const EggplantRiceDry = () =>{
+                data.select1 = "Rice";
+                data.select2 = "Dry";
+                data.select3 = "Eggplant";
+                sessionStorage.setItem("options2",JSON.stringify(data));
+                router.push("/recipe_only/home")
+                }
+
+                const OnionNoodleSoup = () =>{
+                  data.select1 = "Noodle";
+                  data.select2 = "Soup";
+                  data.select3 = "Onion";
+                  sessionStorage.setItem("options2",JSON.stringify(data));
+                  router.push("/recipe_only/home")
+                  }
+
+                  const MushroomRiceSoup = () =>{
+                    data.select1 = "Rice";
+                    data.select2 = "Soup";
+                    data.select3 = "Mushroom";
+                    sessionStorage.setItem("options2",JSON.stringify(data));
+                    router.push("/recipe_only/home")
+                    }
+  
+
+
+
+
+
+
+
   
   return <HomeCont>
     <Head>
@@ -60,35 +153,21 @@ export default function Home() {
     <Line LineBgColor="#000" LineWidth="70%" LineHeight="3px"/>
     <div className="col">
       <div className="row">
-          
-          <img className="item" src="/DN-Onion.jpg" onClick={()=>router.push("/")}/>  {/*onion noodle dry */}
-          <img className="item" src="/DR-Mushroom.jpg" onClick={()=>router.push("/")}/>  {/*mushroom rice dry */}
-          <img className="item" src="/SB-Eggplant.jpg" />  {/*eggplant noodle soup */}
-          <img className="item" src="/DN-Carrot.jpg" />   {/*carrot noodle dry */}
-          <img className="item" src="/NS-Mushroom.jpg" />  {/*mushroom noodle soup */}
-          <img className="item" src="/SB-Pepper.jpg" />   {/*pepper noodle soup */}
-          <img className="item" src="/SR-Onion.jpg" />   {/*onion rice soup */}
-          <img className="item" src="/carrot_rice_soup.jpeg" />  {/*carrot rice soup */}
-          <img className="item" src="/Spicy-Carrot-Fried-Rice.png" />  {/*carrot rice dry */}
+
+          <img className="item" src="/DN-Onion.jpg" onClick ={OnionNoodleDry} />
+          <img className="item" src="/DR-Mushroom.jpg"onClick ={MushroomRiceDry} />
+          <img className="item" src="/SB-Eggplant.jpg"onClick={EggplantNoodleSoup} />
       </div>
       <div className="row">
-          <img className="item" src="/SR-Pepper.jpg" />  {/*pepper rice soup*/}
-          <img className="item" src="/DN-Eggplant.jpg"/> {/*eggplant noodle dry */}
-          <img className="item" src="/DR-Pepper.jpeg" />  {/*pepper rice dry */}
-          <img className="item" src="/DN-Tomato.jpg" />  {/*tomato noodle dry */}
-          <img className="item" src="/DR-Onion.jpg" />  {/*onion rice dry */}
-          <img className="item" src="/SB-Tomato.jpg" />  {/*tomato noodle soup  */}
-          <img className="item" src="/tomato_rice_soup.jpeg" /> {/*tomato rice soup */}
-          <img className="item" src="/DN-Pepper.jpg" />   {/*pepper noodle dry */}
+          <img className="item" src="/SR-Pepper.jpg" onClick = {PepperRiceSoup}/>
+          <img className="item" src="/DN-Eggplant.jpg"onClick = {EggplantNoodleDry}/>
+          <img className="item" src="/DR-Pepper.jpg" onClick ={PepperRiceDry}/>
       </div>
       <div className="row">
-          <img className="item" src="/DR-Eggplant.jpg" />  {/*eggplant rice dry */}
-          <img className="item" src="/SB-Onion.jpg" />   {/*onion noodle soup */}
-          <img className="item" src="/SR-Mushroom.jpg" /> {/*mushroom rice soup */}
-          <img className="item" src="/mushroom_pasta.jpeg" />  {/*mushroom noodle dry */}
-          <img className="item" src="/SB-Carrots.jpg" />   {/*carrot noodle soup */}
-          <img className="item" src="/SR-Eggplant.jpg" />   {/*eggplant rice soup */}
-          <img className="item" src="/Tomato-Fried-Rice.jpeg" /> {/*tomato rice dry*/}
+          <img className="item" src="/DR-Eggplant.jpg" onClick ={EggplantRiceDry} />
+          <img className="item" src="/SB-Onion.jpg" onClick ={OnionNoodleSoup} />
+          <img className="item" src="/SR-Mushroom.jpg" onClick ={MushroomRiceSoup}/>
+
       </div>
     </div>
     <Footer/>
