@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const PrepIngredCont = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px;
-    margin-bottom: 50px;
+    margin: 40px 0px 40px 0px;
 
     @media only screen and (max-width: 400px) {
         display: flex;
@@ -15,8 +15,7 @@ const PrepIngredCont = styled.div`
 `;
 
 const PrepTime = styled.div`
-    width: 140px;
-    height: 260px;
+    width: 150px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;
@@ -25,8 +24,7 @@ const PrepTime = styled.div`
 `;
 
 const Ingredients = styled.div`
-    width: 140px;
-    height: 260px;
+    width: 150px;
     border: 2.5px solid grey;
     border-radius: 20px;
     padding: 20px;

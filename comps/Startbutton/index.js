@@ -29,7 +29,7 @@ const ButtonInput = styled.button`
 //props
 const StartButton = ({
     text="Test Button",
-    width="220px",
+    width="180px",
     visibility="visible",
     routeTo="/",
     onClick=()=>{},
