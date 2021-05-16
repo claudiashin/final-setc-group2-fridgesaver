@@ -141,7 +141,7 @@ export default function Home() {
   const HandleEndRice = () =>{
     // alert(fruits);
     if (options === "option1"){
-      data.select1 = "rice" 
+      data.select1 = "Rice" 
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/options/option2")
@@ -150,7 +150,7 @@ export default function Home() {
    const HandleEndNoodle = () =>{
     // alert(fruits);
     if (options === "option1"){
-      data.select1 = "noodle";
+      data.select1 = "Noodle";
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/options/option2")
@@ -159,7 +159,7 @@ export default function Home() {
 
    const HandleEndSoup = () =>{
     if (options === "option2"){
-       data.select2 = "soup";
+       data.select2 = "Soup";
        console.log(data)
        
     }
@@ -169,7 +169,7 @@ export default function Home() {
 
    const HandleEndDried = () =>{
     if (options === "option2"){
-      data.select2 = "dried";
+      data.select2 = "Dry";
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/recipes/home")

@@ -52,6 +52,9 @@ var data = {
     select3:null,
   }
 
+  var right="/options_two/peppers"
+  var left="/options_two/pepper"
+
 
 export default function Home() {
     const router = useRouter();
@@ -67,8 +70,7 @@ export default function Home() {
     var bg4="#FEF2CA;";
     var bg5="#FEF2CA;";
     var bg6="#FEF2CA;";
-    var right="/options_two/peppers"
-    var left="/options_two/pepper"
+   
 
     //Pepper & peppers 
     if(options_two === "pepper") {
@@ -163,37 +165,37 @@ export default function Home() {
 
 
         const HandleEndPepper = () =>{
-        data.select3 = "pepper" 
+        data.select3 = "Pepper" 
         sessionStorage.setItem("options",JSON.stringify(data));
         router.push("/options_two/pepper")
         }
 
         const HandleEndOnion = () =>{
-            data.select3 = "onion" 
+            data.select3 = "Onion" 
             sessionStorage.setItem("options",JSON.stringify(data));
             router.push("/options_two/onion")
             }
             
         const HandleEndEggPlant = () =>{
-                data.select3 = "eggplant" 
+                data.select3 = "Eggplant" 
                 sessionStorage.setItem("options",JSON.stringify(data));
                 router.push("/options_two/eggplant")
                 } 
         
         const HandleEndCarrot = () =>{
-                data.select3 = "carrot" 
+                data.select3 = "Carrot" 
                 sessionStorage.setItem("options",JSON.stringify(data));
                 router.push("/options_two/carrot")
                 }
                 
         const HandleEndMushroom = () =>{
-                data.select3 = "mushroom" 
+                data.select3 = "Mushroom" 
                 sessionStorage.setItem("options",JSON.stringify(data));
                 router.push("/options_two/mushroom")
                 }     
 
         const HandleEndTomato = () =>{
-                data.select3 = "tomato" 
+                data.select3 = "Tomato" 
                 sessionStorage.setItem("options",JSON.stringify(data));
                 router.push("/options_two/tomato")
                     }

@@ -32,7 +32,6 @@ const StartButton = ({
     width="220px",
     visibility="visible",
     routeTo="/",
-
     onClick=()=>{},
 
 }) => {

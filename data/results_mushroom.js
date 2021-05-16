@@ -21,7 +21,7 @@ export const results_mushroom = {
 
     MushroomRiceDry:{
         title: "Mushroom Pilaf",
-        image: "DR-Mushroom.jpg",
+        image: "/DR-Mushroom.jpg",
         subtext1:"Step1: Start with soaking the dried mushrooms in 3 cups of boing water until tender. Once the desired softness is achieved, drain the mushrooms (reserving the liquid to use as stock. You will need 2 cups. Top up with water or stock as needed). Slice into bite-sized pieces and set aside.",
         subtext2:"Step2: Melt the butter over medium heat. Add the onions and cook until tender. Add the garlic and cook another minute. Add the mushrooms and saute until the fresh mushrooms are cooked. Add the rice and coat with the mixture.",
         subtext3:"Step3: Add the stock, parsley, salt, and pepper. Bring to a boil, cover and simmer for 15-20 minutes or until the rice is tender and has fully absorbed the stock.",
