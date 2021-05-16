@@ -2,7 +2,7 @@ export const results_pepper = {
     
     PepperRiceSoup:{
         title: "Pepper Rice Risotto Soup",
-        image: "./public/SR-Pepper.jpg",
+        image: "/SR-Pepper.jpg",
         subtext1:"Step 1: In a large pot heat add olive oil over medium heat, once hot add beef to pot and season with salt and pepper. Cook, stirring occasionally while breaking up beef, until browned.",
         subtext2:"Step 2: Drain beef and pour onto a plate lined with paper towels, set aside. Heat olive oil in pot then add bell peppers and saute for 3 minutes, and add garlic and saute for 30 seconds.",
         subtext3:"Step 3: Pour in diced tomatoes, beef broth and add cooked beef. Season with salt and pepper to taste. Bring just to a light boil, then reduce heat to low, cover and simmer, stirring occasionally, 30 minutes.",
@@ -21,7 +21,7 @@ export const results_pepper = {
 
     PepperRiceDry:{
         title: "Stuffed Pepper With Rice",
-        image: "./public/DR-Pepper.jpg",
+        image: "/DR-Pepper.jpg",
         subtext1:"Step 1: Preheat oven to 400°. Beat together eggs, 2 teaspoons of water, and a pinch of  salt. Preheat a large (12-inch) nonstick T-fal skillet over medium, about 2 minutes, until the Thermo-Spot turns solid. Coat with 2 tsp oil.",
         subtext2:"Step 2: Add egg mixture and cook, pushing eggs toward center of pan to form large, soft curds, about 30 seconds. Scrape eggs onto a plate.",
         subtext3:"Step 3: Return skillet to medium heat and add the remaining 3 tbsp of the oil, add rice, chicken, and soy sauce; cook stirring occasionally until heated through, about 5 minutes. Season with salt and pepper. Scrape rice mixture into a bowl and wipe skillet out with paper towels.",
@@ -40,7 +40,7 @@ export const results_pepper = {
     
     PepperNoodleSoup:{
         title: "Pepper Steak Noodle Soup",
-        image: "./public/SB-Pepper.jpg",
+        image: "/SB-Pepper.jpg",
         subtext1:"Step 1: Boil water in a large pot , add salt and pasta and cook until al dente.",
         subtext2:"Step 2: Meanwhile, season the steak with salt and pepper. In a large skillet, heat about 1 tbsp of oil over high heat. Add the steak and cook for about 2 minutes on each side; transfer to a cutting board.",
         subtext3:"Step 3: Add the remaining 1 tbsp of oil, 1 turn of the pan, to the skillet and add the bell peppers; cook for a couple of minutes. Stir in the garlic and five-spice powder and toss for a minute or two. Stir in stock and bring to a boil. Add  steak to the soup and turn off the heat.",
@@ -59,7 +59,7 @@ export const results_pepper = {
 
     PepperNoodleDry:{
         title: "Pepper Stir Fry Noodles",
-        image: "./public/DN-Pepper.jpg",
+        image: "/DN-Pepper.jpg",
         subtext1:"Step 1: Heat 1 tbsp of the  sesame oil in a large frying pan, add the chicken and cook until golden all over.",
         subtext2:"Step 2: Scoop out of the pan with a slotted spoon and add the rest of the oil, spring onions and pepper. Stir-fry until the pepper has softened a little then add back the chicken along with the soy sauce, and stock.",
         subtext3:"Step 3: Bubble for 2 minutes then add the noodles and toss.",

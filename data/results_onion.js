@@ -2,7 +2,7 @@ export const results_onion = {
         
     OnionRiceSoup:{
         title: "Onion & Rice Saffron Soup",
-        image: "./public/SR-Onion.jpg",
+        image: "/SR-Onion.jpg",
         subtext1:"Step 1: Add the garlic to the vegetable broth along with the saffron, sage, thyme, and oil. Stir in the rice kernels. Bring to a boil, cover, reduce the heat and simmer for about 30 minutes.",
         subtext2:"Step 2: On very low heat cook and stir the onions until they are very soft and translucent. Stir the sautéed onions into the broth.",
         subtext3:"Step 3: Taste and adjust seasoning, add salt if needed. With a slotted spoon, pick out most the garlic.",
@@ -21,7 +21,7 @@ export const results_onion = {
 
     OnionRiceDry:{
         title: "Onion Fried Rice",
-        image: "./public/DR-Onion.jpg",
+        image: "/DR-Onion.jpg",
         subtext1:"Step 1: In a medium saucepan, heat olive oil over medium-low heat. Add onion and carrot; cook, stirring frequently, until onion is very tender, for about 15 to 20 minutes.",
         subtext2:"Step 2: Add garlic cloves and ginger; cook 2 minutes.",
         subtext3:"Step 3: Add rice, stirring to coat. Add water and coarse salt; bring to a boil.",
@@ -40,7 +40,7 @@ export const results_onion = {
     
     OnionNoodleSoup:{
         title: "Short-Rib Onion Noodle Soup",
-        image: "./public/SB-Onion.jpg",
+        image: "/SB-Onion.jpg",
         subtext1:"Step 1: Heat oil in a large pot over medium-high. Season short ribs with salt and cook, turning occasionally, until well browned on all sides, for 10 minutes. Set aside the meat.",
         subtext2:"Step 2: Cook garlic until they are starting to brown. Add beef to pot and add soy sauce and 12 cups water. Bring to a boil, then reduce heat and cover partially with a lid. Simmer until for about 30 minutes.",
         subtext3:"Step 3: Meanwhile, in another large pot add onions, season with salt and cook, for about 10 minutes.  Reduce heat to medium-low and cook until onions are deep golden.",
@@ -59,7 +59,7 @@ export const results_onion = {
 
     OnionNoodleDry:{
         title: "Onion Parmesan Pasta",
-        image: "./public/DN-Onion.jpg",
+        image: "/DN-Onion.jpg",
         subtext1:"Step 1: Heat oil in a large heavy pot over medium. Add onions and garlic and cook, stirring occasionally, until very tender and deeply golden brown, about 30 minutes.",
         subtext2:"Step 2: Add red pepper flakes (if using) and 1 1/2 tsp. salt. Remove pot from heat.",
         subtext3:"Step 3: Meanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente. Reserve 1 1/2 cups pasta cooking liquid.",
