@@ -22,28 +22,24 @@ const HomeCont = styled.div`
 
     .col {
       display:flex;
-      width: 100%;
-      height:65%;
-      flex-direction: column;
-      justify-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
 
       .row {
-        display:flex;
-        margin-top: 15px;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        // margin-top: 15px;
       }
 
-      .item {
-        display:flex;
-
-        margin: 10px;
+      .row img {
+        width: 100%;
+        margin-top: 5px;
+        vertical-align: middle;
       }
 
-      img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-      }
+    
     }
 `;
 
@@ -61,22 +57,38 @@ export default function Home() {
       />
     </div>
     <Header icon="/recipe-book.png" text="Recipes"/>
-    <Line LineBgColor="#000" LineWidth="50%" LineHeight="5px"/>
+    <Line LineBgColor="#000" LineWidth="70%" LineHeight="3px"/>
     <div className="col">
       <div className="row">
-          <img className="item" src="/DN-Onion.jpg" />
-          <img className="item" src="/DR-Mushroom.jpg" />
-          <img className="item" src="/SB-Eggplant.jpg" />
+          
+          <img className="item" src="/DN-Onion.jpg" onClick={()=>router.push("/")}/>  {/*onion noodle dry */}
+          <img className="item" src="/DR-Mushroom.jpg" onClick={()=>router.push("/")}/>  {/*mushroom rice dry */}
+          <img className="item" src="/SB-Eggplant.jpg" />  {/*eggplant noodle soup */}
+          <img className="item" src="/DN-Carrot.jpg" />   {/*carrot noodle dry */}
+          <img className="item" src="/NS-Mushroom.jpg" />  {/*mushroom noodle soup */}
+          <img className="item" src="/SB-Pepper.jpg" />   {/*pepper noodle soup */}
+          <img className="item" src="/SR-Onion.jpg" />   {/*onion rice soup */}
+          <img className="item" src="/carrot_rice_soup.jpeg" />  {/*carrot rice soup */}
+          <img className="item" src="/Spicy-Carrot-Fried-Rice.png" />  {/*carrot rice dry */}
       </div>
       <div className="row">
-          <img className="item" src="/SR-Pepper.jpg" />
-          <img className="item" src="/DN-Eggplant.jpg"/>
-          <img className="item" src="/DR-Pepper.jpg" />
+          <img className="item" src="/SR-Pepper.jpg" />  {/*pepper rice soup*/}
+          <img className="item" src="/DN-Eggplant.jpg"/> {/*eggplant noodle dry */}
+          <img className="item" src="/DR-Pepper.jpeg" />  {/*pepper rice dry */}
+          <img className="item" src="/DN-Tomato.jpg" />  {/*tomato noodle dry */}
+          <img className="item" src="/DR-Onion.jpg" />  {/*onion rice dry */}
+          <img className="item" src="/SB-Tomato.jpg" />  {/*tomato noodle soup  */}
+          <img className="item" src="/tomato_rice_soup.jpeg" /> {/*tomato rice soup */}
+          <img className="item" src="/DN-Pepper.jpg" />   {/*pepper noodle dry */}
       </div>
       <div className="row">
-          <img className="item" src="/DR-Eggplant.jpg" />
-          <img className="item" src="/SB-Onion.jpg" />
-          <img className="item" src="/SR-Mushroom.jpg" />
+          <img className="item" src="/DR-Eggplant.jpg" />  {/*eggplant rice dry */}
+          <img className="item" src="/SB-Onion.jpg" />   {/*onion noodle soup */}
+          <img className="item" src="/SR-Mushroom.jpg" /> {/*mushroom rice soup */}
+          <img className="item" src="/mushroom_pasta.jpeg" />  {/*mushroom noodle dry */}
+          <img className="item" src="/SB-Carrots.jpg" />   {/*carrot noodle soup */}
+          <img className="item" src="/SR-Eggplant.jpg" />   {/*eggplant rice soup */}
+          <img className="item" src="/Tomato-Fried-Rice.jpeg" /> {/*tomato rice dry*/}
       </div>
     </div>
     <Footer/>
