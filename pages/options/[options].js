@@ -33,17 +33,19 @@ const HomeCont = styled.div`
 `;
 
 
-var data = {
-  select1:null,
-  select2:null,
-  select3:null,
-}
+
+
+
 
 export default function Home() {
     const router = useRouter();
     const {options} = router.query;
     const [chosen,setChosen] = useState(0);
-    // const[end,setEnd] = useState(false);
+    const [data,setData] = useState({
+      select1:"",
+      select2:"",
+      select3:""      
+    })
 
     var head = "Head text goes here"
     var txt1 = "rice";
@@ -90,7 +92,18 @@ export default function Home() {
 
   useEffect(()=>{
    
-      if(options === "option1"){
+    if(process.browser){
+      var data =sessionStorage.getItem("options");
+      var obj =JSON.parse(data);
+      setData(obj)
+      
+    }
+
+    if(!options){
+      sessionStorage.setItem("options",JSON.stringify(data))
+    }
+
+    if(options === "option1"){
         setChosen(1);
         // console.log(chosen)
      }
@@ -105,20 +118,23 @@ export default function Home() {
     },[router.query]);
 
 
-    useEffect(()=> {
+  //   useEffect(()=> {
      
-      if(process.browser){
-          var o =sessionStorage.getItem("options");
-          var obj =JSON.parse(o);
-          // var key = obj.fruits+ obj.coins +obj.colors;
-          // if(results[key]){
-          //     setText(results[key]) 
-          // }else {
-          //     setText(results.wrong)
-          // }
-          // setoptions(JSON.parse(o))
-      }
-  },[]);
+  //     if(process.browser){
+  //         var o =sessionStorage.getItem("options");
+  //         var obj =JSON.parse(o);
+  //         var key1 =obj.select3
+  //         data.select1 = key1
+
+  //         // var key = obj.fruits+ obj.coins +obj.colors;
+  //         // if(results[key]){
+  //         //     setText(results[key]) 
+  //         // }else {
+  //         //     setText(results.wrong)
+  //         // }
+  //         // setoptions(JSON.parse(o))
+  //     }
+  // },[]);
 
 
 
@@ -126,7 +142,6 @@ export default function Home() {
     // alert(fruits);
     if (options === "option1"){
       data.select1 = "rice" 
-      console.log(data)
     }
     sessionStorage.setItem("options",JSON.stringify(data));
     router.push("/options/option2")
