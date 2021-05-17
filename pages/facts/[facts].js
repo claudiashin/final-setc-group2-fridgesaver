@@ -132,7 +132,7 @@ export default function Home() {
                 <Button text = {"Greenhouse Gases"} bgcolor={bgcolor3} onClick = {()=>router.push("/facts/topic3")}/>
                 <Button text = {"Food in Landfills"} bgcolor={bgcolor4} onClick  = {()=>router.push("/facts/topic4")}/>
                 <div class="tutorialbutton">
-                <StartButton text="Go to Tutorial" width="260px" routeTo="/tutorial"/>
+                <StartButton text="Go to Tutorial" width="220px" routeTo="/tutorial"/>
                 </div>
             </div> 
         <Footer />
