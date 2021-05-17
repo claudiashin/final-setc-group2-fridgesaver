@@ -16,7 +16,7 @@ export const results_eggplant = {
         ingred3:"1 cup parboiled white rice",
         ingred4:"6 cups chicken broth",
         ingred5:"1 can crushed tomatoes",
-        ingred6:"3 cups mix of chicken, sausage, shrimp",
+        ingred6:"3 cups mix of chicken, sausage, and shrimp",
     }, 
 
     EggplantRiceDry:{

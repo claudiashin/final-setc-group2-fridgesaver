@@ -3,10 +3,10 @@ export const results_onion = {
     OnionRiceSoup:{
         title: "Onion & Rice Saffron Soup",
         image: "/SR-Onion.jpg",
-        subtext1:"Step 1: Add the garlic to the vegetable broth along with the saffron, thyme, and oil. Stir in the rice kernels. Bring to a boil, cover, reduce the heat and simmer for about 30 minutes.",
+        subtext1:"Step 1: Add the garlic to the vegetable broth along with the saffron, thyme, sage, and oil. Stir in the rice kernels. Bring to a boil, cover, reduce the heat and simmer for about 30 minutes.",
         subtext2:"Step 2: On very low heat cook and stir the onions until they are very soft and translucent. Add the sautéed onions into the broth.",
         subtext3:"Step 3: Taste and adjust seasoning, add salt if needed. With a spoon, pick out the garlic.",
-        subtext4:"Step 4: To serve, ladle in the soup and sprinkle with the cheese (optional).",
+        subtext4:"Step 4: To serve, ladle in the soup and sprinkle with the cheese (optional). Serve and enjoy.",
         prep1:"Calories: 300",
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 40 minutes",
@@ -16,7 +16,7 @@ export const results_onion = {
         ingred3:"4 cups vegetable broth",
         ingred4:"2 tbsp virgin olive oil",
         ingred5:"2 garlic cloves",
-        ingred6:"1 tbsp saffron, thyme"
+        ingred6:"1½ tbsp saffron, thyme, and sage"
     }, 
 
     OnionRiceDry:{
@@ -44,7 +44,7 @@ export const results_onion = {
         subtext1:"Step 1: Heat oil in a large pot over medium-high. Season short ribs with salt and cook, turning occasionally, until well browned on all sides, for 5 minutes. Set aside the meat.",
         subtext2:"Step 2: Cook garlic until they are starting to brown. Add beef to pot and add soy sauce and 12 cups water. Bring to a boil, then reduce heat and cover partially with a lid. Simmer until for about 30 minutes.",
         subtext3:"Step 3: Meanwhile, in another large pot add onions, season with salt and cook, for about 5 minutes.  Reduce heat to medium-low and cook until onions are deep golden.",
-        subtext4:"Step 4: Using tongs tear meat into bite-size pieces, discarding any bone and excess fat. Add meat and broth to pot with onions. Bring to a boil and simmer until liquid is reduced and flavors have melded, for about 10 minutes. Cook noodles according to package directions. Divide among bowls.",
+        subtext4:"Step 4: Using tongs tear meat into bite-size pieces, discarding any bone and excess fat. Add meat and broth to pot with onions. Bring to a boil and simmer until liquid is reduced and flavors have melded, for about 10 minutes. Cook noodles according to package directions. Divide among bowls. Serve and enjoy.",
         prep1:"Calories: 450",
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 50 minutes",
@@ -63,12 +63,12 @@ export const results_onion = {
         subtext1:"Step 1: Heat oil in a large heavy pot over medium. Add onions and garlic and cook, stirring occasionally, until very tender and deeply golden brown, about 30 minutes.",
         subtext2:"Step 2: Add red pepper flakes (if using) and 1 1/2 tsp. salt. Remove pot from heat.",
         subtext3:"Step 3: Meanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente. Reserve 1 1/2 cups pasta cooking liquid.",
-        subtext4:"Step 4: Add pasta and 1 cup pasta cooking liquid to onion mixture and stir to combine. Add a small handful of cheese and stir until melted. Repeat with remaining cheese, adding more pasta cooking liquid as needed to create a glossy sauce that coats the pasta. Stir in parsley (if using). Divide pasta among bowls. Top with Parmesan, parsley, and a few cranks of pepper.",
+        subtext4:"Step 4: Add pasta and 1 cup pasta cooking liquid to onion mixture and stir to combine. Add a small handful of cheese and stir until melted. Repeat with remaining cheese, adding more pasta cooking liquid as needed to create a glossy sauce that coats the pasta. Divide pasta among bowls. Top with Parmesan, and a few cranks of pepper. Serve and enjoy.",
         prep1:"Calories: 390",
         prep2:"Prep Time: 20 minutes",
         prep3:"Cook Time: 35 minutes",
         prep4:"Total Time: 55 minutes",
-        ingred1:"2 tbsp extra-virgin olive oil",
+        ingred1:"2 tbsp virgin olive oil",
         ingred2:"12 oz linguine",
         ingred3:"3 large onions",
         ingred4:"2 garlic cloves",

@@ -68,7 +68,7 @@ export const results_mushroom = {
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 15 minutes",
         prep4:"Total Time: 25 minutes",
-        ingred1:"4 tbsp extra-virgin olive oil",
+        ingred1:"4 tbsp virgin olive oil",
         ingred2:"1 lb mixed mushrooms ",
         ingred3:"2 medium shallots",
         ingred4:"1 lb dried pasta",
