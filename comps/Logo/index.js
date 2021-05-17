@@ -26,7 +26,7 @@ const LogoImage = styled.img`
 
 //props
 const Logo = ({
-    image="/logo.png",
+    image="/Logo.png",
     width="250",
     routeTo=""
 }) => {
