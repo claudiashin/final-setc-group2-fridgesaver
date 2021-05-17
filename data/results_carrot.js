@@ -16,7 +16,7 @@ export const results_carrot = {
         ingred3:"1½ lb carrots",
         ingred4:"¼ cup of dry sherry",
         ingred5:"2 shallots",
-        ingred6:"1 bulb fennel",
+        ingred6:"1 fennel bulb",
     }, 
 
     CarrotRiceDry:{

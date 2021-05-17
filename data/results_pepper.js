@@ -16,7 +16,7 @@ export const results_pepper = {
         ingred3:"2 large bell peppers",
         ingred4:"2 cans diced tomatoes",
         ingred5:"2 garlic cloves",
-        ingred6:"1 can low-sodium beef broth"
+        ingred6:"1 can beef broth"
     }, 
 
     PepperRiceDry:{
@@ -35,7 +35,7 @@ export const results_pepper = {
         ingred3:"2 cups parboiled white rice",
         ingred4:"2 cups rotisserie chicken",
         ingred5:"2 large eggs",
-        ingred6:"3 tbsp low-sodium soy sauce"
+        ingred6:"3 tbsp soy sauce"
     },
     
     PepperNoodleSoup:{
@@ -52,7 +52,7 @@ export const results_pepper = {
         ingred1:"3 tbsp olive oil",
         ingred2:"1 lbs whole wheat spaghetti",
         ingred3:"2 bell peppers",
-        ingred4:"3/4 lbs beef sirloin steak",
+        ingred4:"3/4 lbs beef sirloin",
         ingred5:"3 cloves garlic",
         ingred6:"6 cups vegetable or beef stock"
     },
@@ -71,7 +71,7 @@ export const results_pepper = {
         ingred1:"2 tbsp sesame oil",
         ingred2:"1 bell pepper",
         ingred3:"300g cooked egg noodles",
-        ingred4:"2 skinless chicken thigh fillets",
+        ingred4:"2 chicken thigh fillets",
         ingred5:"4 spring onions",
         ingred6:"2 tbsp soy sauce"
     },

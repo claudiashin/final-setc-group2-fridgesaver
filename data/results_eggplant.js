@@ -16,7 +16,7 @@ export const results_eggplant = {
         ingred3:"1 cup parboiled white rice",
         ingred4:"6 cups chicken broth",
         ingred5:"1 can crushed tomatoes",
-        ingred6:"3 cups mix of cooked chicken, sausage, shrimp",
+        ingred6:"3 cups mix of chicken, sausage, shrimp",
     }, 
 
     EggplantRiceDry:{
@@ -26,7 +26,7 @@ export const results_eggplant = {
         subtext2:"Step 2: Preheat oil in a 12-inch oven-safe skillet over medium-high heat. Add eggplant and stir to coat with the oil. Add 1 teaspoon of the salt and continue to saute for five minutes, until the eggplant has softened.",
         subtext3:"Step 3: Add onions and saute for another five minutes. The eggplant and onion will both melt down slightly. Add tomatoes and garlic and cook for an additional minute. Season with salt and black pepper. Add rice and stir in the stock, ensuring all of the rice is submerged. Top with grated cheese and dot with butter (optional).",
         subtext4:"Step 4: Place in the oven, uncovered, and bake for thirty minutes, or until all the liquid has been absorbed. Remove from oven and let cool slightly. Taste and adjust seasoning if necessary. Garnish with parsley (optional) and serve.",
-        prep1:"Calories: 235",
+        prep1:"Calories: 325",
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 40 minutes",
         prep4:"Total Time: 50 minutes",
@@ -45,7 +45,7 @@ export const results_eggplant = {
         subtext2:"Step 2: Heat oil in a large soup pot over medium-high heat. Add the bell pepper and eggplant and sauté for 2-3 minutes until eggplant begins to brown.",
         subtext3:"Step 3: Add the tofu, vegetable broth, and coconut milk to the soup pot. Bring soup to a boil and then reduce heat to a simmer and simmer for 3-5 minutes. Stir in the red curry paste (optional).",
         subtext4:"Step 4: Add brown rice noodles and continue to cook the soup until the noodles are tender, about an additional 4 minutes. Serve with lime wedges (optional).",
-        prep1:"Calories: 275",
+        prep1:"Calories: 345",
         prep2:"Prep Time: 20 minutes",
         prep3:"Cook Time: 25 minutes",
         prep4:"Total Time: 45 minutes",

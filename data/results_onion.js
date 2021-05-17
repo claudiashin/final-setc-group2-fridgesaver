@@ -14,9 +14,9 @@ export const results_onion = {
         ingred1:"½ cup parboiled white rice",
         ingred2:"1 large onion",
         ingred3:"4 cups vegetable broth",
-        ingred4:"2 tbsp extra virgin olive oil",
+        ingred4:"2 tbsp virgin olive oil",
         ingred5:"2 garlic cloves",
-        ingred6:"1 tbsp mix of saffron, thyme"
+        ingred6:"1 tbsp saffron, thyme"
     }, 
 
     OnionRiceDry:{
@@ -25,7 +25,7 @@ export const results_onion = {
         subtext1:"Step 1: In a medium saucepan, heat olive oil over medium-low heat. Add onion and carrot; cook, stirring frequently, until onion is very tender, for about 15 to 20 minutes.",
         subtext2:"Step 2: Add garlic cloves and ginger; cook 2 minutes until they are glazed and golden brown in color.",
         subtext3:"Step 3: Add rice, stirring to coat. Add water and coarse salt; bring to a boil.",
-        subtext4:"Step 4: Reduce to a simmer; cover, and cook until rice is tender, 17 to 20 minutes (add a little more water if pan becomes dry).",
+        subtext4:"Step 4: Reduce to a simmer; cover, and cook until rice is tender, 17 to 20 minutes (add a little more water if pan becomes dry). Serve and enjoy.",
         prep1:"Calories: 295",
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 40 minutes",
@@ -45,7 +45,7 @@ export const results_onion = {
         subtext2:"Step 2: Cook garlic until they are starting to brown. Add beef to pot and add soy sauce and 12 cups water. Bring to a boil, then reduce heat and cover partially with a lid. Simmer until for about 30 minutes.",
         subtext3:"Step 3: Meanwhile, in another large pot add onions, season with salt and cook, for about 5 minutes.  Reduce heat to medium-low and cook until onions are deep golden.",
         subtext4:"Step 4: Using tongs tear meat into bite-size pieces, discarding any bone and excess fat. Add meat and broth to pot with onions. Bring to a boil and simmer until liquid is reduced and flavors have melded, for about 10 minutes. Cook noodles according to package directions. Divide among bowls.",
-        prep1:"Calories: 400",
+        prep1:"Calories: 450",
         prep2:"Prep Time: 10 minutes",
         prep3:"Cook Time: 50 minutes",
         prep4:"Total Time: 60 minutes",
