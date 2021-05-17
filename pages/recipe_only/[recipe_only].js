@@ -9,8 +9,8 @@ import Footer from '../../comps/Footer';
 import React, {useState,useEffect} from 'react';
 import Navbar from '../../comps/Navigation';
 import {recipeCategories} from '../../data/recipetexts';
-import Startbutton from '../../comps/Startbutton';
-import PrepIngred from '../../comps/PrepIngred';
+import StartButton from '../../comps/Startbutton';
+import PrepIngred from '../../comps/Prepingred';
 
 import {results_pepper} from '../../data/results_pepper';
 import {results_onion} from '../../data/results_onion';
@@ -655,7 +655,7 @@ export default function Home() {
 
 
     <div className="bottom">
-      <Startbutton text="Pick Another Veggie"  width="200px" routeTo="../options_two/pepper"/>
+      <StartButton text="Pick Another Veggie"  width="200px" routeTo="../options_two/pepper"/>
     </div>
     <Footer/>
   </HomeCont>
