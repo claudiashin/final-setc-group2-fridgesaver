@@ -45,9 +45,9 @@ const Header = ({
         <HeaderText fontsize={fontsize}>
             {text} 
         </HeaderText>
-        <HeaderSubText>
+        {/* <HeaderSubText>
             {text2}
-        </HeaderSubText>
+        </HeaderSubText> */}
     </HeaderCont>
 }
 

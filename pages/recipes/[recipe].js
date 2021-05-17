@@ -6,8 +6,11 @@ import {useRouter} from 'next/router';
 import Footer from '../../comps/Footer';
 import React, {useState,useEffect} from 'react';
 import Navbar from '../../comps/Navigation';
+import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/Startbutton';
-import PrepIngred from '../../comps/PrepIngred';
+import PrepIngred from '../../comps/Prepingred';
+
+
 import {results_pepper} from '../../data/results_pepper';
 import {results_onion} from '../../data/results_onion';
 import {results_eggplant} from '../../data/results_eggplant';

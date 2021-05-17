@@ -22,6 +22,7 @@ const HomeCont = styled.div`
     }
 
     .col {
+      max-width: 80%;
       display:flex;
       flex-wrap: wrap;
       justify-content: center;

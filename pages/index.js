@@ -3,7 +3,6 @@ import Logo from '../comps/Logo';
 import Developer from '../comps/Developer';
 import Information from '../comps/Information';
 import Footer from '../comps/Footer';
-import Prepingred from '../comps/Prepingred';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 

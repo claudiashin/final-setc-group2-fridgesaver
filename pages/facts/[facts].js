@@ -66,7 +66,7 @@ const HomeCont = styled.div`
 
 const issue = {
     topic1: {
-        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of the food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. ",
+        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. ",
         bg1: "#FBD0A9",
     },
     topic2: {
@@ -132,7 +132,7 @@ export default function Home() {
                 <Button text = {"Greenhouse Gases"} bgcolor={bgcolor3} onClick = {()=>router.push("/facts/topic3")}/>
                 <Button text = {"Food in Landfills"} bgcolor={bgcolor4} onClick  = {()=>router.push("/facts/topic4")}/>
                 <div class="tutorialbutton">
-                <StartButton text="Go to Tutorial" width="260px" routeTo="/tutorial"/>
+                <StartButton text="Go to Tutorial" width="220px" routeTo="/tutorial"/>
                 </div>
             </div> 
         <Footer />
