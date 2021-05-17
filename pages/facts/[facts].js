@@ -66,7 +66,7 @@ const HomeCont = styled.div`
 
 const issue = {
     topic1: {
-        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of the food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. ",
+        topic:"In Canada, the amount of food waste Canadians produce costs the economy roughly an estimated $49 billion a year. About 63% of food that is thrown away could be eaten or stored away. On average, a Canadian household will waste about 140kgs of food on average; therefore, which is a total of $1,100 per year and almost $100 per month. ",
         bg1: "#FBD0A9",
     },
     topic2: {
