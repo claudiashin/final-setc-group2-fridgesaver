@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const FactsCont = styled.div`
     background-color: #FFF3F3;
-    width: 500px;
+    // width: 480px;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -11,6 +11,10 @@ const FactsCont = styled.div`
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
+
+    @media only screen and (max-width: 400px) {
+        height: 600px;
+    }
 `;
 
 const Heading = styled.p`
@@ -24,45 +28,50 @@ const FactCirclesCont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     flex-direction: row;
-    // position: relative;
+    width: 500px;
+
+    @media only screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
 `;
 
 const FactCircle1 = styled.div`
     background-color: #F3D4D4;
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     padding: 25px;
     text-align: center;
-    margin: 20px;
+    margin: 15px;
     display:flex;
     align-items: center;
     justify-content: center;
-    // position: absolute;
-    // top: 20px;
-    // left: -80px;
 `;
 
 const FactCircle2 = styled.div`
     background-color: #F3D4D4;
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     padding: 25px;
     text-align: center;
-    margin: 20px;
+    margin: 15px;
     display:flex;
     align-items: center;
     justify-content: center;
 `;
+
 const ArrowImgCont = styled.div`
     display: flex;
     margin-bottom: 30px;
 `;
+
 const ArrowImg = styled.img`
-    width: 50px;
+    width: 40px;
 `;
 
 const Facts = ({

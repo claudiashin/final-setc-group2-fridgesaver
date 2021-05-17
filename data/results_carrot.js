@@ -60,6 +60,7 @@ export const results_carrot = {
     CarrotNoodleDry:{
         title: "Carrot & Garlic Pasta",
         image: "/DN-Carrot.jpg",
+
         subtext1:"Step 1: Wash and peel the carrots. Slice half of the carrots and grate the remaining carrots using a grater. Chop the shallots.",
         subtext2:"Step 2: In a big pot, heat up the olive oil and add the carrots and the shallots. Season it with salt and let it brown over a medium heat until the carrots get soft. During that time, cook the pasta and prepare the breadcrumbs. To cook the pasta, check the instructions on its packaging and cook the pasta for 1 minute less than indicated, it will finish cooking once mixed with carrots. RESERVE half a cup of water from pasta cooking. To make the breadcrumbs, cut your bread into small pieces or use a food processor. Next, roast them until golden on a dry frying pan. To finish add olive oil and sprinkle with flaky salt.",
         subtext3:"Step 3: When carrots are brown and the biggest pieces are a bit softer, add half a cup of water from pasta cooking to deglaze the pot.",
@@ -74,6 +75,5 @@ export const results_carrot = {
         ingred4:"1 large clove garlic",
         ingred5:"1 tbsp olive oil",
         ingred6:"2-3 slices of bread",
-    }
-    
+    } 
 }
