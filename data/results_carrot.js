@@ -5,7 +5,7 @@ export const results_carrot = {
         image: "/carrot_rice_soup.jpeg",
         subtext1:"Step 1: Heat the olive oil and some butter in a large soup pot. Saute the fennel and shallots for about 10 minutes, stirring often.",
         subtext2:"Step 2: Add the sherry and cook for a minute more. Then add the carrots, broth, and a teaspoon of salt and pepper. Bring to a boil, then lower the heat and simmer for 15 minutes while covered. Turn off the heat and let sit for 10 minutes more.",
-        subtext3:"Step 3: Puree the soup in batches. Return to the pot.",
+        subtext3:"Step 3: Puree the soup in batches and return to the pot.",
         subtext4:"Step 4: Reheat the soup and add half the rice, reserving the rest for adding to individual bowls. Taste to adjust the salt and pepper, then serve.",
         prep1:"Calories: 325",
         prep2:"Prep Time: 5 minutes",
