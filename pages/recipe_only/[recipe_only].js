@@ -2,16 +2,12 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Recipe from '../../comps/Recipe';
 import Direction from '../../comps/Directions';
-import CircleButton from '../../comps/Circlebutton';
-import Infobox from '../../comps/Infobox';
 import {useRouter} from 'next/router';
 import Footer from '../../comps/Footer';
 import React, {useState,useEffect} from 'react';
 import Navbar from '../../comps/Navigation';
-import {recipeCategories} from '../../data/recipetexts';
-import StartButton from '../../comps/StartButton';
+import StartButton from '../../comps/Startbutton';
 import PrepIngred from '../../comps/PrepIngred';
-
 import {results_pepper} from '../../data/results_pepper';
 import {results_onion} from '../../data/results_onion';
 import {results_eggplant} from '../../data/results_eggplant';
