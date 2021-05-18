@@ -19,7 +19,7 @@ const HomeCont = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     padding-top: 10px;
 
     .nav {
@@ -69,14 +69,14 @@ export default function Home() {
 
     var image="/vegetables.png";
     var title="Pick me";
-    var info="Please click one of vegetable circle buttons above";
+    var info="Please select one of the vegetable above";
     var bg1="#FEF2CA;";
     var bg2="#FEF2CA;";
     var bg3="#FEF2CA;";
     var bg4="#FEF2CA;";
     var bg5="#FEF2CA;";
     var bg6="#FEF2CA;";
-
+    var visibility="hidden";
 
 
     useEffect(()=>{
@@ -98,6 +98,7 @@ export default function Home() {
         bg1 = vegitexts.pepper.bg1;
         info = vegitexts.pepper.info;
         right = vegitexts.pepper.right;
+        visibility = vegitexts.pepper.visibility;
     }
     if(options_two === "peppers") {
         image = vegitexts.peppers.image;
@@ -105,6 +106,8 @@ export default function Home() {
         bg1 = vegitexts.peppers.bg1;
         info = vegitexts.peppers.info;
         left = vegitexts.peppers.left;
+        visibility = vegitexts.peppers.visibility;
+        
     }
     //Onion & onions
     if(options_two === "onion") {
@@ -113,6 +116,7 @@ export default function Home() {
         bg2 = vegitexts.onion.bg2;
         info = vegitexts.onion.info;
         right = vegitexts.onion.right;
+        visibility = vegitexts.onion.visibility;
     }
     if(options_two === "onions") {
         image = vegitexts.onions.image;
@@ -120,6 +124,7 @@ export default function Home() {
         bg2 = vegitexts.onions.bg2;
         info = vegitexts.onions.info;
         left = vegitexts.onions.left;
+        visibility = vegitexts.onions.visibility;
     }
     //Eggplant & eggplants
     if(options_two === "eggplant") {
@@ -128,6 +133,7 @@ export default function Home() {
         bg3 = vegitexts.eggplant.bg3;
         info = vegitexts.eggplant.info;
         right = vegitexts.eggplant.right;
+        visibility = vegitexts.eggplant.visibility;
     }
     if(options_two === "eggplants") {
         image = vegitexts.eggplants.image;
@@ -135,6 +141,7 @@ export default function Home() {
         bg3 = vegitexts.eggplants.bg3;
         info = vegitexts.eggplants.info;
         left = vegitexts.eggplants.left;
+        visibility = vegitexts.eggplants.visibility;
     }
     //carrot & carrots
     if(options_two === "carrot") {
@@ -143,6 +150,7 @@ export default function Home() {
         bg4 = vegitexts.carrot.bg4;
         info = vegitexts.carrot.info;
         right = vegitexts.carrot.right;
+        visibility = vegitexts.carrot.visibility;
     }
     if(options_two === "carrots") {
         image = vegitexts.carrots.image;
@@ -150,6 +158,7 @@ export default function Home() {
         bg4 = vegitexts.carrots.bg4;
         info = vegitexts.carrots.info;
         left = vegitexts.carrots.left;
+        visibility = vegitexts.carrots.visibility;
     }
     //mushroom & mushrooms
     if(options_two === "mushroom") {
@@ -157,7 +166,8 @@ export default function Home() {
         title = vegitexts.mushroom.title;
         bg5 = vegitexts.mushroom.bg5;
         info = vegitexts.mushroom.info;
-        right = vegitexts.mushroom.right
+        right = vegitexts.mushroom.right;
+        visibility = vegitexts.mushroom.visibility;
     }
     if(options_two === "mushrooms") {
         image = vegitexts.mushrooms.image;
@@ -165,6 +175,7 @@ export default function Home() {
         bg5 = vegitexts.mushrooms.bg5;
         info = vegitexts.mushrooms.info;
         left = vegitexts.mushrooms.left;
+        visibility = vegitexts.mushrooms.visibility;
     }
     //tomato & tomatoes
     if(options_two === "tomato") {
@@ -173,6 +184,7 @@ export default function Home() {
         bg6 = vegitexts.tomato.bg6;
         info = vegitexts.tomato.info;
         right = vegitexts.tomato.right;
+        visibility = vegitexts.tomato.visibility;
     }
     if(options_two === "tomatoes") {
         image = vegitexts.tomatoes.image;
@@ -180,6 +192,7 @@ export default function Home() {
         bg6 = vegitexts.tomatoes.bg6;
         info = vegitexts.tomatoes.info;
         left = vegitexts.tomatoes.left;
+        visibility = vegitexts.tomatoes.visibility;
     }
 
 
@@ -241,6 +254,7 @@ export default function Home() {
                 src={image}
                 name={title}
                 text={info}
+                visibility={visibility}
                 onLeftArrowClick={()=> router.push(left)}
                 onRightArrowClick={()=> router.push(right)}
             >

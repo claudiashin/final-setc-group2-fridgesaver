@@ -46,7 +46,7 @@ const FactCircle1 = styled.div`
     border-radius: 50%;
     padding: 25px;
     text-align: center;
-    margin: 15px;
+    margin: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ const FactCircle2 = styled.div`
     border-radius: 50%;
     padding: 25px;
     text-align: center;
-    margin: 15px;
+    margin: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +72,7 @@ const ArrowImgCont = styled.div`
 
 const ArrowImg = styled.img`
     width: 40px;
+    padding: 5px;
 `;
 
 const Facts = ({

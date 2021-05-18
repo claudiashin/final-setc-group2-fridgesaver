@@ -116,7 +116,7 @@ export default function Home() {
 
     return <HomeCont>
        
-        <Navbar onClick={()=>router.push("/options/option1")} />
+        <Navbar onClick={()=>router.push("/index2")} />
             <div className = "column">
                 <div className="logo">
                     <img src="/Logo.png" />

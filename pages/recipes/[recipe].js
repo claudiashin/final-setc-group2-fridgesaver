@@ -624,6 +624,7 @@ export default function Home() {
       <Navbar 
         onClick={()=>router.push("/options/option2")}
       />
+
     </div>
     
     <Recipe
@@ -652,8 +653,9 @@ export default function Home() {
         subtext4={subtext4}
       />
     </div>
+
     <div className="bottom">
-      <StartButton text="Pick Another Veggie"  width="200px" routeTo="/options_two/pepper"/>
+      <StartButton text="Pick Another Veggie"  width="200px" routeTo="/options_two/home"/>
     </div>
     <Footer/>
   </HomeCont>
