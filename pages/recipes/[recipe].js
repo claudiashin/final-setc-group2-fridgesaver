@@ -2,8 +2,6 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Recipe from '../../comps/Recipe';
 import Direction from '../../comps/Directions';
-import CircleButton from '../../comps/Circlebutton';
-import Infobox from '../../comps/Infobox';
 import {useRouter} from 'next/router';
 import Footer from '../../comps/Footer';
 import React, {useState,useEffect} from 'react';
@@ -11,6 +9,7 @@ import Navbar from '../../comps/Navigation';
 import {recipeCategories} from '../../data/recipetexts';
 import StartButton from '../../comps/Startbutton';
 import PrepIngred from '../../comps/Prepingred';
+
 
 import {results_pepper} from '../../data/results_pepper';
 import {results_onion} from '../../data/results_onion';
@@ -653,6 +652,7 @@ export default function Home() {
         subtext4={subtext4}
       />
     </div>
+    <div>You saved vegetables!!</div>
     <div className="bottom">
       <StartButton text="Pick Another Veggie"  width="200px" routeTo="/options_two/pepper"/>
     </div>

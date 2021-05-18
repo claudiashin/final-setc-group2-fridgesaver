@@ -9,8 +9,8 @@ const NavCont = styled.div `
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 `;
 
 const NavBack = styled.img `
