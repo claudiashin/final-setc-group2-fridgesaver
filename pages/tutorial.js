@@ -63,13 +63,7 @@ var data = {
 export default function Home() {
   const router = useRouter();
 
-  
 
-  const HandleEndPepper = () =>{
-    data.select3 = "Pepper" 
-    sessionStorage.setItem("options",JSON.stringify(data));
-    console.log(data)
-    }
 
   
   return <HomeCont>
@@ -89,7 +83,7 @@ export default function Home() {
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
-    <StartButton text="Let’s Get Started"  width="200px" onClick = {HandleEndPepper} routeTo="options_two/pepper" />
+    <StartButton text="Let’s Get Started"  width="200px" routeTo="options_two/home" />
     </div>
     <Footer/>
   </HomeCont>
