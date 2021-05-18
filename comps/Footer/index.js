@@ -24,6 +24,12 @@ bottom: 0;
   margin:10px;
 }  
 
+.Icons {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
 
 .IconImg {
   width: 30px;

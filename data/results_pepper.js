@@ -21,7 +21,7 @@ export const results_pepper = {
 
     PepperRiceDry:{
         title: "Stuffed Pepper With Rice",
-        image: "/DR-Pepper.jpeg",
+        image: "/DR-pepper.jpeg",
         subtext1:"Step 1: Preheat oven to 400°. Beat together eggs, 2 teaspoons of water, and a pinch of  salt. Preheat a large (12-inch) nonstick T-fal skillet over medium, about 2 minutes, until the Thermo-Spot turns solid. Coat with 2 tsp oil.",
         subtext2:"Step 2: Add egg mixture and cook, pushing eggs toward center of pan to form large, soft curds, about 30 seconds. Scrape eggs onto a plate.",
         subtext3:"Step 3: Return skillet to medium heat and add the remaining 3 tbsp of the oil, add rice, chicken, and soy sauce; cook stirring occasionally until heated through, about 5 minutes. Season with salt and pepper. Scrape rice mixture into a bowl and wipe skillet out with paper towels.",
