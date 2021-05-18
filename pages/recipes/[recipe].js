@@ -38,6 +38,7 @@ const HomeCont = styled.div`
   align-items: center;
   background-color: #FFF8F8;
   overflow: scroll; 
+  padding-bottom: 100px;
   
     .navbar {
       width: 100%;

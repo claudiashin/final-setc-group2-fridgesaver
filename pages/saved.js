@@ -26,7 +26,7 @@ const HomeCont = styled.div`
       display:flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
 
       .row {
         flex: 25%;

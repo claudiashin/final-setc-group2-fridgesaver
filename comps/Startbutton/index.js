@@ -1,6 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {useRouter} from 'next/router';
+
+const AnimateButton = keyframes`
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+`;
 
 const ButtonInput = styled.button`
     background-color: #B4E2B9;
@@ -14,6 +23,7 @@ const ButtonInput = styled.button`
     font-size: 1em;
     text-align: center;
     visibility: ${props=>props.visibility};
+    animation: ${AnimateButton} 1.5s ease infinite;
 `;
 
 //props
