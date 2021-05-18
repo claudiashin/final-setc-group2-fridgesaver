@@ -19,8 +19,8 @@ const HomeCont = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 170px;
-    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-top: 10px;
 
     .nav {
         width: 100%;
