@@ -24,6 +24,8 @@ const HomeCont = styled.div `
 
     .nav {
         width: 100%;
+        padding: 20px;
+        margin-top: 15px;
     }
 
     .icons {

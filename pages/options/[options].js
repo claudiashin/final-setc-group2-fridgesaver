@@ -18,6 +18,8 @@ const HomeCont = styled.div`
 
     .navbar {
       width: 100%;
+      margin-top: -10px;
+      padding-bottom: 20px;
     }
     .buttons {
       display: flex;
