@@ -19,6 +19,7 @@ const HomeCont = styled.div`
 
     .navbar {
       width: 100%;
+      padding-bottom: 20px;
     }
 
     .col {
@@ -272,7 +273,7 @@ export default function Home() {
         onClick={()=>router.push("/")}
       />
     </div>
-    <Header icon="/recipe-book.png" text="Recipes"/>
+    <Header icon="/recipe-book.png" text="Recipe"/>
     <Line LineBgColor="#000" LineWidth="70%" LineHeight="3px"/>
     <div className="col">
       <div className="row">

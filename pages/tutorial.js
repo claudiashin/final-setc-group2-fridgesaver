@@ -15,6 +15,7 @@ const HomeCont = styled.div`
   
     .navbar {
       width: 100%;
+      padding-bottom: 20px;
     }
 
     p {

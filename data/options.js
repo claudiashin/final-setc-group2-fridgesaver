@@ -6,7 +6,7 @@ export const optiontexts = {
         txt2: "Noodle",
         img2: "/noodles_for_page.svg",
         click: "/options/option2",
-        click1: "/options_two/pepper",
+        click1: "/options_two/home",
         display: "visible"
 
         
