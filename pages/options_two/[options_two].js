@@ -46,11 +46,11 @@ const HomeCont = styled.div `
     
 `;
 
-var data = {
-    select1:null,
-    select2:null,
-    select3:null,
-  }
+ var data = {
+     select1:null,
+     select2:null,
+     select3:null,
+   }
 
   var right="/options_two/peppers"
   var left="/options_two/pepper"
@@ -59,6 +59,11 @@ var data = {
 export default function Home() {
     const router = useRouter();
     const {options_two} = router.query;
+    // const [data,setData] = useState({
+    //     select1:"",
+    //     select2:"",
+    //     select3:""      
+    //   })
 
 
     var image="/carrot.png";
@@ -70,6 +75,23 @@ export default function Home() {
     var bg4="#FEF2CA;";
     var bg5="#FEF2CA;";
     var bg6="#FEF2CA;";
+
+
+
+//   useEffect(()=>{
+   
+//     if(process.browser){
+//       var data =sessionStorage.getItem("options");
+//       var obj =JSON.parse(data);
+//       setData(obj)
+      
+//     }
+
+//     // if(!options){
+//     //   sessionStorage.setItem("options",JSON.stringify(data))
+//     // }
+
+//     },[router.query]);
    
 
     //Pepper & peppers 
