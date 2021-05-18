@@ -59,6 +59,7 @@ const Arrow = styled.img`
     height:20px;
     object-fit: contain;
     padding: 5px;
+    visibility: ${props=>props.visibility};
 `;
 
 
@@ -66,6 +67,8 @@ const Ingredient = ({
   src="carrot.png",
   name="Carrot",
   text="You just saved average of $15 for this meal, alternative save about $100 per weeks. Keep going and be proud of being part of saving environment!",
+
+  visibility="visible",
 
   onLeftArrowClick=()=>{},
   onRightArrowClick=()=>{}
@@ -82,9 +85,9 @@ const Ingredient = ({
     <div className="info">
       <IngInfo>{text}</IngInfo>
     </div>
-    <div className="arrow">
-      <Arrow src='/arrow-left.png' onClick={onLeftArrowClick}/>
-      <Arrow src='/arrow-right.png' onClick={onRightArrowClick}/>
+    <div className="arrow"  >
+      <Arrow src='/arrow-left.png' onClick={onLeftArrowClick}  visibility={visibility} />
+      <Arrow src='/arrow-right.png' onClick={onRightArrowClick}  visibility={visibility} />
     </div>
 
 

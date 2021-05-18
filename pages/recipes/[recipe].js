@@ -652,9 +652,9 @@ export default function Home() {
         subtext4={subtext4}
       />
     </div>
-    <div>You saved vegetables!!</div>
+
     <div className="bottom">
-      <StartButton text="Pick Another Veggie"  width="200px" routeTo="/options_two/pepper"/>
+      <StartButton text="Pick Another Veggie"  width="200px" routeTo="/options_two/home"/>
     </div>
     <Footer/>
   </HomeCont>
