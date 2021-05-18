@@ -52,8 +52,8 @@ const HomeCont = styled.div `
      select3:null,
    }
 
-  var right="/options_two/peppers"
-  var left="/options_two/pepper"
+  var right="/options_two/home"
+  var left="/options_two/home"
 
 
 export default function Home() {
@@ -67,8 +67,8 @@ export default function Home() {
     //   })
 
 
-    var image="/carrot.png";
-    var title="Carrot";
+    var image="/vegetables.png";
+    var title="Pick me";
     var info="Please click one of vegetable circle buttons above";
     var bg1="#FEF2CA;";
     var bg2="#FEF2CA;";
