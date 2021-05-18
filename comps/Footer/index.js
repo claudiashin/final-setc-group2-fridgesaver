@@ -61,7 +61,7 @@ const  Footer = ({
                       {/* <IconImage src = "/recipe-book-footer.png"/> */}
                       <IconImage src = "/recipe-book-color.png"/>
                     </div>
-                    <div>RECIPE</div>
+                    <div>RECIPES</div>
                   </div>
                 </Link>
               </div> 

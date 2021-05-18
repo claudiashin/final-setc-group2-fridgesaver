@@ -269,7 +269,7 @@ export default function Home() {
     </Head>
     <div className="navbar">
       <Navbar 
-        onClick={()=>router.push("/")}
+        visibility = "hidden" onClick={()=>router.push("/")}
       />
     </div>
     <Header icon="/recipe-book.png" text="Recipes"/>
@@ -304,9 +304,6 @@ export default function Home() {
           <img className="item" src="/SB-Carrots.jpg" onClick={CarrotNoodleSoup}/>   {/*carrot noodle soup */}
           <img className="item" src="/SR-Eggplant.jpg" onClick={EggplantRiceSoup}/>   {/*eggplant rice soup */}
           <img className="item" src="/Tomato-Fried-Rice.jpeg" onClick={TomatoRiceDry}/> {/*tomato rice dry*/}
-
-
-
       </div>
     </div>
     <Footer/>

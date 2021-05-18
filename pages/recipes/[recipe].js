@@ -624,6 +624,7 @@ export default function Home() {
       <Navbar 
         onClick={()=>router.push("/options/option2")}
       />
+
     </div>
     
     <Recipe
