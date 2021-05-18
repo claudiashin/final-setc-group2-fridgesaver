@@ -94,14 +94,17 @@ export default function Home() {
    
     if(process.browser){
       var data =sessionStorage.getItem("options");
+
       var obj =JSON.parse(data);
       setData(obj)
       
     }
-
+    
     if(!options){
       sessionStorage.setItem("options",JSON.stringify(data))
+      console.log(data)
     }
+   
 
     if(options === "option1"){
         setChosen(1);

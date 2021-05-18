@@ -53,8 +53,19 @@ const HomeCont = styled.div`
 `;
 
 
+var data = {
+  select1:null,
+  select2:null,
+  select3:null,
+}
+
+
 export default function Home() {
   const router = useRouter();
+
+
+
+  
   return <HomeCont>
     <Head>
       <title>Tutorial</title>
@@ -72,7 +83,7 @@ export default function Home() {
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
-    <StartButton text="Let’s Get Started"  width="200px" routeTo="options_two/pepper"/>
+    <StartButton text="Let’s Get Started"  width="200px" routeTo="options_two/home" />
     </div>
     <Footer/>
   </HomeCont>
