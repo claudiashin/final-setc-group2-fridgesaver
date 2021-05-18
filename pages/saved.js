@@ -273,7 +273,7 @@ export default function Home() {
         visibility = "hidden" onClick={()=>router.push("/")}
       />
     </div>
-    <Header icon="/recipe-book.png" text="Recipe"/>
+    <Header icon="/recipe-book.png" text="Recipes"/>
     <Line LineBgColor="#000" LineWidth="70%" LineHeight="3px"/>
     <div className="col">
       <div className="row">
