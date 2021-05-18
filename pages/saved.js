@@ -290,7 +290,7 @@ export default function Home() {
       <div className="row">
           <img className="item" src="/SR-Pepper.jpg" onClick={PepperRiceSoup}/>  {/*pepper rice soup*/}
           <img className="item" src="/DN-Eggplant.jpg" onClick={EggplantNoodleDry}/> {/*eggplant noodle dry */}
-          <img className="item" src="/DR-Pepper.jpeg" onClick={PepperRiceDry}/>  {/*pepper rice dry */}
+          <img className="item" src="/DR-pepper.jpeg" onClick={PepperRiceDry}/>  {/*pepper rice dry */}
           <img className="item" src="/DN-Tomato.jpg" onClick={TomatoNoodleDry}/>  {/*tomato noodle dry */}
           <img className="item" src="/DR-Onion.jpg" onClick={OnionRiceDry}/>  {/*onion rice dry */}
           <img className="item" src="/SB-Tomato.jpg" onClick={TomatoNoodleSoup}/>  {/*tomato noodle soup  */}
