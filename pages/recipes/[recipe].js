@@ -38,7 +38,7 @@ const HomeCont = styled.div`
   justify-content:center;
   align-items: center;
   background-color: #FFF8F8;
-  overflow: scroll;
+  overflow: scroll; 
   padding-bottom: 100px;
   
     .navbar {
