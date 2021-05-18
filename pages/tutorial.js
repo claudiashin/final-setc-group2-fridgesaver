@@ -79,9 +79,9 @@ export default function Home() {
     </div>
     <Header icon="/video-tutorial.png" text="Tutorial" text2="(Based on single servings)"/>
     <div className="top">
-      <p className="step"><span class="bold">Step 1</span> - Select your main</p>
-      <p className="step"><span class="bold">Step 2</span> - Select your style</p>
-      <p className="step"><span class="bold">Step 3</span> - Select your veggies</p>
+      <p className="step"><span class="bold">Step 1</span> - Select your veggies</p>
+      <p className="step"><span class="bold">Step 2</span> - Select your main</p>
+      <p className="step"><span class="bold">Step 3</span> - Select your style</p>
     </div>
     <p className="bottom">Voila! You have your recipe!!</p>
     <div className="startbutton">
