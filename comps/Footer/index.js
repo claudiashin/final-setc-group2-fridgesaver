@@ -7,7 +7,7 @@ const FooterCont  = styled.div`
 display:flex;
 flex-direction:row;
 width:100%;
-padding-top: 100px;
+padding-top: 20px;
 font-size: 14px;
 text-align: center;
 position: fixed;
