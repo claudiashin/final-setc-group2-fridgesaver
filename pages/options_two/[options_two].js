@@ -19,8 +19,8 @@ const HomeCont = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 170px;
-    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-top: 10px;
 
     .nav {
         width: 100%;
@@ -46,30 +46,49 @@ const HomeCont = styled.div `
     
 `;
 
-var data = {
-    select1:null,
-    select2:null,
-    select3:null,
-  }
+ var data = {
+     select1:null,
+     select2:null,
+     select3:null,
+   }
 
-  var right="/options_two/peppers"
-  var left="/options_two/pepper"
+  var right="/options_two/home"
+  var left="/options_two/home"
 
 
 export default function Home() {
     const router = useRouter();
     const {options_two} = router.query;
+    const [chosen,setChosen] = useState(0);
+    // const [data,setData] = useState({
+    //     select1:"",
+    //     select2:"",
+    //     select3:""      
+    //   })
 
 
-    var image="/carrot.png";
-    var title="Carrot";
-    var info="an information goes here";
+    var image="/vegetables.png";
+    var title="Pick me";
+    var info="Please click one of vegetable circle buttons above";
     var bg1="#FEF2CA;";
     var bg2="#FEF2CA;";
     var bg3="#FEF2CA;";
     var bg4="#FEF2CA;";
     var bg5="#FEF2CA;";
     var bg6="#FEF2CA;";
+
+
+
+    useEffect(()=>{
+   
+        if(options_two ==="home"){
+            setChosen(1);
+        }
+        if(options_two != "home"){
+            setChosen(2);
+        }
+
+     },[router.query]);
    
 
     //Pepper & peppers 
@@ -227,7 +246,7 @@ export default function Home() {
             >
             </Ingredient>
         </div>
-        <StartButton text="Next" routeTo="/options/option1"/>
+        {chosen ===  2 && <StartButton text="Next" routeTo="/options/option1"/>}
 
         <Footer />
 
