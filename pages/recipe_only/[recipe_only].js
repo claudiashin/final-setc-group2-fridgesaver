@@ -39,6 +39,7 @@ const HomeCont = styled.div`
   align-items: center;
   background-color: #FFF8F8;
   overflow: scroll; 
+  padding-bottom: 200px;
   
     .navbar {
       width: 100%;
@@ -654,9 +655,9 @@ export default function Home() {
     </div>
 
 
-    <div className="bottom">
+    {/* <div className="bottom">
       <StartButton text="Pick Another Veggie"  width="200px" routeTo="../options_two/pepper"/>
-    </div>
+    </div> */}
     <Footer/>
   </HomeCont>
 }
