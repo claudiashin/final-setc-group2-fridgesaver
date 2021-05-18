@@ -59,6 +59,7 @@ const HomeCont = styled.div `
 export default function Home() {
     const router = useRouter();
     const {options_two} = router.query;
+    const [chosen,setChosen] = useState(0);
     // const [data,setData] = useState({
     //     select1:"",
     //     select2:"",
@@ -68,7 +69,7 @@ export default function Home() {
 
     var image="/carrot.png";
     var title="Carrot";
-    var info="an information goes here";
+    var info="Please click one of vegetable circle buttons above";
     var bg1="#FEF2CA;";
     var bg2="#FEF2CA;";
     var bg3="#FEF2CA;";
@@ -78,20 +79,16 @@ export default function Home() {
 
 
 
-//   useEffect(()=>{
+    useEffect(()=>{
    
-//     if(process.browser){
-//       var data =sessionStorage.getItem("options");
-//       var obj =JSON.parse(data);
-//       setData(obj)
-      
-//     }
+        if(options_two ==="home"){
+            setChosen(1);
+        }
+        if(options_two != "home"){
+            setChosen(2);
+        }
 
-//     // if(!options){
-//     //   sessionStorage.setItem("options",JSON.stringify(data))
-//     // }
-
-//     },[router.query]);
+     },[router.query]);
    
 
     //Pepper & peppers 
@@ -249,7 +246,7 @@ export default function Home() {
             >
             </Ingredient>
         </div>
-        <StartButton text="Next" routeTo="/options/option1"/>
+        {chosen ===  2 && <StartButton text="Next" routeTo="/options/option1"/>}
 
         <Footer />
 
